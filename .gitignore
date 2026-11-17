@@ -1,0 +1,14 @@
+tools/gradle*
+node_modules/
+android/.gradle/
+android/**/build/
+android/local.properties
+android/app/src/main/assets/
+tools/github.mjs
+tools/android-ui.xml
+.vercel/
+*.log
+.DS_Store
+test-results/
+web/downloads/
+output/

@@ -1,0 +1,7 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.fitbox.app'
+    compileSdk 36
+    defaultConfig { applicationId 'com.fitbox.app'; minSdk 26; targetSdk 36; versionCode 1; versionName '0.1.0' }
+    buildTypes { release { minifyEnabled false } }
+}

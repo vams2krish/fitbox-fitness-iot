@@ -1,0 +1,1 @@
+{"name":"fitbox","version":"0.1.0","private":true,"description":"FitBox offline-first fitness IoT companion and Android prototype","scripts":{"start":"node tools/serve.mjs","test":"node --test tests/*.test.cjs","sync:android":"node tools/sync-android.mjs"},"devDependencies":{"@playwright/test":"1.56.1"}}

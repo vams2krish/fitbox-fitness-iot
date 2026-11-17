@@ -1,0 +1,26 @@
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.FitBoxCore=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  'use strict';
+  const KEY='fitbox.v1';
+  const localDay=(date=new Date())=>`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
+  const dayBefore=(day)=>{const date=new Date(day+'T12:00:00');date.setDate(date.getDate()-1);return localDay(date);};
+  function fresh(){return {version:1,profile:null,sessions:[],claims:[],restDays:[],draft:null};}
+  function parse(raw){try{const x=JSON.parse(raw);if(x?.version!==1||!Array.isArray(x.sessions)||!Array.isArray(x.claims)||!Array.isArray(x.restDays))return fresh();return {...fresh(),...x};}catch{return fresh();}}
+  const exercises=[
+    {id:'pushups',name:'Pushups',group:'Body Exercise',unit:'reps',base:5,asset:'381-4523-imgRectangle31.png',muscle:'Chest · shoulders · triceps',steps:['Start in a high plank, with hands slightly wider than your shoulders.','Lower your chest by bending your elbows, keeping your body in a straight line.','Push back up. Use your knees for a gentler variation.'],seconds:0},
+    {id:'squats',name:'Squats',group:'Body Exercise',unit:'reps',base:10,asset:'381-4523-imgRectangle32.png',muscle:'Quads · glutes · core',steps:['Stand with feet about shoulder-width apart.','Bend at your hips and knees, keeping your chest comfortably lifted.','Press through your feet to return to standing.'],seconds:0},
+    {id:'plank',name:'Plank',group:'Body Exercise',unit:'sec',base:20,asset:'445-4674-imgCrunchImage4.png',muscle:'Core · shoulders',steps:['Place your forearms on the floor, with elbows under your shoulders.','Extend your legs and keep your body in a straight line.','Breathe steadily. Lower your knees whenever you need a break.'],seconds:20},
+    {id:'crunches',name:'Crunches',group:'Body Exercise',unit:'reps',base:8,asset:'445-4674-imgCrunchImage1.png',muscle:'Core · abdominals',steps:['Lie on your back with knees bent and feet on the floor.','Lift your shoulders gently, without pulling on your neck.','Lower with control. Keep your range of motion comfortable.'],seconds:0},
+    {id:'lunges',name:'Stationary lunges',group:'Body Exercise',unit:'reps',base:6,asset:'445-4674-imgCrunchImage3.png',muscle:'Legs · glutes · balance',steps:['Stand tall and step one foot forward.','Bend both knees within a comfortable range, keeping your torso upright.','Return to standing, then alternate sides. Each side counts as one rep.'],seconds:0},
+    {id:'yoga',name:'Mountain pose',group:'Yoga Pose',unit:'sec',base:60,asset:null,muscle:'Balance · posture',steps:['Stand comfortably with your feet grounded.','Relax your shoulders and let your arms rest by your sides.','Breathe naturally and notice your balance.'],seconds:60},
+    {id:'meditation',name:'Mindful breathing',group:'Meditation',unit:'sec',base:60,asset:'364-4986-imgUnsplashLrQptQs7NQq.png',muscle:'Mindfulness · calm',steps:['Find a comfortable seated position.','Let your shoulders soften and breathe naturally.','Notice each breath. When your mind wanders, gently return your attention.'],seconds:60}
+  ];
+  const exercise=id=>exercises.find(e=>e.id===id);
+  function plan(profile){const factor=({Beginner:1,Intermediate:2,Seasoned:3,Veteran:4})[profile?.level]||1;const n=profile?.time==='< 15 mins'?2:profile?.time==='15–30 mins'?3:5;return exercises.filter(e=>e.group===(profile?.activity||'Body Exercise')).slice(0,n).map(e=>({...e,target:e.base*(e.unit==='reps'?factor:1)}));}
+  function progress(state,id,day=localDay()){return state.sessions.filter(s=>s.day===day&&s.exercise===id).reduce((sum,s)=>sum+(exercise(id)?.unit==='sec'?s.seconds:s.reps),0);}
+  function canClaim(state,id,day=localDay()){const task=plan(state.profile).find(e=>e.id===id);return !!task&&progress(state,id,day)>=task.target&&!state.claims.some(c=>c.day===day&&c.exercise===id);}
+  function claim(state,id,day=localDay()){if(!canClaim(state,id,day))return false;state.claims.push({exercise:id,day,xp:25});return true;}
+  function xp(state){return state.claims.reduce((n,c)=>n+c.xp,0);}
+  function streak(state,today=localDay()){const days=new Set(state.sessions.filter(s=>s.reps>0||s.seconds>0).map(s=>s.day));let day=days.has(today)?today:dayBefore(today),count=0;while(days.has(day)){count++;day=dayBefore(day);}return count;}
+  function saveSession(state,{id,exercise:idExercise,reps,seconds,day=localDay(),at=Date.now()}){if(!exercise(idExercise)||!Number.isFinite(reps)||!Number.isFinite(seconds)||reps<0||seconds<0||(!reps&&!seconds)||state.sessions.some(s=>s.id===id))return false;state.sessions.push({id,exercise:idExercise,reps:Math.floor(reps),seconds:Math.floor(seconds),day,at,source:'manual'});return true;}
+  return {KEY,localDay,dayBefore,fresh,parse,exercises,exercise,plan,progress,canClaim,claim,xp,streak,saveSession};
+});
