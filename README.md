@@ -1,4 +1,4 @@
-# FitBox — Fitness IoT & Android App
+# FitBox (Fitness IoT & Android App)
 
 **Your space. Your pace. Your fitness, one rep at a time.**
 
@@ -41,7 +41,7 @@ These are actual screenshots of the implemented app, captured during automated b
 
 ### Android emulator screenshots
 
-<p><img src="docs/screenshots/15-android-welcome.png" width="260" alt="FitBox welcome running in Android"><img src="docs/screenshots/16-android-home.png" width="260" alt="FitBox home dashboard running in Android"></p>
+<p><img src="docs/screenshots/15-android-welcome.png" width="240" alt="FitBox welcome running in Android"><img src="docs/screenshots/16-android-home.png" width="240" alt="FitBox home dashboard running in Android"><img src="docs/screenshots/17-android-workout.png" width="240" alt="FitBox manual repetition tracking running in Android"></p>
 
 ## Working features
 
