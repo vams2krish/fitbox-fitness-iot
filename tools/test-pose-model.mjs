@@ -1,0 +1,7 @@
+import {chromium} from '@playwright/test';import fs from 'node:fs';import assert from 'node:assert/strict';
+const browser=await chromium.launch({args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.route('**/pose-test-fixture.jpg',route=>route.fulfill({body:fs.readFileSync('tests/pose-fixture.jpg'),contentType:'image/jpeg'}));
+await page.goto('http://127.0.0.1:4173');
+const result=await page.evaluate(async()=>{const {FilesetResolver,PoseLandmarker}=await import('/vendor/mediapipe/vision_bundle.mjs');const files=await FilesetResolver.forVisionTasks('/vendor/mediapipe/wasm');const model=await PoseLandmarker.createFromOptions(files,{baseOptions:{modelAssetPath:'/models/pose_landmarker_lite.task',delegate:'CPU'},runningMode:'IMAGE',numPoses:2});const image=new Image();image.src='/pose-test-fixture.jpg';await image.decode();const prediction=model.detect(image);const answer={poses:prediction.landmarks.length,landmarks:prediction.landmarks[0]?.length,valid:prediction.landmarks[0]?.every(p=>Number.isFinite(p.x)&&Number.isFinite(p.y))};model.close();return answer;});
+assert.ok(result.poses>=1);assert.equal(result.landmarks,33);assert.equal(result.valid,true);assert.deepEqual(errors,[]);console.log('PASS: bundled MediaPipe Lite model executed real WASM inference:',result);await browser.close();

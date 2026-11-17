@@ -1,0 +1,11 @@
+.cache/
+.git/
+android/
+docs/
+node_modules/
+output/
+tests/
+tools/
+.env
+.env.*
+*.log

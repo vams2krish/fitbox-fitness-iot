@@ -1,0 +1,18 @@
+import '../server/env.mjs';
+import fs from 'node:fs';import path from 'node:path';import {spawn} from 'node:child_process';
+import {stripe,PLANS} from '../server/stripe.mjs';
+if(!stripe)throw Error('A Stripe test-mode key is required; live keys are refused');
+const cache=path.join(process.env.LOCALAPPDATA,'npm-cache','_npx');let cli;
+for(const entry of fs.readdirSync(cache)){const pkg=path.join(cache,entry,'node_modules','vercel','package.json');if(fs.existsSync(pkg)){const data=JSON.parse(fs.readFileSync(pkg));if(data.version==='65.17.0'){cli=path.resolve(path.dirname(pkg),data.bin.vercel);break;}}}
+if(!cli)throw Error('Vercel CLI unavailable');
+async function save(key,value){let text=fs.readFileSync('.env.local','utf8');text=text.replace(new RegExp('^'+key+'=.*(?:\\r?\\n|$)','m'),'');fs.writeFileSync('.env.local',text+'\n'+key+'='+JSON.stringify(value)+'\n');process.env[key]=value;
+  for(const target of ['production','preview','development'])await new Promise((resolve,reject)=>{const env={...process.env};delete env.VERCEL_OIDC_TOKEN;const child=spawn(process.execPath,[cli,'env','add',key,'--environment',target,'--force','--yes','--type',target==='development'?'config':'secret'],{env,stdio:['pipe','ignore','pipe']});let error='';child.stderr.on('data',d=>error+=d);child.on('close',code=>code===0?resolve():reject(Error(error.replaceAll(value,'[REDACTED]'))));child.stdin.end(value+'\n');});console.log('Configured '+key+' (value hidden)');
+}
+for(const plan of PLANS){const lookup='fitbox_'+plan.id+'_'+plan.months+'m_usd_v1';let price=(await stripe.prices.list({lookup_keys:[lookup],active:true,limit:1})).data[0];if(!price){const product=await stripe.products.create({name:'FitBox+ '+plan.name,description:plan.months+'-month testing membership. Sandbox only.',metadata:{app:'fitbox',tier:plan.id}},{idempotencyKey:'fitbox-product-'+plan.id+'-v1'});price=await stripe.prices.create({product:product.id,currency:'usd',unit_amount:plan.amount,recurring:{interval:'month',interval_count:plan.months},lookup_key:lookup,metadata:{app:'fitbox',tier:plan.id}},{idempotencyKey:'fitbox-price-'+plan.id+'-v1'});}
+  if(price.livemode||price.unit_amount!==plan.amount||price.recurring?.interval_count!==plan.months)throw Error('Unexpected sandbox price configuration');await save(plan.env,price.id);
+}
+const url='https://fitbox-fitness-iot.vercel.app/api/billing/webhook';const existing=(await stripe.webhookEndpoints.list({limit:100})).data.find(e=>e.url===url);
+if(!existing){const endpoint=await stripe.webhookEndpoints.create({url,api_version:stripe.getApiField('version'),description:'FitBox sandbox subscription state',enabled_events:['checkout.session.completed','customer.subscription.created','customer.subscription.updated','customer.subscription.deleted','invoice.paid','invoice.payment_failed'],metadata:{app:'fitbox'}},{idempotencyKey:'fitbox-webhook-v1'});await save('STRIPE_WEBHOOK_SECRET',endpoint.secret);}else if(!process.env.STRIPE_WEBHOOK_SECRET)throw Error('FitBox endpoint exists but local signing secret is absent; recover it securely before continuing');
+let config=(await stripe.billingPortal.configurations.list({active:true,limit:100})).data.find(c=>c.metadata?.app==='fitbox');
+if(!config)config=await stripe.billingPortal.configurations.create({business_profile:{headline:'Manage your FitBox sandbox membership'},features:{invoice_history:{enabled:true},payment_method_update:{enabled:true},subscription_cancel:{enabled:true,mode:'at_period_end'}},metadata:{app:'fitbox'}},{idempotencyKey:'fitbox-portal-v1'});
+await save('STRIPE_PORTAL_CONFIG',config.id);console.log('Stripe sandbox plans, signed webhook and management portal configured.');

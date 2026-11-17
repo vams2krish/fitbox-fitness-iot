@@ -1,5 +1,7 @@
 # Validation record
 
+> Historical v0.1 validation. See [V0.2-STATUS.md](V0.2-STATUS.md) for current tests and limits.
+
 Verified on November 17, 2026.
 
 ## Automated checks

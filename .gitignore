@@ -12,3 +12,12 @@ tools/android-ui.xml
 test-results/
 web/downloads/
 output/
+.env
+.env.*
+!.env.example
+.design/
+.data/
+.cache/
+
+.vercel
+.env.local

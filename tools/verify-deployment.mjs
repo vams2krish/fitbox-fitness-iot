@@ -5,7 +5,7 @@ const page=await browser.newPage({viewport:{width:1440,height:1000}});
 const errors=[];page.on('pageerror',e=>errors.push(e.message));
 const response=await page.goto('https://fitbox-fitness-iot.vercel.app');
 assert.equal(response.status(),200);
-assert.equal(await page.locator('#apk-link').getAttribute('href'),'https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.1.0/FitBox-debug.apk');
+assert.equal(await page.locator('#apk-link').getAttribute('href'),'https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.2.0/FitBox-debug.apk');
 await page.locator('[data-action="demo"]').click();
 await page.waitForFunction(()=>[...document.images].every(i=>i.complete&&i.naturalWidth>0));
 assert.equal(await page.locator('.greeting').innerText(),'Alex');

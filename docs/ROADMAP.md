@@ -1,5 +1,7 @@
 # FitBox roadmap
 
+> Historical v0.1 roadmap. On-device pose inference and authenticated Neon sync are now implemented. See [V0.2-STATUS.md](V0.2-STATUS.md) for current work and blockers.
+
 ## 0.1 — Software experience
 
 Offline local profile, level-based starter goals, manual repetition tracking, active timers, partial-session persistence, daily claims, XP, streaks, rest days, anatomy references, guides, insights, export, Android package, and web preview.

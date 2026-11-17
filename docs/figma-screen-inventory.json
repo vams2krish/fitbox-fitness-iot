@@ -1,0 +1,3230 @@
+[
+  {
+    "page": "513:4507",
+    "id": "739:12114",
+    "name": "Frame 64",
+    "x": "14567",
+    "y": "6514",
+    "width": "309",
+    "height": "1162",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12112",
+    "name": "Frame 63",
+    "x": "14176",
+    "y": "6514",
+    "width": "316",
+    "height": "908",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12109",
+    "name": "Frame 61",
+    "x": "13455",
+    "y": "6514",
+    "width": "312",
+    "height": "980",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12101",
+    "name": "Frame 53",
+    "x": "10742",
+    "y": "6518",
+    "width": "309",
+    "height": "957",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12100",
+    "name": "Frame 52",
+    "x": "10401",
+    "y": "6518",
+    "width": "309",
+    "height": "957",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12098",
+    "name": "Frame 50",
+    "x": "9709",
+    "y": "6529",
+    "width": "312",
+    "height": "946",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12095",
+    "name": "Frame 47",
+    "x": "8617",
+    "y": "6518",
+    "width": "321",
+    "height": "950",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12094",
+    "name": "Frame 46",
+    "x": "8257",
+    "y": "6516",
+    "width": "312",
+    "height": "940",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "513:4508",
+    "name": "Bluetooth Popup 2",
+    "x": "-22845",
+    "y": "2388",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "513:4515",
+    "name": "Bluetooth Popup 1",
+    "x": "-23260",
+    "y": "2388",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "693:9376",
+    "name": "User account drop down",
+    "x": "5426",
+    "y": "2767",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Version 2.0.1",
+      "Sign Out"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "513:4522",
+    "name": "Video Play 2",
+    "x": "2141",
+    "y": "4384",
+    "width": "375",
+    "height": "815",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "ABS Crunches",
+      "00:50",
+      "04:00"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "640:7286",
+    "name": "Video Play 4",
+    "x": "3013",
+    "y": "4382",
+    "width": "375",
+    "height": "815",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Stationary Lunges",
+      "00:50",
+      "04:00"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "655:8639",
+    "name": "Video Play 5",
+    "x": "771",
+    "y": "2836",
+    "width": "375",
+    "height": "815",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "11 Feb 2022",
+      "00:50",
+      "04:00"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "658:8699",
+    "name": "Video Play 7",
+    "x": "1233",
+    "y": "2836",
+    "width": "375",
+    "height": "815",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "11 Feb 2022",
+      "00:50",
+      "04:00"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "513:4547",
+    "name": "Video Play 1",
+    "x": "1685",
+    "y": "4381",
+    "width": "375",
+    "height": "815",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "ABS Crunches",
+      "00:50",
+      "04:00"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "640:7311",
+    "name": "Video Play 3",
+    "x": "2577",
+    "y": "4384",
+    "width": "375",
+    "height": "815",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Stationary Lunges",
+      "00:50",
+      "04:00"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "655:8664",
+    "name": "Video Play 6",
+    "x": "289",
+    "y": "2839",
+    "width": "375",
+    "height": "815",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "11 Feb 2022",
+      "00:50",
+      "04:00"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "513:4573",
+    "name": "Gallery",
+    "x": "-473",
+    "y": "4384",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "ABS crunches",
+      "Pushup",
+      "Squats",
+      "Plank",
+      "Endurance exercises list"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "640:7338",
+    "name": "Gallery",
+    "x": "-1147",
+    "y": "2814",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Review Center",
+      "Place where you can view wellenss journey on timeline basis"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "834:26326",
+    "name": "Gallery",
+    "x": "-676",
+    "y": "2814",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Review Center",
+      "Place where you can view wellenss journey on timeline basis"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "640:7541",
+    "name": "Gallery",
+    "x": "-157",
+    "y": "2842",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Review Center",
+      "Place where you can view wellenss journey on timeline basis"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "640:7036",
+    "name": "Gallery",
+    "x": "-49",
+    "y": "4384",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "ABS crunches",
+      "Pushup",
+      "Squats",
+      "Plank",
+      "Endurance exercises list",
+      "Search for exercises here.."
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "640:7103",
+    "name": "Gallery",
+    "x": "426",
+    "y": "4384",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "ABS crunches",
+      "Pushup",
+      "Squats",
+      "Plank",
+      "Endurance exercises list",
+      "Lunges"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "640:7172",
+    "name": "Gallery",
+    "x": "1249",
+    "y": "4384",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "List of Wellness Exercises",
+      "ABS crunches",
+      "Pushup",
+      "Squats",
+      "Plank",
+      "Search Results",
+      "3/3",
+      "Stationary Lunges",
+      "Side Lunges",
+      "Walking Lunges",
+      "Learning Center",
+      "All-in-one fitness video collection center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "513:4581",
+    "name": "Insights",
+    "x": "-1332",
+    "y": "5488",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Fitness Activity",
+      "Item",
+      "Statistic",
+      "54",
+      "Item",
+      "1 h 20 min",
+      "125",
+      "Plank",
+      "15 min",
+      "20",
+      "Crunches",
+      "59 min",
+      "68",
+      "Burpees",
+      "10 mins",
+      "12",
+      "Pull up",
+      "26 mins",
+      "20",
+      "Cross pilates",
+      "22 mins",
+      "15",
+      "Count",
+      "Type",
+      "Total Time"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "834:26515",
+    "name": "Insights",
+    "x": "-917",
+    "y": "5488",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Fitness Activity",
+      "Item",
+      "Statistic",
+      "54",
+      "Item",
+      "1 h 20 min",
+      "125",
+      "Plank",
+      "15 min",
+      "20",
+      "Crunches",
+      "59 min",
+      "68",
+      "Burpees",
+      "10 mins",
+      "12",
+      "Pull up",
+      "26 mins",
+      "20",
+      "Cross pilates",
+      "22 mins",
+      "15",
+      "Count",
+      "Type",
+      "Total Time"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "827:25622",
+    "name": "Insights",
+    "x": "-486",
+    "y": "5488",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Item",
+      "Statistic",
+      "54",
+      "Item",
+      "1 h 20 min",
+      "125",
+      "Plank",
+      "15 min",
+      "20",
+      "Crunches",
+      "59 min",
+      "68",
+      "Burpees",
+      "10 mins",
+      "12",
+      "Pull up",
+      "26 mins",
+      "20",
+      "Cross pilates",
+      "22 mins",
+      "15",
+      "Fitness Activity",
+      "Count",
+      "Type",
+      "Total Time"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "526:6103",
+    "name": "Messenger Pop up",
+    "x": "8927",
+    "y": "2706",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:9707",
+    "name": "Messenger Pop up 3",
+    "x": "11512",
+    "y": "2688",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Fitbox",
+      "1",
+      "Fitbox",
+      "1",
+      "Fitbox",
+      "1"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "572:5943",
+    "name": "Level up 2",
+    "x": "-16838",
+    "y": "2362",
+    "width": "375",
+    "height": "821",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Congratulations !"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:8659",
+    "name": "Level up 9",
+    "x": "18442",
+    "y": "2545",
+    "width": "375",
+    "height": "821",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Congratulations !"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:7478",
+    "name": "Level up 4",
+    "x": "-16008",
+    "y": "2362",
+    "width": "375",
+    "height": "821",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Congratulations !"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:7515",
+    "name": "Level up 5",
+    "x": "-15109",
+    "y": "2362",
+    "width": "375",
+    "height": "821",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Congratulations !"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:7553",
+    "name": "Level up 6",
+    "x": "-14165",
+    "y": "2393",
+    "width": "375",
+    "height": "821",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Congratulations !"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:7590",
+    "name": "Level up 7",
+    "x": "-13256",
+    "y": "2393",
+    "width": "375",
+    "height": "821",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Congratulations !"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:6755",
+    "name": "Level up 3",
+    "x": "-10903",
+    "y": "2336",
+    "width": "375",
+    "height": "821",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Congratulations !"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "815:19538",
+    "name": "Full character Level up",
+    "x": "-9241",
+    "y": "2336",
+    "width": "375",
+    "height": "821",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Level up!",
+      "Upcoming Rewards!",
+      "2",
+      "480/ 4000",
+      "Sweat Points"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "513:4620",
+    "name": "Level up 1",
+    "x": "-17789",
+    "y": "2352",
+    "width": "375",
+    "height": "821",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Congratulations !"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:8340",
+    "name": "Level up 8",
+    "x": "16679",
+    "y": "2550",
+    "width": "375",
+    "height": "821",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Congratulations !"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:6792",
+    "name": "Home Screen 15",
+    "x": "-10361",
+    "y": "2345",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status",
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Task Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "607:7323",
+    "name": "Home Screen 20",
+    "x": "7376",
+    "y": "2690",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "751:11170",
+    "name": "Rate experience 0",
+    "x": "-17",
+    "y": "5504",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check Up Center",
+      "This is Check up Center where you can check your Body perfromance any time.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:7050",
+    "name": "Home Screen 16",
+    "x": "-9781",
+    "y": "2341",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status",
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Task Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:6945",
+    "name": "Subscription message Pop up 1",
+    "x": "-8182",
+    "y": "2336",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Task Center",
+      "Check up Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "827:25276",
+    "name": "Subscription message Pop up 2",
+    "x": "-7663",
+    "y": "2336",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Task Center",
+      "Check up Center",
+      "GO Premium"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "827:25175",
+    "name": "Home Screen  19",
+    "x": "-2476",
+    "y": "2368",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Task Center",
+      "Check up Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "820:19690",
+    "name": "Home Screen 30",
+    "x": "-8701",
+    "y": "2336",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Task Center",
+      "Check up Center",
+      "Continue",
+      "Present Body",
+      "Desired Body",
+      "Goal Center",
+      "Match Percentage : 42%"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "619:7178",
+    "name": "Home Screen 21",
+    "x": "-2960",
+    "y": "2368",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Task Center",
+      "Check up Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "827:25510",
+    "name": "Home Screen 32",
+    "x": "-3953",
+    "y": "2336",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Task Center",
+      "Check up Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:7264",
+    "name": "Home Screen 19",
+    "x": "-1913",
+    "y": "2368",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Task Center",
+      "Check up Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:6600",
+    "name": "Home Screen 14",
+    "x": "-12714",
+    "y": "2393",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:6439",
+    "name": "Home Screen 13",
+    "x": "-13671",
+    "y": "2383",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:6292",
+    "name": "Home Screen 12",
+    "x": "-14590",
+    "y": "2393",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:6157",
+    "name": "Home Screen 11",
+    "x": "-15524",
+    "y": "2362",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "592:6011",
+    "name": "Home Screen 10",
+    "x": "-16423",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "570:5991",
+    "name": "Home Screen 9",
+    "x": "-17322",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:8666",
+    "name": "Home Screen 26",
+    "x": "17158",
+    "y": "2550",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:9436",
+    "name": "Home Screen 29",
+    "x": "17586",
+    "y": "2550",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:9313",
+    "name": "Home Screen 28",
+    "x": "18014",
+    "y": "2562",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "564:5877",
+    "name": "Home Screen 8",
+    "x": "-18256",
+    "y": "2357",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:8347",
+    "name": "Home Screen 24",
+    "x": "16251",
+    "y": "2562",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "561:6428",
+    "name": "Home Screen 7",
+    "x": "-20124",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:8404",
+    "name": "Home Screen 25",
+    "x": "15836",
+    "y": "2562",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center",
+      "Check up center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "561:6211",
+    "name": "Home Screen 6",
+    "x": "-20605",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Task Center",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:8547",
+    "name": "Group 207",
+    "x": "-10089",
+    "y": "5472",
+    "width": "66",
+    "height": "53",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "561:5808",
+    "name": "Home Screen 5",
+    "x": "-21580",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up Center",
+      "Task Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "572:6626",
+    "name": "Home Screen 4",
+    "x": "-22015",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up Center",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "572:6511",
+    "name": "Home Screen 3",
+    "x": "-22430",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up Center",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "572:5995",
+    "name": "Home Screen 2",
+    "x": "-23686",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up Center",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "553:5643",
+    "name": "Home Screen 1",
+    "x": "-24195",
+    "y": "2358",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up Center",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "browser reviewed"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12421",
+    "name": "Main home Screen",
+    "x": "6557",
+    "y": "6529",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up Center",
+      "Task Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "758:11160",
+    "name": "Main home Screen",
+    "x": "-21061",
+    "y": "2357",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Total time",
+      "Status",
+      "Calorie Burnt",
+      "Strength %"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "browser reviewed"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:8044",
+    "name": "Home Screen 22",
+    "x": "14929",
+    "y": "2559",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up Center",
+      "Task Center",
+      "0",
+      "0 mins",
+      "0 %",
+      "-----",
+      "Calorie Burnt",
+      "Total time",
+      "Strength %",
+      "Status"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:8158",
+    "name": "Home Screen 23",
+    "x": "15408",
+    "y": "2559",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up Center",
+      "Task Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "523:5675",
+    "name": "AI Loading screen",
+    "x": "-30853",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Workout plan is initializing! (Please dont close APP)"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:9216",
+    "name": "bye screen 1",
+    "x": "18901",
+    "y": "2545",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "End of tutorial  (player closes app after 2nd day)"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:14332",
+    "name": "Tag Exercise Components",
+    "x": "-1476",
+    "y": "4358",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Flexibility",
+      "Agility",
+      "Muscle",
+      "Power",
+      "Composition",
+      "React time",
+      "Static Balance",
+      "Dynamic Balance",
+      "Endurance",
+      "Speed",
+      "Coordination",
+      "Strength"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "834:26423",
+    "name": "Tag Exercise Components",
+    "x": "-957",
+    "y": "4368",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Flexibility",
+      "Agility",
+      "Muscle",
+      "Power",
+      "Composition",
+      "React time",
+      "Static Balance",
+      "Dynamic Balance",
+      "Endurance",
+      "Speed",
+      "Coordination",
+      "Strength"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:9248",
+    "name": "bye screen 2",
+    "x": "13526",
+    "y": "2690",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "After sometime, when timeslot is 10:00 am for jenny"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:9280",
+    "name": "bye screen 1",
+    "x": "8183",
+    "y": "2690",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "After sometime instructor sends Report and analysis message in the message center",
+      "Day 1 End"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:9676",
+    "name": "Day 2 scenario",
+    "x": "10603",
+    "y": "2690",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Next : Day 2 scenario starts!  (Early in the morning message Pop up gets to ther user)"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "523:5464",
+    "name": "MC 6",
+    "x": "-31284",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:7452",
+    "name": "Screen 7",
+    "x": "9348",
+    "y": "2703",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "February 7, 2022",
+      "Message Center"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:7556",
+    "name": "Screen 8",
+    "x": "12050",
+    "y": "2693",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "February 7, 2022",
+      "Today"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:7965",
+    "name": "Screen 9",
+    "x": "12529",
+    "y": "2693",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "February 7, 2022",
+      "Today"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "642:7995",
+    "name": "Screen 10",
+    "x": "13045",
+    "y": "2690",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "February 7, 2022",
+      "Today"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "523:5348",
+    "name": "MC 5",
+    "x": "-31701",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "523:5225",
+    "name": "MC 4",
+    "x": "-32132",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "523:5137",
+    "name": "Mc 3",
+    "x": "-32561",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "523:5052",
+    "name": "MC 2",
+    "x": "-32990",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "high-fidelity context"
+  },
+  {
+    "page": "513:4507",
+    "id": "514:6570",
+    "name": "MC 1",
+    "x": "-33436",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "high-fidelity context"
+  },
+  {
+    "page": "513:4507",
+    "id": "795:11269",
+    "name": "Subscription center",
+    "x": "-6542",
+    "y": "2336",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Personalized wellness Plan",
+      "In-depth activity montoring",
+      "Daily Email Reporting",
+      "Community Benefits",
+      "Benefit A",
+      "Benefit B",
+      "Premium Benefits"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "browser reviewed"
+  },
+  {
+    "page": "513:4507",
+    "id": "795:11456",
+    "name": "Subscription center",
+    "x": "-5975",
+    "y": "2336",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Select Payment Method",
+      "Plan selected",
+      "Final Amount",
+      "12 Months Plan",
+      "$ 20.99"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "795:11741",
+    "name": "Subscription center",
+    "x": "-5408",
+    "y": "2336",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Amount Payable",
+      "$ 20.99",
+      "Card Details",
+      "Name",
+      "Card Number",
+      "Supported Cards",
+      "Expiry",
+      "CVV",
+      "Note - You authorize FitBox to charge and renew your subscription at the expiration of the FitBox+ Plan.",
+      "Enter Card Holder Name",
+      "Enter Card Number",
+      "MM",
+      "YYYY",
+      "CVV"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "795:11921",
+    "name": "Subscription center",
+    "x": "-4841",
+    "y": "2336",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Amount Payable",
+      "$ 20.99",
+      "Card Details",
+      "Name",
+      "Card Number",
+      "Supported Cards",
+      "Expiry",
+      "CVV",
+      "Note - You authorize FitBox to charge and renew your subscription at the expiration of the FitBox+ Plan.",
+      "Jenny Alvarez",
+      "734-100-1234",
+      "12",
+      "2035",
+      "732"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "523:5721",
+    "name": "Activity Selection Area 1",
+    "x": "-33913",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "523:6029",
+    "name": "Selection Screen 1",
+    "x": "-35266",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "788:11905",
+    "name": "Selection Screen 2",
+    "x": "-34851",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "788:11980",
+    "name": "Selection Screen 3",
+    "x": "-34436",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "high-fidelity context"
+  },
+  {
+    "page": "513:4507",
+    "id": "513:4807",
+    "name": "Welcome Screen",
+    "x": "-35722",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Welcome to FitBox!"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "high-fidelity context"
+  },
+  {
+    "page": "513:4507",
+    "id": "513:4815",
+    "name": "Compoent Storage",
+    "x": "-41490",
+    "y": "4299",
+    "width": "3426",
+    "height": "4942",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "693:8770",
+    "name": "Video Camera Overlay 2",
+    "x": "-19157",
+    "y": "2357",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Position yourself towards the lens of the camera",
+      "Detected"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "693:8710",
+    "name": "Video Camera Overlay 1",
+    "x": "-19660",
+    "y": "2357",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Position yourself towards the lens of the camera",
+      "Undetected"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "708:8310",
+    "name": "Account Page Details",
+    "x": "6028",
+    "y": "2690",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Value",
+      "Value",
+      "Value",
+      "Value",
+      "Value",
+      "Value",
+      "Value",
+      "Value",
+      "Value",
+      "Value"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "browser reviewed"
+  },
+  {
+    "page": "513:4507",
+    "id": "731:8705",
+    "name": "Language Center",
+    "x": "6630",
+    "y": "2690",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "731:8302",
+    "name": "Body Selection Image Comparison",
+    "x": "-29934",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "browser reviewed"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:12289",
+    "name": "Body Selection Image Comparison",
+    "x": "-26897",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:11719",
+    "name": "Body Selection Image Comparison",
+    "x": "-29520",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:12299",
+    "name": "Body Selection Image Comparison",
+    "x": "-26477",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:11797",
+    "name": "Body Selection Image Comparison",
+    "x": "-29094",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:12309",
+    "name": "Body Selection Image Comparison",
+    "x": "-26037",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:11875",
+    "name": "Body Selection Image Comparison",
+    "x": "-28668",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:12319",
+    "name": "Body Selection Image Comparison",
+    "x": "-25597",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:11953",
+    "name": "Body Selection Image Comparison",
+    "x": "-28242",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:12329",
+    "name": "Body Selection Image Comparison",
+    "x": "-25157",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:12031",
+    "name": "Body Selection Image Comparison",
+    "x": "-27777",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:12339",
+    "name": "Body Selection Image Comparison",
+    "x": "-24727",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:12109",
+    "name": "Body Selection Image Comparison",
+    "x": "-30348",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "747:13022",
+    "name": "Body Selection Image Comparison",
+    "x": "-27337",
+    "y": "2352",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "693:8815",
+    "name": "Video Camera Overlay 3",
+    "x": "-18690",
+    "y": "2357",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Position yourself towards the lens of the camera",
+      "Count :",
+      "29",
+      "29",
+      "Pose :",
+      "Correct!",
+      "Timer :",
+      "1:20 mins",
+      "Go Back!",
+      "Activity Recording"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "607:6834",
+    "name": "Frame 24",
+    "x": "-1229",
+    "y": "1242",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Message here..."
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "607:6905",
+    "name": "Frame 25",
+    "x": "-679",
+    "y": "1242",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "How to do pushup?"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "607:6923",
+    "name": "Frame 26",
+    "x": "-100",
+    "y": "1242",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "640:7169",
+    "name": "Frame 31",
+    "x": "862",
+    "y": "4384",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "607:6939",
+    "name": "Frame 27",
+    "x": "450",
+    "y": "1242",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "607:7016",
+    "name": "Frame 28",
+    "x": "1133",
+    "y": "1242",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "607:7034",
+    "name": "Frame 29",
+    "x": "1712",
+    "y": "1242",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "607:7268",
+    "name": "Frame 30",
+    "x": "2291",
+    "y": "1242",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "733:8911",
+    "name": "Bottom HUD 4 buttons",
+    "x": "-2456",
+    "y": "4601",
+    "width": "415",
+    "height": "638",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:9707",
+    "name": "Group 212",
+    "x": "7546",
+    "y": "6515",
+    "width": "314",
+    "height": "888",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:9842",
+    "name": "Group 214",
+    "x": "8257",
+    "y": "6515",
+    "width": "312",
+    "height": "804",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:9926",
+    "name": "Group 210",
+    "x": "8617",
+    "y": "6517",
+    "width": "165",
+    "height": "24",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:10137",
+    "name": "Group 220",
+    "x": "9706",
+    "y": "6530",
+    "width": "312",
+    "height": "636",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:11758",
+    "name": "Group 271",
+    "x": "13463",
+    "y": "7068",
+    "width": "309",
+    "height": "72",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:10252",
+    "name": "Group 222",
+    "x": "10398",
+    "y": "6531",
+    "width": "312",
+    "height": "552",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:10713",
+    "name": "Group 210",
+    "x": "14176",
+    "y": "6525",
+    "width": "165",
+    "height": "24",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12091",
+    "name": "Frame 43",
+    "x": "7150",
+    "y": "6514",
+    "width": "307",
+    "height": "1268",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "No Task’s are done",
+      " You need to complete the tasks to reflect them here",
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12093",
+    "name": "Frame 45",
+    "x": "7906",
+    "y": "6514",
+    "width": "312",
+    "height": "1268",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "No Task’s are done",
+      " You need to complete the tasks to reflect them here",
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12096",
+    "name": "Frame 48",
+    "x": "8992",
+    "y": "6514",
+    "width": "312",
+    "height": "942",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12097",
+    "name": "Frame 49",
+    "x": "9352",
+    "y": "6514",
+    "width": "312",
+    "height": "946",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12099",
+    "name": "Frame 51",
+    "x": "10052",
+    "y": "6518",
+    "width": "312",
+    "height": "956",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12102",
+    "name": "Frame 54",
+    "x": "11083",
+    "y": "6518",
+    "width": "312",
+    "height": "966",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12103",
+    "name": "Frame 55",
+    "x": "11422",
+    "y": "6518",
+    "width": "317",
+    "height": "975",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12104",
+    "name": "Frame 56",
+    "x": "11761",
+    "y": "6518",
+    "width": "312",
+    "height": "975",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12105",
+    "name": "Frame 57",
+    "x": "12100",
+    "y": "6518",
+    "width": "312",
+    "height": "975",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12106",
+    "name": "Frame 58",
+    "x": "12448",
+    "y": "6518",
+    "width": "312",
+    "height": "976",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12107",
+    "name": "Frame 59",
+    "x": "12776",
+    "y": "6514",
+    "width": "312",
+    "height": "980",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12108",
+    "name": "Frame 60",
+    "x": "13118",
+    "y": "6514",
+    "width": "312",
+    "height": "980",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "739:12110",
+    "name": "Frame 62",
+    "x": "13820",
+    "y": "6514",
+    "width": "312",
+    "height": "908",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Completed Tasks",
+      "Active Tasks"
+    ],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "751:11351",
+    "name": "Star Rating",
+    "x": "-8987",
+    "y": "5933",
+    "width": "300",
+    "height": "380",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "788:11270",
+    "name": "Exercise select variant",
+    "x": "-8032",
+    "y": "5747",
+    "width": "190",
+    "height": "416",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "788:11656",
+    "name": "Continue select variants",
+    "x": "-8032",
+    "y": "6256",
+    "width": "427",
+    "height": "242",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "788:11780",
+    "name": "Trainer Variant type",
+    "x": "-8274",
+    "y": "5747",
+    "width": "197",
+    "height": "686",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "788:12097",
+    "name": "Language Select Variant types",
+    "x": "-10083",
+    "y": "5967",
+    "width": "367",
+    "height": "156",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "795:11732",
+    "name": "Premium account Pop up",
+    "x": "-3469",
+    "y": "2358",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "751:11487",
+    "name": "Quit message popup",
+    "x": "-11417",
+    "y": "2383",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Go Back",
+      "Check Up Center",
+      "Dear Jenny! You still haven’t finished all your Active tasks. Do not run away from the workout session."
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "827:25781",
+    "name": "Quit message popup",
+    "x": "-12076",
+    "y": "2383",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "795:11636",
+    "name": "Payment selection Variation",
+    "x": "-9486",
+    "y": "5099",
+    "width": "392",
+    "height": "180",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "820:19796",
+    "name": "iPhone 11 Pro Gmail Inbox",
+    "x": "9765",
+    "y": "2706",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "sender",
+      "subject",
+      "message",
+      "02:02 am",
+      "sender",
+      "subject",
+      "message",
+      "June 19",
+      "message",
+      "sender",
+      "subject",
+      "message",
+      "May 6",
+      "sender",
+      "subject",
+      "message",
+      "May 6",
+      "sender",
+      "sender",
+      "sender",
+      "2 new",
+      "99+ new",
+      "sender",
+      "subject",
+      "message",
+      "11:27 pm",
+      "message",
+      "message",
+      "primary",
+      "Search in mail",
+      "Mail",
+      "99+",
+      "Meet"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "820:19909",
+    "name": "iPhone 11 Pro Open Mail",
+    "x": "10165",
+    "y": "2697",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Fitbox Co.",
+      "Hi Jenny Alvarez,  Below is the file attached for your reference on wellness session Februrary 6th,2022 with us.  For any assistance, Please reach our support team here Thank you, Fitbox Service team",
+      "Review Analysis Report 06Feb2022",
+      "Inbox",
+      "sender",
+      "Feb 6",
+      "to me",
+      "sender"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "827:25380",
+    "name": "Home Screen 31",
+    "x": "-7144",
+    "y": "2312",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Check up centre",
+      "Great Job !",
+      " You did a great job. All the current fitness session task’s are completed.",
+      "Task Center",
+      "Check up Center",
+      "GO Premium"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "827:25479",
+    "name": "Subscription Purchase",
+    "x": "-4397",
+    "y": "2336",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Your subscription is successfully!"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "834:26240",
+    "name": "Overlay video popup 1",
+    "x": "2943",
+    "y": "1242",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "513:4507",
+    "id": "834:26241",
+    "name": "overlay video pop up 2",
+    "x": "3595",
+    "y": "1242",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "459:4577",
+    "name": "Bluetooth 2",
+    "x": "3771",
+    "y": "3128",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "455:5322",
+    "name": "Bluetooth 1",
+    "x": "3356",
+    "y": "3128",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "340:4283",
+    "name": "Video Play 2",
+    "x": "7003",
+    "y": "2205",
+    "width": "375",
+    "height": "815",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Playing Now",
+      "00:50",
+      "04:00"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "340:4223",
+    "name": "Video Play 1",
+    "x": "6570",
+    "y": "2205",
+    "width": "375",
+    "height": "815",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Playing Now",
+      "00:50",
+      "04:00"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "445:4674",
+    "name": "Gallery",
+    "x": "6109",
+    "y": "2205",
+    "width": "375",
+    "height": "1038",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Videos"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "435:4711",
+    "name": "Insights",
+    "x": "5648",
+    "y": "2182",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Workout Activity",
+      "Item",
+      "Statistic",
+      "54",
+      "Item",
+      "Statistic",
+      "125",
+      "Plank",
+      "15 min",
+      "20",
+      "Crunches",
+      "59 min",
+      "68",
+      "Situps",
+      "3 h 10 min",
+      "209",
+      "Count",
+      "Type",
+      "Time"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "426:4956",
+    "name": "Homescreen 3",
+    "x": "5220",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Muscle’s",
+      "Muscle Up!"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "455:5169",
+    "name": "Homescreen 2",
+    "x": "4814",
+    "y": "2188",
+    "width": "375",
+    "height": "1325",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Daily Workout",
+      "Value",
+      "How it is done",
+      "Muscle’s"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "381:4523",
+    "name": "Homescreen 1",
+    "x": "4420",
+    "y": "2188",
+    "width": "375",
+    "height": "1325",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Daily Workout",
+      "Value",
+      "How it is done",
+      "Muscle’s"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "364:4986",
+    "name": "Activity Selection Area",
+    "x": "3992",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Select exercise activity"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "364:4925",
+    "name": "Onboarding 4",
+    "x": "3592",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "what is your schedule?",
+      "It helps us to understand you better"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "364:4868",
+    "name": "Onboarding 3",
+    "x": "3192",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "How much time can you dedicate?",
+      "It helps us to understand you better"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "364:4815",
+    "name": "Onboarding 2",
+    "x": "2792",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "What is your fitness profile?",
+      "It helps us to understand you better"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "312:3159",
+    "name": "Onboarding 1",
+    "x": "2392",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "What is your main goal?",
+      "It helps us to understand you better"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "364:4640",
+    "name": "Login screen 3",
+    "x": "1922",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Welcome Back 👋"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "364:4348",
+    "name": "Login screen 2",
+    "x": "1522",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Welcome Back 👋"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "364:4178",
+    "name": "Login screen 1",
+    "x": "1122",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Welcome Back 👋"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "364:4008",
+    "name": "Signup screen 3",
+    "x": "722",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Create Account"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "328:4000",
+    "name": "Signup screen 2",
+    "x": "279",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Create Account"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "364:3834",
+    "name": "Signup screen 1",
+    "x": "-164",
+    "y": "2188",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Create Account"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "364:3661",
+    "name": "Welcome Screen",
+    "x": "-660",
+    "y": "2174",
+    "width": "375",
+    "height": "812",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [
+      "Welcome to FitBox!"
+    ],
+    "kind": "screen-or-state",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  },
+  {
+    "page": "311:3158",
+    "id": "372:4524",
+    "name": "Compoent Storage",
+    "x": "-1604",
+    "y": "2188",
+    "width": "861",
+    "height": "2000",
+    "status": "inventory; implementation parity not yet certified",
+    "text": [],
+    "kind": "component-or-working-frame",
+    "designRead": "metadata only; detailed MCP access rate-limited"
+  }
+]

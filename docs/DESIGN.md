@@ -1,5 +1,7 @@
 # Design provenance
 
+> Historical v0.1 record. See [V0.2-STATUS.md](V0.2-STATUS.md) for current coverage and unresolved Figma states.
+
 Source file: `7vS0ax0bayEIE4QrXlBjsQ`, original prototype starting at `364:3661`.
 
 The file also contains an MVP Version 2.0 page. The shared URL points to the original Version 1.0 flow, so that is the primary visual reference for this release.

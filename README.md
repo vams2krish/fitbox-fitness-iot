@@ -1,26 +1,150 @@
-# FitBox (Fitness IoT & Android App)
+# FitBox (DL & Computer Vision Fitness App)
 
 **Your space. Your pace. Your fitness, one rep at a time.**
 
-FitBox is an offline-first home fitness companion, built from the supplied FitBox Figma prototype and product notes. It brings onboarding, daily workout goals, muscle anatomy views, exercise instructions, manual tracking, and habit rewards into an installable Android test app and a responsive web preview.
+FitBox is an Android and web fitness app with bundled **on-device MediaPipe pose inference**, a local guided trainer, workout goals, private video review, and optional authenticated text-summary sync to Neon Postgres. Its interface follows the supplied FitBox Figma design with blue and white UI accents.
 
-![FitBox product preview — blue-and-white desktop experience and mobile workout dashboard](docs/screenshots/14-desktop-preview.png)
+![FitBox product photo — implemented dashboard](docs/screenshots/14-desktop-preview.png)
 
-**Project type:** Fitness technology / IoT companion / Android & web application.  
-**AI classification:** This release is **not an ML, DL, or Generative AI project**. It includes no trained model or inference pipeline. Computer vision and hardware-driven rep recognition are future integration work.
+**Project type:** Deep learning / computer vision / fitness application. MediaPipe's pretrained neural pose model runs locally; repetition and hold recognition use deterministic joint-angle rules. No model is trained by this repository. The trainer is a local guided assistant, with no cloud LLM or Generative AI dependency.
 
 | Try it | Link |
 | --- | --- |
-| Android test APK | [Download FitBox v0.1.0](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.1.0/FitBox-debug.apk) |
-| Interactive web preview | [Open FitBox on Vercel](https://fitbox-fitness-iot.vercel.app) |
-| Design reference | [Original FitBox Figma prototype](https://www.figma.com/proto/7vS0ax0bayEIE4QrXlBjsQ/FitBox-App?node-id=364-3661) |
+| Android test APK | [Download FitBox v0.2.0](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.2.0/FitBox-debug.apk) |
+| Web app | [FitBox on Vercel](https://fitbox-fitness-iot.vercel.app) |
 | Source | [Public GitHub repository](https://github.com/vams2krish/fitbox-fitness-iot) |
+| Design | [FitBox Figma prototype](https://www.figma.com/proto/7vS0ax0bayEIE4QrXlBjsQ/FitBox-App?node-id=364-3661) |
 
-## What FitBox solves
+## What works
 
-Building a fitness habit at home can feel fragmented: choosing an exercise, understanding the movement, counting repetitions, and keeping a record all compete for attention. FitBox brings these steps together, with small goals and visible progress.
+- Local profile and guided onboarding; trainer John or Tina; deterministic coaching based on workout records and camera setup.
+- 22 exercise tasks: **15 pose tasks (9 repetition tasks and 6 timed holds)** and 7 explicitly manual activities.
+- Front, rear and browser-visible external cameras; blue skeleton overlay; calibration, visibility checks, pause/resume, retry, and disposal when leaving the workout.
+- Daily goals, cumulative partial sessions, one 25 XP claim per exercise/day, levels, streaks, voluntary rest, insights, and front/back anatomy reference views.
+- Sequential Task Center, Body Center preferences, account details, feedback, and exercise instructions.
+- Review Center: import, play, favorite and delete local videos; optional silent practice clips capped at one minute / 50 MB. Videos remain in device IndexedDB.
+- Email/password accounts, HttpOnly sessions, explicit sync consent, restore and sign-out. The backend validates small scalar summaries and checks ownership on every query.
+- Offline packaged Android UI, model and WASM runtime; native camera permission, user-selected video picker and JSON sharing.
+- Three real Stripe sandbox membership plans with checkout, subscription status and cancellation management; explicitly unsent email previews.
 
-The wider product concept includes a dedicated camera-and-sensor device that communicates with a mobile app over Bluetooth. This release implements the software journey so it can be tested **without that device**. It records only what a person enters or times; it does not claim to detect their body, form, or calories.
+## Scope still pending
+
+This is a functional **v0.2 testing release**, not a claim that every requested Figma state is complete. Stripe sandbox is connected with Starter (3 months / $20.99), Plus (6 months / $36.99) and Pro (12 months / $60.99) plans, authenticated checkout, signed idempotent webhooks, authoritative membership status and billing management/cancellation. All prices are USD totals per recurring period. No real money is charged, and all training features remain free during beta.
+
+Email is **demo-preview only**, as requested until FitBox has its own sender/domain. Welcome and workout-summary previews never send messages. Resend delivery, verification and recovery remain disabled. No unrelated product domain or email key is connected.
+
+The Figma inventory contains 187 top-level frames, including 149 phone-sized screens/state frames. Detailed Figma access reached its tool quota. Existing extracted assets and browser-reviewed screens were used, but complete visual and interaction parity is **not certified**. Language translations, some level-up/tutorial overlays, exact body-choice illustrations and other state variants remain to audit. See [design coverage](docs/V0.2-STATUS.md) and the [complete source inventory](docs/figma-screen-inventory.json).
+
+## Camera task matrix
+
+All automatic tasks use an ordinary RGB camera; depth sensors are not required. “Front” and “Side” describe the person's position relative to the lens, independently of the phone lens selected. Keep the required joints visible, use a fixed camera and one person in frame. These exercise rules are experimental and have not been validated against a physical exercise dataset.
+
+| Exercise | Task | View | Camera placement / limitation |
+| --- | --- | --- | --- |
+| Pushups | Repetition phases | Side | Place the camera low, side-on. Keep your shoulders, hips and ankles in frame. |
+| Squats | Repetition phases | Side | Place the camera around hip height, side-on, with your whole body visible. |
+| Stationary lunges | Repetition phases | Side | Stand side-on. Keep both feet and your full body visible. Track one set on each side. |
+| Plank | Timed pose hold | Side | Place the camera low, side-on. Your shoulder, hip, knee and ankle must be visible. |
+| Situps | Repetition phases | Side | Place the camera low, side-on. Keep your shoulders, hips, knees and feet in frame. |
+| Crunches | Repetition phases | Side | Use a low side view. Keep the camera fixed and shoulders, hips and knees visible. |
+| Pullups | Repetition phases | Front | Face the camera. Include the bar, both hands, elbows, shoulders and hips. |
+| Biceps curls | Repetition phases | Side | Stand side-on, camera near chest height, with the working arm fully visible. |
+| Glute bridges | Repetition phases | Side | Use a low side view that includes shoulders, hips, knees and feet. |
+| Jumping jacks | Repetition phases | Front | Face the camera. Allow room above your hands and to both sides of your feet. |
+| Chair pose | Timed pose hold | Side | Use a full-body side view with feet visible. |
+| Mountain pose | Timed pose hold | Front | Face the camera, keeping your whole body and feet visible. |
+| Warrior II | Timed pose hold | Front | Face the camera with both arms and feet visible. Leave room to either side. |
+| Tree pose | Timed pose hold | Front | Face the camera. Stand near a stable support if you need one. |
+| Downward-facing dog | Timed pose hold | Side | Place the camera low and side-on, with hands and feet visible. |
+| Burpees | Manual timer / counter | Not required | Use the manual timer or repetition counter. Automatic counting has not been validated for this activity. |
+| Walking / treadmill | Manual timer / counter | Not required | Use the manual timer or repetition counter. Automatic counting has not been validated for this activity. |
+| Stationary cycling | Manual timer / counter | Not required | Use the manual timer or repetition counter. Automatic counting has not been validated for this activity. |
+| Shadow boxing | Manual timer / counter | Not required | Use the manual timer or repetition counter. Automatic counting has not been validated for this activity. |
+| Handstand | Manual timer / counter | Not required | Use the manual timer or repetition counter. Automatic counting has not been validated for this activity. |
+| Bench press | Manual timer / counter | Not required | Use the manual timer or repetition counter. Automatic counting has not been validated for this activity. |
+| Mindful breathing | Manual timer / counter | Not required | Use the manual timer or repetition counter. Automatic counting has not been validated for this activity. |
+
+## How on-device AI works
+
+The APK bundles MediaPipe Pose Landmarker Lite, float16 version 1, plus @mediapipe/tasks-vision 1.2.3 and its WASM runtime. No cloud inference is used. Android uses CPU WASM to avoid WebView GPU-driver differences; other browsers try GPU with CPU fallback. The model produces 33 landmarks locally. Visibility must reach 0.65, phase changes must be stable, and tracking resets when a person leaves frame or timestamps jump. Aspect-corrected joint angles feed a state machine with neutral calibration and a repetition cooldown. Hold time only advances while its rule is satisfied.
+
+The model checksum is `59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a`. [Model provenance](web/models/manifest.json), [runtime license](web/vendor/mediapipe/LICENSE) and [official model documentation](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker) are included for inspection. Model inference was verified on an official static test image; this is not an exercise-accuracy benchmark.
+
+### Data and privacy
+
+Camera frames and per-frame landmarks stay in memory on the device. Only an explicit recording creates a local video. Optional cloud sync sends exercise IDs, timestamps, repetition/hold totals and aggregate confidence/tracking counts, along with the user's selected profile fields. The API rejects images, landmark arrays and unrecognized fields. Clips are excluded from sync and JSON export.
+
+Profiles/history use localStorage; clips use IndexedDB. These stores are not encrypted by the app. Cloud credentials live only in deployment environment variables. Better Auth uses secure HttpOnly cookies in production, password hashing and database-backed rate limits. Queries derive user ownership from the session; duplicate sessions and reward claims are idempotent. Server reward logic checks saved progress rather than accepting client-supplied XP. Local pose/manual summaries are user-controlled and are not verified competitive scores or health records.
+
+Anatomy art is a reference; no muscle growth, body fat, sweat, strength or clinical assessment is inferred. Green prototype UI accents were replaced with blue; source photos retain their original colors. Product PDFs are reference material, not operational instructions, and are not published in this repository.
+
+## Architecture
+
+```text
+Android WebView / browser
+  camera -> bundled MediaPipe -> local angle/phase rules -> saved summary
+  local guided coach + goals + anatomy + review -> localStorage / IndexedDB
+  explicit sign-in + sync consent -> HTTPS Hono API (Vercel)
+                                   -> Better Auth + Neon Postgres
+  video / frames / landmarks ------ stay on device
+```
+
+| Path | Purpose |
+| --- | --- |
+| web/pose-camera.mjs | Local camera and model lifecycle |
+| web/pose-engine.js | Exercise definitions, phase rules and safe scalar summaries |
+| web/features.js | Camera catalog, trainer and MVP navigation |
+| web/local-media.js | Device-only video review and optional recording |
+| web/cloud*.js | Account UI and consent-gated sync |
+| server/ | Authentication, strict validation, migrations and Hono API |
+| api/index.mjs | Vercel Function entry |
+| android/ | Native permission, secure asset origin, video picker and sharing |
+| tests/ and tools/test-*.mjs | Unit, real-model, database and browser verification |
+
+## Run locally
+
+Install Node.js 22 or later. Run `npm ci` and `npm start`, then open http://127.0.0.1:4173. Local workouts and camera tracking work without backend credentials. For accounts, copy .env.example to ignored .env.local, provision a dedicated Postgres database and a strong BETTER_AUTH_SECRET, then run `npm run db:migrate`. Migrations create the Better Auth and FitBox tables; run them only against a database intended for this app. Never put provider secrets in the web directory or public GitHub repository.
+
+The hosted deployment is linked to a dedicated Neon database and a Stripe sandbox through Vercel. Stripe price, portal and webhook configuration are server-only environment variables. The setup tool provisions only test-mode resources and refuses live keys. Email credentials are absent while preview-only mode is selected. Re-provisioning integrations is not a prerequisite for running local camera features.
+
+## Android installation and build
+
+Download the APK from the v0.2.0 release and install it on Android 8.0 / API 26 or later. This is a debug-signed test build using package `com.fitbox.app`, target API 36. Camera permission is requested only when enabling tracking; microphone and Bluetooth permissions are not requested. Internet is used for optional accounts/sync. Keep the same signing key when upgrading; export local history before uninstalling.
+
+To build: install JDK 17 and Android SDK platform 36, set ignored android/local.properties to your SDK path, run `npm run sync:android`, then `android/gradlew.bat -p android assembleDebug` (or the shell wrapper on Linux/macOS). Output: `android/app/build/outputs/apk/debug/app-debug.apk`. Bundled assets are generated from web/. The legacy file-origin localStorage is migrated once to the new secure asset origin to support camera/WASM and session cookies.
+
+## Verification
+
+```sh
+npm test
+npx playwright install chromium
+npm start
+# In another terminal:
+npm run test:model
+node tools/test-ui.mjs
+node tools/test-v2-ui.mjs
+node tools/test-product-flows.mjs
+# Uses the configured real database; creates/deletes only tagged test accounts:
+npm run test:fullstack
+node tools/test-billing.mjs
+```
+
+18 unit tests, actual model inference, full-stack account isolation/sync, Stripe sandbox lifecycle tests and browser journeys passed during development. Billing tests create and remove only their own sandbox customers/subscriptions. See [validation details and limits](docs/V0.2-STATUS.md). Physical-phone exercise accuracy, battery use and broad device compatibility remain unmeasured. Hardware Bluetooth integration needs a real firmware protocol; no sensor connection is simulated.
+
+## v0.2 screenshot showcase
+
+These are actual implemented UI captures. The inference screenshot deliberately uses a static official MediaPipe test photo: it demonstrates model execution, not a real completed squat or accuracy result.
+
+<table>
+<tr><th>Camera exercises</th><th>Camera setup</th><th>Inference test fixture</th></tr>
+<tr><td><img src="docs/screenshots/18-camera-exercises.png" width="240" alt="Camera exercise catalog"></td><td><img src="docs/screenshots/19-camera-setup.png" width="240" alt="Camera setup instructions"></td><td><img src="docs/screenshots/20-camera-inference-fixture.png" width="240" alt="Local model inference on a static test fixture"></td></tr>
+<tr><th>Local trainer</th><th>Cloud sync</th><th>Task Center</th></tr>
+<tr><td><img src="docs/screenshots/21-local-trainer.png" width="240" alt="Local trainer messages"></td><td><img src="docs/screenshots/22-cloud-sync.png" width="240" alt="Account and text-summary sync"></td><td><img src="docs/screenshots/23-task-center.png" width="240" alt="Sequential tasks"></td></tr>
+<tr><th>Check up Center</th><th>Review Center</th><th>Android camera</th></tr>
+<tr><td><img src="docs/screenshots/24-checkup-center.png" width="240" alt="Activity totals and anatomy reference"></td><td><img src="docs/screenshots/25-review-library.png" width="240" alt="Private local video library"></td><td><img src="docs/screenshots/26-android-v2.png" width="240" alt="Native Android camera over the emulator test scene, paused"></td></tr>
+</table>
+
+<p><img src="docs/screenshots/27-subscription-plans.png" width="280" alt="Three real Stripe sandbox plans"><img src="docs/screenshots/28-email-demo.png" width="280" alt="Email demo explicitly labelled as unsent"></p>
 
 ## Screenshot showcase
 
@@ -39,168 +163,10 @@ These are actual screenshots of the implemented app, captured during automated b
   <tr><td><img src="docs/screenshots/13-rest-day.png" width="240" alt="Rest day experience"></td><td colspan="2"><img src="docs/screenshots/14-desktop-preview.png" width="520" alt="Responsive FitBox desktop preview"></td></tr>
 </table>
 
-### Android emulator screenshots
+### Android emulator screenshots (v0.1 baseline)
 
 <p><img src="docs/screenshots/15-android-welcome.png" width="240" alt="FitBox welcome running in Android"><img src="docs/screenshots/16-android-home.png" width="240" alt="FitBox home dashboard running in Android"><img src="docs/screenshots/17-android-workout.png" width="240" alt="FitBox manual repetition tracking running in Android"></p>
 
-## Working features
 
-| Area | Implemented behavior |
-| --- | --- |
-| Local onboarding | Name, goal, fitness level, available time, schedule, and preferred activity |
-| Daily plan | Bodyweight goals scale by selected level; available time controls the number of tasks |
-| Activity types | Body Exercise, Yoga Pose, and Meditation |
-| Bodyweight exercises | Pushups, squats, plank, crunches, and stationary lunges |
-| Timed activities | Plank, mountain pose, and mindful breathing |
-| Muscle view | Front/back anatomical reference images from the Figma design |
-| Rep tracking | Start the active timer, add repetitions, undo a repetition, pause/resume, and save |
-| Timed tracking | Record active seconds; backgrounding the app pauses the timer |
-| Partial sessions | Save unfinished goals and accumulate their progress during the same local day |
-| Rewards | Claim 25 XP per completed daily task, once per task per day; level up every 100 XP |
-| Streaks | Consecutive local calendar days with logged activity; rest days do not manufacture activity |
-| Insights | Time distribution chart, repetition totals, active minutes, date filters, and recent session history |
-| Exercise guides | Local images and step-by-step movement instructions |
-| Rest days | Hide today's tasks and resume whenever ready |
-| Profile management | Edit preferences, export data, or explicitly reset local data |
-| Export | JSON download on web; native Android share sheet in the APK |
-| Offline Android | All application code and visual assets are packaged inside the APK |
 
-The saved schedule is a preference, not an automatic calendar or notification system. Goal selection is recorded in the profile; this prototype does not calculate individualized exercise prescriptions from a health assessment. Anatomy pictures are references, not measurements of muscle growth.
-
-## Design approach
-
-The app follows the linked original prototype's white surfaces, charcoal typography, bright blue primary actions (`#007FFF`), blue muscle/workout panels, rounded controls, front/back view, exercise imagery, and bottom navigation. **Green UI accents are replaced with blue.** Original Figma photos and illustrations retain their source colors.
-
-The iOS-shaped prototype has been adapted for Android and responsive web: system bars are native on Android, controls fit smaller screens, navigation has text labels, and unavailable online login is replaced by an honest local profile flow. Guides contain images and written instructions rather than nonfunctional video buttons.
-
-Design provenance and the reference-to-implementation mapping are in [docs/DESIGN.md](docs/DESIGN.md).
-
-## Install the Android APK
-
-1. Open the [v0.1.0 release](https://github.com/vams2krish/fitbox-fitness-iot/releases/tag/v0.1.0) on your Android phone.
-2. Download **FitBox-debug.apk**.
-3. Open the downloaded APK and allow that source to install it if Android asks.
-4. Launch **FitBox**, then choose **Get started** or **Try a demo profile**.
-5. Start a workout, start the timer, add repetitions, and select **Finish & save**. Claim XP after reaching a daily goal.
-
-**Requirements:** Android 8.0 / API 26 or later. This is a debug-signed testing build, not a Play Store production release. It uses the package ID `com.fitbox.app`, targets API 36, and includes no camera, microphone, Bluetooth, or Internet permission.
-
-Do not uninstall if you want to keep your local history. Export first. Browser and Android storage are separate; they do not synchronize.
-
-## Run the web app locally
-
-Install Node.js, then run:
-
-```sh
-npm ci
-npm start
-```
-
-Open **http://127.0.0.1:4173**. Runtime code uses plain HTML, CSS, and JavaScript; there are no frontend framework dependencies or remote APIs. Playwright is a development-only dependency.
-
-## Build the APK from source
-
-Prerequisites: JDK 17, Android SDK platform 36, accepted Android SDK licenses, and Node.js.
-
-```sh
-npm run sync:android
-```
-
-Create an untracked `android/local.properties` pointing to your Android SDK:
-
-```properties
-sdk.dir=C:/Users/YOUR_USER/AppData/Local/Android/Sdk
-```
-
-Then build using the included Gradle wrapper:
-
-```powershell
-cd android
-.\gradlew.bat assembleDebug
-```
-
-On macOS/Linux, use `sh ./gradlew assembleDebug` in the same directory. The output is `android/app/build/outputs/apk/debug/app-debug.apk`. The project pins Android Gradle Plugin 8.12.2 and Gradle 8.14.3.
-
-Run `npm run sync:android` after changing the web app and before rebuilding. Generated Android assets are ignored by Git to keep one source of truth.
-
-## Architecture
-
-```text
-                   Shared offline interface
-                 web/index.html + styles.css
-                              |
-                         web/app.js
-                  screens / timer / navigation
-                              |
-                         web/core.js
-              plans / sessions / daily rewards / streaks
-                              |
-                 localStorage (fitbox.v1)
-                    /                     \
-         Browser preview             Android WebView
-         Static Vercel host          Bundled local assets
-         JSON download               Native share sheet
-```
-
-| Path | Purpose |
-| --- | --- |
-| `web/` | Shared app UI, local data layer, and bundled design assets |
-| `android/` | Native Java Activity, application manifest, icon, and Gradle build |
-| `tests/core.test.cjs` | Pure logic tests for goals, sessions, rewards, dates, and recovery |
-| `tools/test-ui.mjs` | End-to-end browser flow checks and screenshot capture |
-| `tools/sync-android.mjs` | Packages the shared web source inside the Android app |
-| `tools/serve.mjs` | Local static development server |
-| `docs/` | Screenshots, implementation details, validation, and roadmap |
-| `vercel.json` | Static web deployment and response headers |
-
-### Data model
-
-Each device stores a versioned object containing `profile`, `sessions`, `claims`, `restDays`, and an optional onboarding `draft`.
-
-Sessions include a unique ID, exercise ID, manually entered repetitions, active seconds, local calendar day, timestamp, and the source `manual`. Duplicate session IDs are rejected. Task rewards are keyed by day and exercise to prevent duplicate claims. Local data can be modified by the device owner and is not suitable for competitive leaderboards or verified health records.
-
-## Privacy and security
-
-- Profiles and workout history stay in browser/WebView local storage.
-- No online authentication, analytics, advertising, third-party SDK, or backend database.
-- No API key or service credential is required to run the app.
-- User-entered names are escaped before rendering.
-- Android loads only its bundled page and blocks in-WebView navigation to outside pages.
-- The native bridge only shares JSON after the user chooses Export; it does not expose filesystem or device controls.
-- Browser data is not encrypted by this application. Reset removes the local profile and history after a confirmation.
-- Source product PDFs are not included in the public repository. The implemented assets originate from the user-supplied Figma file; no broader redistribution license for those assets is asserted.
-
-## Tests and verification
-
-```sh
-npm test
-npx playwright install chromium
-npm start
-# In another terminal:
-node tools/test-ui.mjs
-# Check the published production preview:
-node tools/verify-deployment.mjs
-```
-
-The browser suite covers onboarding, asset loading, repetition entry/undo, timer pause/resume, partial/timed sessions, saving, XP claims, reload persistence, insights, guides, rest days, export, reset, and horizontal overflow at widths 320, 375, 390, 480, and 1440 pixels. It captures the showcase screenshots through real UI interactions.
-
-See [docs/VALIDATION.md](docs/VALIDATION.md) for the recorded build and test results and verification limits.
-
-## Current limits and next steps
-
-| Status | Capability |
-| --- | --- |
-| Working now | Offline profiles, manual/timed sessions, goals, rewards, guides, insights, export, APK, and web preview |
-| Needs hardware protocol | BLE discovery/pairing, service and characteristic UUIDs, firmware messages, device identity, reconnect behavior, and live sensor events |
-| Future computer vision | Camera capture, pose model selection, confidence thresholds, rep phase detection, form feedback, and real-world validation |
-| Future backend | Secure accounts, family profiles, cloud sync, recovery, and authenticated device ownership |
-| Future content | Licensed exercise videos, larger exercise library, adaptive programs, and instructor review |
-| Future production release | Release signing, hardware testing, accessibility audit, device matrix, store packaging, and privacy disclosures |
-
-Future camera pose estimation using a neural network would be a **DL/computer vision** feature; rule-based repetition counting over pose coordinates would be a separate algorithmic layer. Neither runs in this release. The broader concept is documented in [docs/ROADMAP.md](docs/ROADMAP.md).
-
-## Project context
-
-The supplied proposal, hardware notes, roadmap, miscellaneous notes, architecture, idea board, and habit research informed scope. They are treated as reference material, not operational instructions. This implementation emphasizes supportive progress and voluntary rest.
-
-**Version:** 0.1.0 · **App name:** FitBox · **Repository:** `fitbox-fitness-iot` · **Type:** Fitness IoT & Android App.
+**Version:** 0.2.0 · **App name:** FitBox · **Classification:** DL / computer vision with a local guided coach.

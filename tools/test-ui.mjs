@@ -4,7 +4,7 @@ import fs from 'node:fs';
 const browser=await chromium.launch({headless:true});
 const context=await browser.newContext({viewport:{width:390,height:844},deviceScaleFactor:2});
 const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
-const click=action=>page.locator(`[data-action="${action}"]`).first().click();
+const click=async action=>{if(action==="nav:profile"&&!(await page.locator(`[data-action="${action}"]`).count()))await page.locator('[data-action="nav:home"]').first().click();return page.locator(`[data-action="${action}"]`).first().click();};
 async function checkImages(){await page.waitForFunction(()=>[...document.images].every(i=>i.complete));const broken=await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>!i.naturalWidth).map(i=>i.src));assert.deepEqual(broken,[]);}
 async function shot(name){await page.waitForTimeout(180);await checkImages();await page.screenshot({path:`docs/screenshots/${name}.png`,fullPage:false});}
 await page.goto('http://127.0.0.1:4173');await shot('01-welcome');
@@ -29,6 +29,6 @@ await click('nav:guides');await click('guide:meditation');await click('start:med
 for(const width of [320,375,480]){await page.setViewportSize({width,height:812});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Overflow at ${width}`);await checkImages();}
 await page.setViewportSize({width:1440,height:1000});await shot('14-desktop-preview');
 await page.setViewportSize({width:390,height:844});await click('nav:profile');await click('reset');await click('close-modal');assert.equal(await page.locator('.profile-head h1').innerText(),'Alex');
-await click('reset');await click('confirm-reset');assert.equal(await page.locator('.welcome').count(),1);await page.reload();assert.equal(await page.locator('.welcome').count(),1);
+await click('reset');await click('confirm-reset');await page.locator('.welcome').waitFor();assert.equal(await page.locator('.welcome').count(),1);await page.reload();assert.equal(await page.locator('.welcome').count(),1);
 assert.deepEqual(errors,[]);console.log('PASS: onboarding, layouts, all images, reps, undo, timer pause, sessions, rewards, persistence, insights, guides, rest, export, timed sessions, reset; 14 screenshots captured.');
 await browser.close();
