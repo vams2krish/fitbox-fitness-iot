@@ -12,7 +12,7 @@ FitBox is an offline-first home fitness companion, built from the supplied FitBo
 | Try it | Link |
 | --- | --- |
 | Android test APK | [Download FitBox v0.1.0](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.1.0/FitBox-debug.apk) |
-| Interactive web preview | Deployment link will be added after verification. |
+| Interactive web preview | [Open FitBox on Vercel](https://fitbox-fitness-iot.vercel.app) |
 | Design reference | [Original FitBox Figma prototype](https://www.figma.com/proto/7vS0ax0bayEIE4QrXlBjsQ/FitBox-App?node-id=364-3661) |
 | Source | [Public GitHub repository](https://github.com/vams2krish/fitbox-fitness-iot) |
 
@@ -38,6 +38,10 @@ These are actual screenshots of the implemented app, captured during automated b
   <tr><th>Rest day</th><th colspan="2">Desktop web preview</th></tr>
   <tr><td><img src="docs/screenshots/13-rest-day.png" width="240" alt="Rest day experience"></td><td colspan="2"><img src="docs/screenshots/14-desktop-preview.png" width="520" alt="Responsive FitBox desktop preview"></td></tr>
 </table>
+
+### Android emulator screenshots
+
+<p><img src="docs/screenshots/15-android-welcome.png" width="260" alt="FitBox welcome running in Android"><img src="docs/screenshots/16-android-home.png" width="260" alt="FitBox home dashboard running in Android"></p>
 
 ## Working features
 

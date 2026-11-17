@@ -9,6 +9,7 @@ import android.webkit.JavascriptInterface;
 import android.net.Uri;
 import android.content.Intent;
 import android.view.View;
+import android.widget.FrameLayout;
 
 public class MainActivity extends Activity {
     private WebView web;
@@ -44,14 +45,17 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
+        FrameLayout container = new FrameLayout(this);
+        container.setBackgroundColor(0xFFFFFFFF);
+        container.addView(web, new FrameLayout.LayoutParams(-1, -1));
         if (android.os.Build.VERSION.SDK_INT >= 35) {
-            web.setOnApplyWindowInsetsListener((view, insets) -> {
+            container.setOnApplyWindowInsetsListener((view, insets) -> {
                 android.graphics.Insets bars = insets.getInsets(android.view.WindowInsets.Type.systemBars());
                 view.setPadding(bars.left, bars.top, bars.right, bars.bottom);
                 return insets;
             });
         }
-        setContentView(web);
+        setContentView(container);
         web.loadUrl("file:///android_asset/index.html");
     }
     @Override public void onBackPressed() { web.evaluateJavascript("window.fitboxBack && window.fitboxBack()", null); }
