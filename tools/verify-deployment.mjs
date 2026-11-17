@@ -1,0 +1,16 @@
+import {chromium} from '@playwright/test';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch();
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+const response=await page.goto('https://fitbox-fitness-iot.vercel.app');
+assert.equal(response.status(),200);
+assert.equal(await page.locator('#apk-link').getAttribute('href'),'https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.1.0/FitBox-debug.apk');
+await page.locator('[data-action="demo"]').click();
+await page.waitForFunction(()=>[...document.images].every(i=>i.complete&&i.naturalWidth>0));
+assert.equal(await page.locator('.greeting').innerText(),'Alex');
+await page.locator('[data-action="side:back"]').click();
+await page.waitForFunction(()=>document.querySelector('.muscle-figure').complete);
+assert.equal(await page.locator('.muscle-figure').getAttribute('alt'),'Back muscle anatomy');
+assert.deepEqual(errors,[]);await browser.close();
+console.log('PASS: public production URL, APK link, demo, imagery and back muscle view.');

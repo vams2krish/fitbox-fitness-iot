@@ -17,6 +17,8 @@ Verified on November 17, 2026.
 | Android installation | `adb install -r` succeeded on API 36.1 emulator |
 | Android launch | MainActivity resumed; welcome and local demo dashboard rendered |
 | Web deployment | Vercel production deployment reached READY; public root returned HTTP 200 |
+| Public browser smoke test | Production page, APK link, demo profile, image loading, and back anatomy view passed |
+| Release download | Public APK downloaded successfully; its SHA-256 matched the local signed binary |
 
 The browser suite exercises the actual UI: onboarding through all preference steps, front/back anatomy, empty-state insights, manual repetition entry and undo, active timer pause/resume, save and claim, persistence after reload, guides, profile, device status, rest day, JSON export, timed meditation, reset confirmation cancellation, and completed reset. It checks that no uncaught browser page errors occurred.
 

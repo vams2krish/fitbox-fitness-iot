@@ -178,6 +178,8 @@ npx playwright install chromium
 npm start
 # In another terminal:
 node tools/test-ui.mjs
+# Check the published production preview:
+node tools/verify-deployment.mjs
 ```
 
 The browser suite covers onboarding, asset loading, repetition entry/undo, timer pause/resume, partial/timed sessions, saving, XP claims, reload persistence, insights, guides, rest days, export, reset, and horizontal overflow at widths 320, 375, 390, 480, and 1440 pixels. It captures the showcase screenshots through real UI interactions.
