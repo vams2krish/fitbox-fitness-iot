@@ -8,22 +8,20 @@ FitBox is an Android and web wellness app with on-device MediaPipe pose tracking
 
 | Try it | Link |
 | --- | --- |
-| Android test APK | [Download FitBox v0.4.0](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.4.0/FitBox-debug.apk) |
+| Android test APK | [Download FitBox v0.4.1](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.4.1/FitBox-debug.apk) |
 | Web app | [FitBox on Vercel](https://fitbox-fitness-iot.vercel.app) |
 | Public source | [GitHub repository](https://github.com/vams2krish/fitbox-fitness-iot) |
-| Correct design reference | [MVP Version 2.0, starting at 513:4807](https://www.figma.com/proto/7vS0ax0bayEIE4QrXlBjsQ/FitBox-App?node-id=513-4807&starting-point-node-id=513%3A4807) |
+| First design reference | [Original Figma, starting at 364:3661](https://www.figma.com/proto/7vS0ax0bayEIE4QrXlBjsQ/FitBox-App?node-id=364-3661&starting-point-node-id=364%3A3661) |
 
-## Product showcase — FitBox Studio v0.4
+## Product showcase — Original Figma layout, v0.4.1
 
-The Figma flow is the reference; the new visual direction is fitness, gamification and on-device computer vision. The old supplied artwork is not used or included in the APK/web deployment. Screens below are actual app captures with fictional profiles.
+The first Figma screen designs and supplied screenshots are the visual reference again: photo welcome, white/blue onboarding, compact check-up panel above yellow mystery tasks, and five-tab navigation. Current workout, privacy, gamification and reporting features are preserved. The original Figma welcome photograph is intentionally restored; the old supplied clipart remains excluded. Screens below are actual app captures with fictional profiles.
 
-| Fitness / AI home | Live cumulative goal ring | Interactive insights |
+| Original welcome | Trainer selection | Original home layout |
 | --- | --- | --- |
-| ![Fitness home](docs/screenshots/50-studio-home.png) | ![Goal ring](docs/screenshots/51-live-goal-progress.png) | ![Insights](docs/screenshots/52-interactive-insights.png) |
-| Reports and email templates | Settings and exclusions | Virtual gear store |
-| ![Reports](docs/screenshots/53-yearly-report.png) | ![Settings](docs/screenshots/54-app-settings.png) | ![Gear](docs/screenshots/55-studio-store.png) |
-| Digital athlete | Private local gallery | Welcome |
-| ![Athlete](docs/screenshots/56-digital-athlete.png) | ![Gallery](docs/screenshots/57-local-fitbox-gallery.png) | ![Welcome](docs/screenshots/49-studio-welcome.png) |
+| ![Welcome](docs/screenshots/60-original-figma-welcome.png) | ![Trainer](docs/screenshots/61-original-trainer-layout.png) | ![Home](docs/screenshots/62-original-home-layout.png) |
+| Back-view panel | Learning categories | Interactive progress |
+| ![Back view](docs/screenshots/63-original-back-view.png) | ![Learning](docs/screenshots/64-original-learning-grid.png) | ![Progress](docs/screenshots/51-live-goal-progress.png) |
 
 ## Connected product journey
 
@@ -174,7 +172,7 @@ This release implements the listed functional flows; it does **not** certify eve
 
 Physical-phone pose accuracy, battery use, broad device compatibility, accessibility certification, real email delivery, release signing/store packaging and real Bluetooth hardware integration remain unverified or pending. BLE needs an actual firmware protocol; no connected device is simulated.
 
-**Version:** 0.4.0 · **App:** FitBox · **Type:** DL / computer vision fitness app with a local guided coach.
+**Version:** 0.4.1 · **App:** FitBox · **Type:** DL / computer vision fitness app with a local guided coach.
 
 
 
@@ -204,3 +202,12 @@ Legacy artwork remains on disk because automated approval review blocked its fil
 ## v0.4 verification
 
 Run `npm test`, `node tools/test-studio.mjs`, `node tools/test-fullstack.mjs`, `node tools/test-reports-api.mjs`, `node tools/test-billing.mjs` and `node tools/test-android-studio.mjs` (test emulator only). Detailed observed results and limits are recorded in [v0.4 status](docs/V0.4-STATUS.md). Email templates and camera fixtures use fictional data, not user recordings.
+
+
+## v0.4.1 — original Figma screen direction
+
+Restored the first design's welcome photograph, centered welcome title and bottom Get Started action. Home now follows the original header/progress/Bluetooth, Check-up panel and compact yellow mystery rows. Learning uses the original 3-column category grid; coach dialogs, onboarding cards, blue congratulations and yellow level screen follow the screenshot language. Kept the newer replacement coach/3D athlete artwork instead of restoring the rejected clipart. Real stats, hidden completed tasks, cumulative counts, settings, reports, voice, local media, wallet and call handling are unchanged.
+
+The Figma MCP Starter quota still blocks new live design exports; this revision uses the supplied screenshots, cached design provenance and original downloaded welcome-photo asset. It is not a claim of fresh live Figma certification across all frames.
+
+Welcome photo provenance: original `364:3661` / `imgEzgif3`, recorded in [asset-manifest.json](asset-manifest.json), copied unchanged to `web/assets/design/welcome-gym.png`. Other old artwork remains excluded from deployment and Android packaging.
