@@ -1,6 +1,6 @@
 {
   "name": "fitbox",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "FitBox on-device MediaPipe pose tracking, local trainer, authenticated fitness summary sync",
   "scripts": {
@@ -22,6 +22,7 @@
     "better-auth": "1.7.25",
     "hono": "4.13.19",
     "pg": "8.23.1",
-    "stripe": "23.1.0"
+    "stripe": "23.1.0",
+    "three": "0.187.0"
   }
 }

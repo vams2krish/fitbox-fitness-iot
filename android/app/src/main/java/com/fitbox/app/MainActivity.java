@@ -40,6 +40,7 @@ public class MainActivity extends Activity {
         web.getSettings().setAllowUniversalAccessFromFileURLs(false);
         web.getSettings().setMediaPlaybackRequiresUserGesture(true);
         web.addJavascriptInterface(new Object() {
+            @JavascriptInterface public void exitApp() { runOnUiThread(() -> finish()); }
             @JavascriptInterface public void shareData(String json) {
                 if (json == null || json.length() > 5000000) return;
                 try { new JSONObject(json); } catch (org.json.JSONException e) { return; }

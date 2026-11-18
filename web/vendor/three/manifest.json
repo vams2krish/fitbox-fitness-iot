@@ -1,0 +1,7 @@
+{
+  "package": "three",
+  "version": "0.187.0",
+  "license": "MIT",
+  "source": "https://www.npmjs.com/package/three",
+  "use": "Locally bundled WebGL renderer for the procedural 3D reference avatar"
+}

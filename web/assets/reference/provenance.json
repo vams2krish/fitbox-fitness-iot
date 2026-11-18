@@ -1,0 +1,85 @@
+{
+  "origin": "User-supplied fitness artwork; no license ownership asserted. Stock markings retained.",
+  "files": [
+    {
+      "sourceFile": "Pose 1.png",
+      "asset": "anatomy-front.png",
+      "sha256": "980afec69f02ce507a864d1ea01bce45bdfdc843cda642ac8215f758c88e1296"
+    },
+    {
+      "sourceFile": "Pose 2.png",
+      "asset": "anatomy-back.png",
+      "sha256": "eee48f045ae9cc2e6cb8cb6a93415f5ab20178ac5c99216ef156bddf510df110"
+    },
+    {
+      "sourceFile": "muscle anatomy 1.jpg",
+      "asset": "body-thin.jpg",
+      "sha256": "7db4c8ec2a446a37896a93c76918098c50376d5d2249afd0e2b4ea1a16876522"
+    },
+    {
+      "sourceFile": "muscle anatomy 2.jpg",
+      "asset": "body-lean.jpg",
+      "sha256": "b2509c9e8c5d3df32012c09999b30d429c994db2ea3ab7e2ef5e8a8736c4c6b0"
+    },
+    {
+      "sourceFile": "3d character.jpg",
+      "asset": "level-character.jpg",
+      "sha256": "edaa2250a7aaa4b96175b357149e5d3a472a5660e2865fb0b94b233aeb3f3812"
+    },
+    {
+      "sourceFile": "taskdone-removebg-preview.png",
+      "asset": "task-done.png",
+      "sha256": "f687fb77100cedc97789ab76d8e0a23af75307d48409eaabade96ff5bceee4a2"
+    },
+    {
+      "sourceFile": "premium badge.png",
+      "asset": "premium-crown.png",
+      "sha256": "15cfbb9f8b6ace059a81316a290ff7b6ce3c0df852844f1d7127b1308b45a751"
+    },
+    {
+      "sourceFile": "badge.png",
+      "asset": "reward-crown.png",
+      "sha256": "8873eb4b1a0ba97f246e483f645d3204cf9eb79dcb3fe32c7c6322f0d99a79fa"
+    },
+    {
+      "sourceFile": "hat.jpg",
+      "asset": "reward-hat.jpg",
+      "sha256": "a2764e69c068f3b8c7f3efc71d6f6e9dca21f46026ace81fa42c289519944652"
+    },
+    {
+      "sourceFile": "congrats_gif.gif",
+      "asset": "confetti.gif",
+      "sha256": "cc61149ad78d29aced228b2a5a041a5bfb8e1106d8f2fcfadd2eb598bd357271"
+    },
+    {
+      "sourceFile": "level-1.webp",
+      "asset": "level-1.webp",
+      "sha256": "56175c365e3b3ea72a12e2f2ac647bf9b95be0f3a7967312e03821de37e687b3"
+    },
+    {
+      "sourceFile": "pexels-jonathan-borba-3076516.jpg",
+      "asset": "activity-muscle.jpg",
+      "sha256": "41b93d0e8477267386f2d817427915cf125553d19bb7f5b0378f4a872debf8e8"
+    },
+    {
+      "sourceFile": "pexels-isabella-mendes-348489.jpg",
+      "asset": "activity-yoga.jpg",
+      "sha256": "3d1f644223ed265530cd1fce42c261995943b631898a9e2c736217f20c50f11f"
+    },
+    {
+      "sourceFile": "pexels-yogendra-singh-4384679.jpg",
+      "asset": "exercise-squat.jpg",
+      "sha256": "05d9ec839fd660af8145441b07a7a00ad5039a326e984f74a36b5934f09c5b88"
+    },
+    {
+      "sourceFile": "pexels-li-sun-2294363.jpg",
+      "asset": "exercise-side-plank.jpg",
+      "sha256": "8f55d5375b78de46e4b61dc8e11bf065fc19a1a48f7934f3c5dbf69cb27165f5"
+    },
+    {
+      "sourceFile": "pexels-keiji-yoshiki-176782.jpg",
+      "asset": "exercise-pushup.jpg",
+      "sha256": "fa459873382b58d062b8602b0faa432249a727b1e33b505c3af123366dafff2c"
+    }
+  ]
+}
