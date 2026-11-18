@@ -1,0 +1,11 @@
+{
+  "upstream": "https://github.com/slfresh/fitmitwith-anatomy-atlas",
+  "commit": "4120ee68b6604b8f2f69105d6de6166fad4734c4",
+  "license": "CC-BY-SA-4.0",
+  "changes": "Blender materials, normalization and studio render; source muscle node metadata retained.",
+  "sourceHashes": {
+    "full-body-male-mobile.glb": "d80bebc4045069b660ca8e7afe599d76d15ccc7d96410b3727c600ef01d24e54",
+    "full-body-female-mobile.glb": "cf5350b62fdb42702b9227a4e8ec4fc1a7bffffef2601cc1c7cc57a72b3bfc99"
+  },
+  "female": "Illustrative deformation of male reference, not independently sourced female anatomy."
+}

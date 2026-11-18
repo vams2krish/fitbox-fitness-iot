@@ -1,16 +1,2 @@
-import {chromium} from '@playwright/test';
-import assert from 'node:assert/strict';
-const browser=await chromium.launch();
-const page=await browser.newPage({viewport:{width:1440,height:1000}});
-const errors=[];page.on('pageerror',e=>errors.push(e.message));
-const response=await page.goto('https://fitbox-fitness-iot.vercel.app');
-assert.equal(response.status(),200);
-assert.equal(await page.locator('#apk-link').getAttribute('href'),'https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.3.0/FitBox-debug.apk');
-await page.evaluate(()=>{FitBoxApp.state.profile={name:'Test User',trainer:'John',goal:'Stay fit',level:'Beginner',time:'15–30 mins',schedule:'3 times a week',activity:'Body Exercise'};FitBoxApp.persist();FitBoxApp.show('home');});
-await page.waitForFunction(()=>[...document.images].every(i=>i.complete&&i.naturalWidth>0));
-assert.equal(await page.locator('.reference-body-card').count(),1);
-assert.equal(await page.locator('.sealed').count(),3);
-await page.locator('[data-journey="reveal:pushups"]').click();
-assert.match(await page.locator('.current-task h2').innerText(),/Pushups/);
-assert.deepEqual(errors,[]);await browser.close();
-console.log('PASS: public production URL, APK link, demo, imagery, concealed tasks and explicit task reveal.');
+import {chromium} from '@playwright/test';import assert from 'node:assert/strict';
+const browser=await chromium.launch(),page=await browser.newPage({viewport:{width:390,height:844}});try{const r=await page.goto('https://fitbox-fitness-iot.vercel.app');assert.equal(r.status(),200);await page.locator('.s-welcome').waitFor();assert.equal(await page.locator('#apk-link').getAttribute('href'),'https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.4.0/FitBox-debug.apk');await page.waitForFunction(()=>[...document.images].every(x=>x.complete&&x.naturalWidth>0));const health=await (await page.request.get('https://fitbox-fitness-iot.vercel.app/api/health')).json();assert.equal(health.version,'0.4.0');console.log('PASS: public Studio app, visible imagery, v0.4 APK link and API health.');}finally{await browser.close();}

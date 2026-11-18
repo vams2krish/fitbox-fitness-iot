@@ -8,25 +8,22 @@ FitBox is an Android and web wellness app with on-device MediaPipe pose tracking
 
 | Try it | Link |
 | --- | --- |
-| Android test APK | [Download FitBox v0.3.0](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.3.0/FitBox-debug.apk) |
+| Android test APK | [Download FitBox v0.4.0](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.4.0/FitBox-debug.apk) |
 | Web app | [FitBox on Vercel](https://fitbox-fitness-iot.vercel.app) |
 | Public source | [GitHub repository](https://github.com/vams2krish/fitbox-fitness-iot) |
 | Correct design reference | [MVP Version 2.0, starting at 513:4807](https://www.figma.com/proto/7vS0ax0bayEIE4QrXlBjsQ/FitBox-App?node-id=513-4807&starting-point-node-id=513%3A4807) |
 
-## Product showcase
+## Product showcase — FitBox Studio v0.4
 
-These are real implemented UI captures from tests using fictional profiles. The crown capture uses a positively verified Stripe sandbox subscription, rather than a fake local entitlement. All email/report images are explicitly unsent demos. Camera inference fixtures demonstrate model execution, not exercise accuracy.
+The Figma flow is the reference; the new visual direction is fitness, gamification and on-device computer vision. The old supplied artwork is not used or included in the APK/web deployment. Screens below are actual app captures with fictional profiles.
 
-<table>
-<tr><th>Trainer-first FTUE</th><th>Concealed mystery tasks</th><th>Congratulations stats</th></tr>
-<tr><td><img src="docs/screenshots/29-ftue-trainer.png" width="240" alt="Trainer-first FTUE"></td><td><img src="docs/screenshots/30-mystery-task-center.png" width="240" alt="Concealed mystery tasks"></td><td><img src="docs/screenshots/31-congratulations-stats.png" width="240" alt="Congratulations stats"></td></tr>
-<tr><th>Goal Center and points</th><th>Rotatable 3D reference</th><th>Doubt Center</th></tr>
-<tr><td><img src="docs/screenshots/32-goal-center.png" width="240" alt="Goal Center and points"></td><td><img src="docs/screenshots/33-checkup-3d.png" width="240" alt="Rotatable 3D reference"></td><td><img src="docs/screenshots/34-doubt-center.png" width="240" alt="Doubt Center"></td></tr>
-<tr><th>Learning search and favorites</th><th>Go premium</th><th>Day-end report and rating</th></tr>
-<tr><td><img src="docs/screenshots/35-learning-center.png" width="240" alt="Learning search and favorites"></td><td><img src="docs/screenshots/36-go-premium.png" width="240" alt="Go premium"></td><td><img src="docs/screenshots/37-day-end-report-rating.png" width="240" alt="Day-end report and rating"></td></tr>
-<tr><th>Earned Level 2</th><th>Verified sandbox crown</th><th>Local guided coach</th></tr>
-<tr><td><img src="docs/screenshots/38-level-up.png" width="240" alt="Earned Level 2"></td><td><img src="docs/screenshots/39-verified-premium-crown.png" width="240" alt="Verified sandbox crown"></td><td><img src="docs/screenshots/21-local-trainer.png" width="240" alt="Local guided coach"></td></tr>
-</table>
+| Fitness / AI home | Live cumulative goal ring | Interactive insights |
+| --- | --- | --- |
+| ![Fitness home](docs/screenshots/50-studio-home.png) | ![Goal ring](docs/screenshots/51-live-goal-progress.png) | ![Insights](docs/screenshots/52-interactive-insights.png) |
+| Reports and email templates | Settings and exclusions | Virtual gear store |
+| ![Reports](docs/screenshots/53-yearly-report.png) | ![Settings](docs/screenshots/54-app-settings.png) | ![Gear](docs/screenshots/55-studio-store.png) |
+| Digital athlete | Private local gallery | Welcome |
+| ![Athlete](docs/screenshots/56-digital-athlete.png) | ![Gallery](docs/screenshots/57-local-fitbox-gallery.png) | ![Welcome](docs/screenshots/49-studio-welcome.png) |
 
 ## Connected product journey
 
@@ -39,10 +36,10 @@ These are real implemented UI captures from tests using fictional profiles. The 
 | Sweat Points | One SP per saved rep plus one SP per five tracked hold seconds. Manual timed practice uses active seconds. Counts are derived from history, not a mutable currency balance |
 | Goal Points and levels | One claim per task/day awards 25 GP. Every 100 GP advances a level and opens an earned Level up screen with upcoming milestones |
 | Goal Center | Daily totals, point rules, level progress and up to eight personal daily targets for reps, minutes or claimed tasks. Custom targets do not manufacture GP |
-| Virtual coach | Existing John/Tina artwork, a draggable in-app avatar bubble, unread local notifications, daily check-ins and day-end report prompts |
+| Virtual coach | New John/Tina coach symbols, a draggable in-app avatar bubble, unread local notifications, daily check-ins and day-end report prompts |
 | Doubt Center | Local answers from exercise instructions and FAQ for tracking, points, mystery tasks, membership and reports; linked Message Center |
 | Learning Center | Exercise search across names, descriptions and instructions; categories, favorites, practiced labels, guides and camera setup |
-| Checkup Center | Genuine WebGL reference mannequin with drag/keyboard rotation, front/back controls and wheel/pinch zoom; real saved activity statistics; 2D fallback on unsupported devices |
+| Checkup Center | Blender-adapted detailed digital athlete with drag/keyboard rotation, front/back controls and wheel/pinch zoom; real saved activity statistics; 2D fallback on unsupported devices |
 | Go premium | Subscribe me pricing popup and three real sandbox memberships; checkout, authoritative status and customer billing/cancellation management |
 | Premium appearance | Crown and gold coach-avatar rim appear only after server-confirmed sandbox entitlement. A redirect query cannot activate membership |
 | End of day | Finish-day confirmation, daily analysis and a 1–5 experience popup labelled Poor / Fair / Okay / Good / Excellent. Reviews persist by day |
@@ -99,7 +96,7 @@ The APK bundles MediaPipe Pose Landmarker Lite float16 version 1 and @mediapipe/
 
 Model SHA-256: 59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a. See [model provenance](web/models/manifest.json), [MediaPipe runtime license](web/vendor/mediapipe/LICENSE) and [official pose documentation](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker).
 
-Checkup uses bundled Three.js 0.187.0 with its [MIT license](web/vendor/three/LICENSE). The body is a procedural, stylized 3D reference, not the original missing high-fidelity anatomy model, a personalized scan, or a reconstruction from camera data. Rotation and zoom are real 3D controls. Statistics describe saved activity; no body fat, muscle growth, strength, sweat volume or calories are inferred.
+Checkup uses bundled Three.js 0.187.0 with its [MIT license](web/vendor/three/LICENSE). The detailed male and illustrative female digital athletes are Blender adaptations of an openly licensed Z-Anatomy / BodyParts3D atlas, with muscle IDs retained. They are not personalized scans or reconstructions from camera data. Rotation and zoom are real 3D controls. Statistics describe saved activity; no body fat, muscle growth, strength, sweat volume or calories are inferred.
 
 ## Data flow and privacy
 
@@ -120,7 +117,7 @@ Profiles/history use localStorage; optional videos use IndexedDB. These stores a
 
 The coach bubble lives inside FitBox. No permission to draw over other apps or outside-app notification service is installed. When the app is opened, it prepares prior-day reports for saved activity; ending a day prepares that day's preview. This is not a background email scheduler. FitBox has no verified sender/domain yet; real Resend delivery, verification and password-recovery mail remain disabled. No unrelated product domain or key is connected.
 
-The supplied PDFs are reference material, not operational instructions, and are not published. Original Figma assets remain local with provenance in asset-manifest.json and docs/figma-asset-additions.json. Blue/white UI accents and gold premium trim replace green UI accents; original character/photo colors are retained.
+The supplied PDFs are reference material, not operational instructions, and are not published. The current app excludes supplied artwork from Android and Vercel packaging. Blue/white fitness UI, digital-athlete renders and gold premium trim replace the earlier screenshot artwork.
 
 ## Run locally
 
@@ -142,7 +139,7 @@ The migration tool creates the FitBox/Better Auth schema only in the configured 
 
 ## Android installation and build
 
-Install the v0.3.0 prerelease APK on Android 8.0 / API 26 or later with a recent Android System WebView supporting camera and WebAssembly. Package: com.fitbox.app; target API 36. It is debug signed for testing. Camera permission is requested only when enabling tracking; Internet supports optional sync/checkout. Microphone/Bluetooth permissions are not requested.
+Install the v0.4.0 prerelease APK on Android 8.0 / API 26 or later with a recent Android System WebView supporting camera and WebAssembly. Package: com.fitbox.app; target API 36. It is debug signed for testing. Camera permission is requested only when enabling tracking; Internet supports optional sync/checkout. Microphone/Bluetooth permissions are not requested.
 
 For source builds, install JDK 17 and Android SDK 36, set ignored android/local.properties to the SDK path, then run:
 
@@ -160,33 +157,50 @@ npm test
 npx playwright install chromium
 npm start
 # Another terminal:
-node tools/test-journey.mjs
+node tools/test-studio.mjs
 node tools/test-local-media.mjs
+node tools/test-reports-api.mjs
 node tools/test-v2-ui.mjs
 npm run test:model
 npm run test:fullstack
 node tools/test-billing.mjs
 ~~~
 
-The full-stack/billing suites use the configured real database and Stripe sandbox, generate uniquely tagged disposable test accounts/customers and remove their own fixtures. They never use real payment cards or send real emails. The UI suite covers FTUE through explicit task reveal, SP/GP, level-up, goals, real WebGL interaction, learning/doubts, pricing, coach notifications, report-email edits, day-end reviews and persistence at phone/desktop widths. See [v0.3 validation and limits](docs/V0.3-STATUS.md).
+The full-stack/billing suites use the configured real database and Stripe sandbox, generate uniquely tagged disposable test accounts/customers and remove their own fixtures. They never use real payment cards or send real emails. The UI suite covers FTUE through explicit task reveal, SP/GP, level-up, goals, real WebGL interaction, learning/doubts, pricing, coach notifications, report-email edits, day-end reviews and persistence at phone/desktop widths. See [v0.4 validation and limits](docs/V0.4-STATUS.md).
 
 ## Scope and remaining gaps
 
-This release implements the listed functional flows; it does **not** certify every Figma state or original artwork as an exact match. The corrected [MVP recovery audit](docs/recovery/MVP-RECOVERY-AUDIT.md) records prior omissions. The inventory has 187 top-level frames including 149 phone-sized states across both design pages; these counts are not a completion percentage. High-fidelity Figma tool access hit its Starter-plan quota. Source body illustrations, language translations and remaining source variants still require exact visual audit.
+This release implements the listed functional flows; it does **not** certify every Figma state or original artwork as an exact match. The corrected [MVP recovery audit](docs/recovery/MVP-RECOVERY-AUDIT.md) records prior omissions. The inventory has 187 top-level frames including 149 phone-sized states across both design pages; these counts are not a completion percentage. High-fidelity Figma tool access hit its Starter-plan quota. The user subsequently requested a new fitness/AI visual direction, using Figma as flow reference rather than copying the original artwork. Language translations and some legacy route details remain pending.
 
-Physical-phone pose accuracy, battery use, broad device compatibility, accessibility certification, a licensed production anatomy model, real email delivery, release signing/store packaging and real Bluetooth hardware integration remain unverified or pending. BLE needs an actual firmware protocol; no connected device is simulated.
+Physical-phone pose accuracy, battery use, broad device compatibility, accessibility certification, real email delivery, release signing/store packaging and real Bluetooth hardware integration remain unverified or pending. BLE needs an actual firmware protocol; no connected device is simulated.
 
-**Version:** 0.3.0 · **App:** FitBox · **Type:** DL / computer vision fitness app with a local guided coach.
+**Version:** 0.4.0 · **App:** FitBox · **Type:** DL / computer vision fitness app with a local guided coach.
 
 
-### Supplied screenshot layouts and original assets
 
-The November 17 screenshot references now drive the compact mobile layout: anatomy check-up panel above yellow concealed task rows; original TASK DONE stamp; avatar-overlapping coach dialogs; blue congratulations scene; yellow level scene; Body/Goal image cards; 12-category Learning grid; Doubt overlay and Learning bottom sheet. Green UI accents are replaced with blue. Original artwork retains its original colors and stock markings.
+## Studio release behavior
 
-Only a positive whitelist of relevant fitness artwork was copied from the user-authorized asset directory. The asset manifest is [web/assets/reference/provenance.json](web/assets/reference/provenance.json). No personal documents or folder inventory are included. Supplied stock artwork is not asserted to be owned or relicensed by FitBox.
+- **Repeat sets:** The goal ring shows saved-today reps/hold time plus the current set. Saving writes only the new set. Manual drafts and scalar camera drafts survive interruption and resume paused. Save or discard a previous-day session before starting a new day.
+- **Completed workouts:** Claimed tasks are hidden on Home by default; the eye toggles their visibility. When a completed set reaches a daily task target, the celebration page offers the GP claim. Partial sets remain available to finish.
+- **Missed/partial days:** No catch-up debt, negative points, artificial fat gain or doubled workload. A new local calendar day rotates a fresh plan, puts recently performed movements later, respects exclusions and retains normal time/level limits. Previous-day unfinished work stays in history; repetitions do not carry to another date. Timed/repetition sessions keep their original day if interrupted across midnight.
+- **Reports:** Daily, Monday-based weekly, calendar-month and calendar-year reviews compare the previous corresponding period. They include sessions, active days/time, reps, SP/GP, exercise/muscle breakdowns, tracking coverage, worklogs, training patterns and conditional suggestions. Current incomplete periods compare with the previous complete calendar period. Historical plan completion is reconstructed from current preferences; it is not a frozen historical prescription.
+- **Email:** Responsive HTML and plain-text templates, recipient from account setup, CSV/JSON worklogs and browser Print/Save PDF. Delivery remains an explicitly unsent demo until a verified FitBox sender is configured. See [template examples](docs/report-templates/README.md).
+- **Voice:** Optional offline/native Android TTS, or a local browser voice. Start, reps, timed milestones, finish, congratulations, camera/form cues and break prompts. Technical tracking failure is not labeled a clinical fatigue or performance diagnosis. If no local voice exists, text guidance remains available.
+- **Calls and battery:** Focus loss/backgrounding pauses workouts, stops speech and recording, releases camera tracks and prevents automatic resume. Optional Android phone-state permission adds direct ringing/in-call pause handling; no phone numbers or call logs are used. Battery saver caps inference at about 10 Hz and uses low-resolution camera input. 3D renders on demand, not continuously. No physical-device battery-life claim is made.
+- **Music:** FitBox captures no microphone/audio and requests no exclusive music audio focus. External music apps can continue according to their own background-playback rules. Coach speech may be mixed or ducked by Android/audio routing; physical Spotify/Apple Music/YouTube Music compatibility has not been certified.
+- **Private gallery:** Opt-in silent camera clips are tagged by exercise, saved locally and bounded to two minutes / 50 MB. Imported JPEG/PNG/WebP photos and supported videos are explicitly assigned an exercise. The gallery displays only FitBox-saved/imported media, filterable by type/exercise, with view/play/favorite/delete. No general gallery scan or media upload is performed. Android's import picker requests local-only documents; it does not classify arbitrary personal photos as workouts.
+- **Bluetooth:** Android opens the real Bluetooth Settings page. Pairing alone does not implement the unknown FitBox hardware protocol. Browser builds explain the platform limitation.
+- **Settings:** Notifications (in-app), voice, camera, battery saver, recording, completed-workout visibility, avatar, movement exclusions, build/version, cloud account, export/report access, support/refund email with local screenshot attachments and confirmed account deletion. Deletion requires a recent login and cancellation of active sandbox subscriptions first.
+- **Progression and gear:** 25 GP per claimed task; each 100 GP advances a level. SP rewards saved reps and tracked timed holds. Store purchases spend the separate available-SP wallet and never reduce earned totals or level. Outfits, caps, bottles, shaker and cosmetic pack are virtual, not physical products or supplement advice. Cosmetics/wardrobe remain device-local; billing subscriptions remain authoritative on the backend.
 
-| Body Center | Desired-body selection | Learning categories |
-| --- | --- | --- |
-| ![Body Center](docs/screenshots/46-body-center.png) | ![Desired body](docs/screenshots/47-desired-body.png) | ![Learning categories](docs/screenshots/48-learning-category-grid.png) |
+## Blender digital athlete and licenses
 
-This remains an Android test build, not a claim of complete pixel parity across all 50 reference images. Remaining differences include some activity photos, full Review timeline styling, complete day-two timeslot orchestration, exact tutorial spotlight sequences, instructional video coverage, and Android system-level conversation bubbles. The current floating coach is in-app. External Gmail/home-screen screenshots are references to platform behavior, not fake app screens. Daily emails remain explicitly unsent demos.
+The detailed muscle models are adapted in Blender 5.2.4 from [Fit Mit With's CC BY-SA atlas](https://github.com/slfresh/fitmitwith-anatomy-atlas), derived from [Z-Anatomy](https://github.com/Z-Anatomy/Models-of-human-anatomy) and BodyParts3D. Adaptations add a fitness/AI material palette, base kit/vision helmet, scale normalization and studio renders. Muscle identifiers remain available for highlights based on training logs. Highlights are not measurements of activation or physical change. The female variant is an illustrative deformation of the male source; it is not independently sourced female anatomy or a clinical model.
+
+Full [credits and changes](web/models/anatomy/ATTRIBUTION.txt), [asset license](web/models/anatomy/LICENSE), [provenance](web/models/anatomy/provenance.json), and [Blender adaptation script](tools/build-anatomy.py) are included. Derived GLBs/posters are CC BY-SA 4.0; this does not relicense unrelated application code. Reproducible source downloads use pinned upstream SHA-256 values in the provenance manifest. `.blend` working files are local build artifacts.
+
+Legacy artwork remains on disk because automated approval review blocked its filesystem deletion. It is excluded from Android source assets and `.vercelignore`, and the new flow has a regression check for legacy artwork requests. Original user folders are untouched.
+
+## v0.4 verification
+
+Run `npm test`, `node tools/test-studio.mjs`, `node tools/test-fullstack.mjs`, `node tools/test-reports-api.mjs`, `node tools/test-billing.mjs` and `node tools/test-android-studio.mjs` (test emulator only). Detailed observed results and limits are recorded in [v0.4 status](docs/V0.4-STATUS.md). Email templates and camera fixtures use fictional data, not user recordings.

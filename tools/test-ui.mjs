@@ -1,1 +1,1 @@
-import './test-journey.mjs';
+import './test-studio.mjs';

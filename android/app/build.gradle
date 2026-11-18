@@ -3,6 +3,7 @@ android {
     namespace 'com.fitbox.app'
     compileSdk 36
     defaultConfig { applicationId 'com.fitbox.app'; minSdk 26; targetSdk 36; versionCode 3; versionName '0.3.0' }
+    sourceSets { main { assets.srcDirs = ['build/fitbox-v4-assets'] } }
     buildTypes { release { minifyEnabled false } }
 }
 dependencies { implementation 'androidx.webkit:webkit:1.14.0' }
