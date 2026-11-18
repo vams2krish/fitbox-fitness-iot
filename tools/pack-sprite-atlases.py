@@ -11,12 +11,16 @@ jobs=json.loads((root/'docs/source-atlases/manifest.json').read_text(encoding='u
 target=root/'web/assets/design/sprites';target.mkdir(parents=True,exist_ok=True)
 records=[]
 for job in jobs:
- source=root/job['source'];im=Image.open(source).convert('RGBA');w,h=im.size
+ source=root/job['source'];im=Image.open(source).convert('RGBA')
+ if job.get('trimVertical'):
+  box=im.getchannel('A').point(lambda a:255 if a>100 else 0).getbbox()
+  if box:im=im.crop((0,max(0,box[1]-8),im.width,min(im.height,box[3]+8)))
+ w,h=im.size;rows=len(job['ids'])
  alpha=im.getchannel('A');pixels=alpha.load()
  counts=[sum(pixels[x,y]>100 for x in range(w)) for y in range(h)]
  cuts=[0]
- for row in range(1,4):
-  center=round(h*row/4);lo=max(cuts[-1]+30,center-70);hi=min(h-30,center+70)
+ for row in range(1,rows):
+  center=round(h*row/rows);lo=max(cuts[-1]+30,center-70);hi=min(h-30,center+70)
   scores={y:sum(counts[max(0,y-2):min(h,y+3)]) for y in range(lo,hi)}
   minimum=min(scores.values());cut=min((y for y in scores if scores[y]<=minimum+5),key=lambda y:abs(y-center));cuts.append(cut)
  cuts.append(h)
@@ -35,5 +39,5 @@ for job in jobs:
   gif[0].save(target/(id+'.gif'),save_all=True,append_images=gif[1:],duration=150,loop=0)
  records.append({'index':job['index'],'ids':job['ids'],'prompt':job['prompt'],'sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'rowCuts':cuts,'mode':'Built-in image generation, reference-guided atlas; mechanical frame packing'})
 (root/'docs/animation-atlases.json').write_text(json.dumps(records,indent=2),encoding='utf-8')
-(target/'manifest.json').write_text(json.dumps({'size':96,'frames':12,'uniqueFrames':6,'layout':'horizontal','ids':[id for job in jobs for id in job['ids']],'source':'docs/animation-atlases.json','purpose':'Illustrative exercise loops; not measured form feedback.'},indent=2),encoding='utf-8')
-print('Packed',sum(len(j['ids']) for j in jobs),'reference-guided sprite sheets.')
+(target/'manifest.json').write_text(json.dumps({'size':96,'frames':12,'uniqueFrames':6,'layout':'horizontal','ids':list(dict.fromkeys(id for job in jobs for id in job['ids'])),'source':'docs/animation-atlases.json','purpose':'Illustrative exercise loops; not measured form feedback.'},indent=2),encoding='utf-8')
+print('Packed',len(set(id for j in jobs for id in j['ids'])),'reference-guided sprite sheets.')

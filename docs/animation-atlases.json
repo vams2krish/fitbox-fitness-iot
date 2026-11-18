@@ -150,5 +150,18 @@
       1024
     ],
     "mode": "Built-in image generation, reference-guided atlas; mechanical frame packing"
+  },
+  {
+    "index": 8,
+    "ids": [
+      "yoga"
+    ],
+    "prompt": "Create a horizontal sprite animation strip of EXACTLY SIX equal-size cells in ONE ROW, transparent background. Use the attached FitBox pixel-art woman as the exact character/style/outfit reference. In EVERY frame she performs MOUNTAIN POSE: standing upright, feet planted parallel at HIP WIDTH, legs straight and still, arms hanging RELAXED STRAIGHT DOWN BESIDE her torso with hands next to thighs, shoulders relaxed, facing viewer. Do NOT raise or extend arms. Do NOT spread legs. No jumping, walking, waving, dance, lunging or changing stance. Six subtly different successive breathing/blink frames: gentle chest expansion, tiny shoulder rise and fall, slight natural head settling; same grounded feet and arm position throughout. Seamless loop with same scale and baseline in each cell. One full-body character per cell; no other objects or people, no text, grid, labels or logos. High-quality charming 16-bit pixel character, navy outlines, violet/cobalt sportswear and blue shoes. Landscape six-column strip, generous transparent padding in every cell. Clear mechanical sprite atlas ready for slicing into six equal columns.",
+    "sha256": "45091f1b01e884d824d812d2d3c785cf9a9467ecef8d5a088fc62714ad135e02",
+    "rowCuts": [
+      0,
+      711
+    ],
+    "mode": "Built-in image generation, reference-guided atlas; mechanical frame packing"
   }
 ]
