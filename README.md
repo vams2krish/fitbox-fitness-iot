@@ -8,7 +8,7 @@ FitBox is an Android and web wellness app with on-device MediaPipe pose tracking
 
 | Try it | Link |
 | --- | --- |
-| Android test APK | [Download FitBox v0.5.1](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.5.1/FitBox-debug.apk) |
+| Android test APK | [Download FitBox v0.5.2](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.5.2/FitBox-debug.apk) |
 | Web app | [FitBox on Vercel](https://fitbox-fitness-iot.vercel.app) |
 | Public source | [GitHub repository](https://github.com/vams2krish/fitbox-fitness-iot) |
 | First design reference | [Original Figma, starting at 364:3661](https://www.figma.com/proto/7vS0ax0bayEIE4QrXlBjsQ/FitBox-App?node-id=364-3661&starting-point-node-id=364%3A3661) |
@@ -19,11 +19,11 @@ White, electric blue and violet with original pixel characters, animated workout
 
 | FitBox | Pixel coaches | Task Center |
 | --- | --- | --- |
-| ![FitBox](docs/screenshots/70-fitbox-brand.png) | ![Coaches](docs/screenshots/71-pixel-trainers.png) | ![Home](docs/screenshots/75-home-3d-pixel.png) |
+| ![FitBox](docs/screenshots/70-fitbox-brand.png) | ![Coaches](docs/screenshots/71-pixel-trainers.png) | ![Home](docs/screenshots/84-interactive-athlete-hint.png) |
 | Camera HUD | Goals | Store |
 | ![Camera](docs/screenshots/76-camera-hud.png) | ![Goals](docs/screenshots/77-goal-journey.png) | ![Store](docs/screenshots/80-pixel-store.png) |
 | Movement notes | Digital athlete | Private media |
-| ![Instructions](docs/screenshots/78-movement-notes.png) | ![Athlete](docs/screenshots/81-athlete-stats.png) | ![Local library](docs/screenshots/82-local-media-thumbnails.png) |
+| ![Instructions](docs/screenshots/78-movement-notes.png) | ![Athlete](docs/screenshots/85-athlete-shrink-control.png) | ![Local library](docs/screenshots/82-local-media-thumbnails.png) |
 
 The five tabs retain their identity across screens. Goal Center and Store have dedicated Home entries; Reports lives beside Insights. Workout controls use progressive disclosure. A single canonical FitBox+ route handles all three Stripe sandbox plans. Completed tasks stay hidden until the eye toggle is selected.
 
@@ -188,7 +188,7 @@ This release implements the listed functional flows; it does **not** certify eve
 
 Physical-phone pose accuracy, battery use, broad device compatibility, accessibility certification, real email delivery, release signing/store packaging and real Bluetooth hardware integration remain unverified or pending. BLE needs an actual firmware protocol; no connected device is simulated.
 
-**Version:** 0.5.1 · **App:** FitBox · **Type:** DL / computer vision fitness app with a local guided coach.
+**Version:** 0.5.2 · **App:** FitBox · **Type:** DL / computer vision fitness app with a local guided coach.
 
 
 
@@ -220,7 +220,7 @@ Legacy artwork remains on disk because automated approval review blocked its fil
 Run `npm test`, `node tools/test-studio.mjs`, `node tools/test-fullstack.mjs`, `node tools/test-reports-api.mjs`, `node tools/test-billing.mjs` and `node tools/test-android-studio.mjs` (test emulator only). Detailed observed results and limits are recorded in [v0.4 status](docs/V0.4-STATUS.md). Email templates and camera fixtures use fictional data, not user recordings.
 
 
-## v0.5.1 — original Figma screen direction
+## v0.5.2 — original Figma screen direction
 
 Restored the first design's welcome photograph, centered welcome title and bottom Get Started action. Home now follows the original header/progress/Bluetooth, Check-up panel and compact yellow mystery rows. Learning uses the original 3-column category grid; coach dialogs, onboarding cards, blue congratulations and yellow level screen follow the screenshot language. Kept the newer replacement coach/3D athlete artwork instead of restoring the rejected clipart. Real stats, hidden completed tasks, cumulative counts, settings, reports, voice, local media, wallet and call handling are unchanged.
 
