@@ -4,24 +4,38 @@
 
 FitBox is an Android and web wellness app with on-device MediaPipe pose tracking, a local virtual coach, concealed daily tasks, Sweat/Goal Points, levels, goals, a 3D check-up reference, private video review, authenticated Neon sync and real Stripe sandbox billing.
 
-**Project classification:** Deep learning / computer vision / fitness application. A pretrained neural pose model runs locally. Exercise phase rules and coaching are deterministic. This repository does not train a model and does not use a cloud LLM or Generative AI service.
+**Project classification:** Deep learning / computer vision / fitness application. A pretrained neural pose model runs locally. Exercise phase rules and coaching are deterministic. This repository does not train a model and does not use a cloud LLM or Generative AI service at runtime. Pixel illustrations are generated development assets; animation sheets run locally.
 
 | Try it | Link |
 | --- | --- |
-| Android test APK | [Download FitBox v0.4.1](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.4.1/FitBox-debug.apk) |
+| Android test APK | [Download FitBox v0.5.0](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.5.0/FitBox-debug.apk) |
 | Web app | [FitBox on Vercel](https://fitbox-fitness-iot.vercel.app) |
 | Public source | [GitHub repository](https://github.com/vams2krish/fitbox-fitness-iot) |
 | First design reference | [Original Figma, starting at 364:3661](https://www.figma.com/proto/7vS0ax0bayEIE4QrXlBjsQ/FitBox-App?node-id=364-3661&starting-point-node-id=364%3A3661) |
 
-## Product showcase — Original Figma layout, v0.4.1
+## Product showcase — Figma flow, refined
 
-The first Figma screen designs and supplied screenshots are the visual reference again: photo welcome, white/blue onboarding, compact check-up panel above yellow mystery tasks, and five-tab navigation. Current workout, privacy, gamification and reporting features are preserved. The original Figma welcome photograph is intentionally restored; the old supplied clipart remains excluded. Screens below are actual app captures with fictional profiles.
+White, electric blue and violet with original pixel characters, animated workout/store sprites, an interactive digital athlete and streamlined camera HUD. Screens below are real app captures with fictional profiles. [Implementation and verification](docs/UI-REFINEMENT-v0.5.md).
 
-| Original welcome | Trainer selection | Original home layout |
+| FitBox | Pixel coaches | Task Center |
 | --- | --- | --- |
-| ![Welcome](docs/screenshots/60-original-figma-welcome.png) | ![Trainer](docs/screenshots/61-original-trainer-layout.png) | ![Home](docs/screenshots/62-original-home-layout.png) |
-| Back-view panel | Learning categories | Interactive progress |
-| ![Back view](docs/screenshots/63-original-back-view.png) | ![Learning](docs/screenshots/64-original-learning-grid.png) | ![Progress](docs/screenshots/51-live-goal-progress.png) |
+| ![FitBox](docs/screenshots/70-fitbox-brand.png) | ![Coaches](docs/screenshots/71-pixel-trainers.png) | ![Home](docs/screenshots/75-home-3d-pixel.png) |
+| Camera HUD | Goals | Store |
+| ![Camera](docs/screenshots/76-camera-hud.png) | ![Goals](docs/screenshots/77-goal-journey.png) | ![Store](docs/screenshots/80-pixel-store.png) |
+| Movement notes | Digital athlete | Private media |
+| ![Instructions](docs/screenshots/78-movement-notes.png) | ![Athlete](docs/screenshots/81-athlete-stats.png) | ![Local library](docs/screenshots/82-local-media-thumbnails.png) |
+
+The five tabs retain their identity across screens. Goal Center and Store have dedicated Home entries; Reports lives beside Insights. Workout controls use progressive disclosure. A single canonical FitBox+ route handles all three Stripe sandbox plans. Completed tasks stay hidden until the eye toggle is selected.
+
+### Looping pixel artwork
+
+32 individual sprite sheets cover two coaches, all 24 exercises and six store goodies. [Browse PNG strips and GIF exports](web/assets/design/sprites). Six illustrated poses per loop are packed into twelve runtime frames; off-screen animation pauses and reduced-motion displays a still.
+
+| Pushups | Squats | Studio cap | Shaker |
+| --- | --- | --- | --- |
+| ![Pushups](web/assets/design/sprites/pushups.gif) | ![Squats](web/assets/design/sprites/squats.gif) | ![Cap](web/assets/design/sprites/store-studio-cap.gif) | ![Shaker](web/assets/design/sprites/store-shaker.gif) |
+
+Source atlases and exact prompts are in [the art manifest](docs/source-atlases/manifest.json); `python tools/pack-sprite-atlases.py` recreates the runtime sheets. These illustrations demonstrate movement rather than assessing the camera user's form.
 
 ## Connected product journey
 
@@ -172,7 +186,7 @@ This release implements the listed functional flows; it does **not** certify eve
 
 Physical-phone pose accuracy, battery use, broad device compatibility, accessibility certification, real email delivery, release signing/store packaging and real Bluetooth hardware integration remain unverified or pending. BLE needs an actual firmware protocol; no connected device is simulated.
 
-**Version:** 0.4.1 · **App:** FitBox · **Type:** DL / computer vision fitness app with a local guided coach.
+**Version:** 0.5.0 · **App:** FitBox · **Type:** DL / computer vision fitness app with a local guided coach.
 
 
 
@@ -204,7 +218,7 @@ Legacy artwork remains on disk because automated approval review blocked its fil
 Run `npm test`, `node tools/test-studio.mjs`, `node tools/test-fullstack.mjs`, `node tools/test-reports-api.mjs`, `node tools/test-billing.mjs` and `node tools/test-android-studio.mjs` (test emulator only). Detailed observed results and limits are recorded in [v0.4 status](docs/V0.4-STATUS.md). Email templates and camera fixtures use fictional data, not user recordings.
 
 
-## v0.4.1 — original Figma screen direction
+## v0.5.0 — original Figma screen direction
 
 Restored the first design's welcome photograph, centered welcome title and bottom Get Started action. Home now follows the original header/progress/Bluetooth, Check-up panel and compact yellow mystery rows. Learning uses the original 3-column category grid; coach dialogs, onboarding cards, blue congratulations and yellow level screen follow the screenshot language. Kept the newer replacement coach/3D athlete artwork instead of restoring the rejected clipart. Real stats, hidden completed tasks, cumulative counts, settings, reports, voice, local media, wallet and call handling are unchanged.
 

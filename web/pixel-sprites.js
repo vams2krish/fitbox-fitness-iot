@@ -1,0 +1,34 @@
+/* Original code-authored 96px sprite choreography. Each PNG has 12 frames. */
+(()=>{'use strict';const FRAMES=12,SIZE=96;
+function pose(id,t){const u=(1-Math.cos(t*Math.PI*2))/2,s=Math.sin(t*Math.PI*2);let h=[48,25],neck=[48,35],hip=[48,57],le=[34,45],lh=[29,55],re=[62,45],rh=[67,55],lk=[40,70],lf=[37,86],rk=[56,70],rf=[59,86];
+ const set=a=>[h,neck,hip,le,lh,re,rh,lk,lf,rk,rf]=a;
+ if(['pushups','plank','burpees'].includes(id)){const y=id==='plank'?0:u*11;set([[23,41+y],[30,46+y],[57,52+y*.3],[26,59],[22,73],[39,60],[38,73],[71,62],[85,73],[70,60],[84,71]]);if(id==='burpees'&&u>.5){const z=(u-.5)*2;h[1]-=z*22;hip[0]-=z*8;hip[1]+=z*7;lk=[55,67];lf=[62,85];rk=[40,70];rf=[38,85];}}
+ else if(['squats','chair','situps','crunches','bridges','bench','cycling'].includes(id)){
+  if(['squats','chair'].includes(id)){h[1]+=u*14;neck[1]+=u*14;hip=[48,57+u*12];le=[32,39+u*8];lh=[23,35+u*8];re=[64,39+u*8];rh=[73,35+u*8];lk=[34,73];rk=[62,73];lf=[36,87];rf=[60,87];}
+  else if(['situps','crunches'].includes(id)){const a=(id==='crunches'?.45:1)*u;set([[18+a*20,68-a*29],[27+a*16,73-a*23],[51,77],[29+a*8,62-a*18],[24+a*6,56-a*18],[40+a*9,67-a*14],[42+a*6,58-a*14],[63,59],[79,78],[65,62],[81,80]]);}
+  else if(id==='bridges'){set([[16,75],[25,76],[51,76-u*17],[31,79],[43,81],[32,82],[43,85],[67,58],[80,81],[66,62],[77,84]]);}
+  else if(id==='bench'){set([[20,55],[30,59],[58,60],[28,44-u*16],[25,32-u*12],[46,44-u*16],[49,32-u*12],[71,66],[73,85],[60,73],[56,86]]);}
+  else {const a=t*Math.PI*2;set([[38,26],[42,36],[51,58],[52,41],[67,43],[55,43],[68,44],[54+Math.cos(a)*12,67+Math.sin(a)*7],[56+Math.cos(a)*17,80+Math.sin(a)*8],[54-Math.cos(a)*12,67-Math.sin(a)*7],[56-Math.cos(a)*17,80-Math.sin(a)*8]]);}
+ }
+ else if(id==='lunges'||id==='warrior'){h[1]+=u*5;neck[1]+=u*5;hip[1]+=u*5;lk=[27,66+u*8];lf=[23,85];rk=[66,70];rf=[79,85];if(id==='warrior'){le=[27,36];lh=[11,35];re=[68,36];rh=[85,35];}}
+ else if(id==='pullups'){const y=u*13;h[1]-=y;neck[1]-=y;hip[1]-=y;le=[30,20+y*.2];lh=[24,9];re=[66,20+y*.2];rh=[72,9];lk[1]-=y;lf[1]-=y;rk[1]-=y;rf[1]-=y;}
+ else if(id==='biceps'){le=[34,48];re=[62,48];lh=[29,56-u*24];rh=[67,56-u*24];}
+ else if(id==='jacks'){le=[31-u*6,44-u*24];lh=[24+u*5,54-u*45];re=[65+u*6,44-u*24];rh=[72-u*5,54-u*45];lf[0]-=u*15;rf[0]+=u*15;}
+ else if(id==='tree'){le=[33,24];lh=[47,9];re=[63,24];rh=[49,9];rk=[67,64];rf=[49,69];h[0]+=s;}
+ else if(id==='downdog'){set([[24,59],[29,54],[51,30+s*2],[23,66],[13,82],[34,67],[26,83],[65,53],[80,82],[63,54],[75,83]]);}
+ else if(id==='handstand'){set([[48,69],[48,59],[48+s*2,37],[33,69],[30,85],[63,69],[66,85],[41,23],[37,7],[55,23],[59,7]]);}
+ else if(id==='meditation'){set([[48,28+s],[48,38+s],[48,60],[31,48],[29,65],[65,48],[67,65],[27,75],[62,79],[69,75],[34,79]]);}
+ else if(id==='shadowboxing'){le=[34,41];lh=[35,30];re=[64+u*4,37];rh=[65+u*19,33];lk=[37,71];lf=[31,87];rk=[61,72];rf=[68,86];hip[0]+=u*3;neck[0]+=u*4;h[0]+=u*4;}
+ else if(['walking','aerobics','zumba','coach-john','coach-tina'].includes(id)){const a=s*10;le=[34,44-a*.4];lh=[30+a*.7,54-a];re=[62,44+a*.4];rh=[66-a*.7,54+a];lk=[40+a*.5,70];lf=[37+a,86-Math.max(0,s)*7];rk=[56-a*.5,70];rf=[59-a,86-Math.max(0,-s)*7];h[1]-=Math.abs(s)*2;neck[1]-=Math.abs(s)*2;if(id==='zumba'){lh=[18,30+s*12];rh=[77,30-s*12];hip[0]+=s*6;}if(id.startsWith('coach')){re=[66,29];rh=[69+s*8,15];lk=[41,71];rk=[56,71];lf=[38,86];rf=[59,86];}}
+ else if(id==='yoga'){le=[34,42];lh=[28,54];re=[62,42];rh=[68,54];h[1]+=s;neck[1]+=s;}
+ if(id==='plank'){h[1]+=s;neck[1]+=s;hip[1]+=s*.5;}
+ return {h,neck,hip,le,lh,re,rh,lk,lf,rk,rf};}
+function frame(ctx,id,n){const t=n/FRAMES;ctx.imageSmoothingEnabled=false;const line=(a,b,w,c)=>{ctx.strokeStyle=c;ctx.lineWidth=w;ctx.lineCap='square';ctx.beginPath();ctx.moveTo(Math.round(a[0]),Math.round(a[1]));ctx.lineTo(Math.round(b[0]),Math.round(b[1]));ctx.stroke();},box=(x,y,w,h,c)=>{ctx.fillStyle=c;ctx.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h));};
+ if(id.startsWith('store-')){const item=id.slice(6),wave=Math.sin(t*Math.PI*2),scale=.66+Math.abs(Math.cos(t*Math.PI*2))*.34;ctx.save();ctx.translate(48,48+wave*3);ctx.scale(scale,1);ctx.translate(-48,-48);const outline='#17294b',blue=item==='midnight-kit'?'#273c61':'#398cff',light='#a0d8ff';if(item.includes('kit')){box(26,24,44,49,outline);box(29,27,38,43,blue);box(18,29,11,17,outline);box(67,29,11,17,outline);box(21,32,8,11,blue);box(67,32,8,11,blue);box(40,24,16,8,outline);box(43,24,10,5,'#dfeaff');box(47,38,3,28,light);box(29,64,38,6,'#1d4c87');}else if(item==='studio-cap'){box(24,36,46,25,outline);box(28,29,38,28,outline);box(33,25,28,28,outline);box(32,32,30,23,'#9683ef');box(38,28,18,24,'#b4a5ff');box(21,57,58,8,outline);box(26,57,48,4,'#bbadff');box(48,37,6,8,'#fff');}else if(item==='lunar-pack'){box(22,30,52,44,outline);box(26,34,44,36,'#8d76e8');box(20,25,56,13,outline);box(24,28,48,7,'#c0adff');box(44,27,8,43,'#d8e9ff');box(37,17,9,10,'#b7a4ff');box(51,17,9,10,'#b7a4ff');}else {box(32,29,32,49,outline);box(36,32,24,42,item==='shaker'?'#9887ed':'#56bded');box(36,19,24,13,outline);box(40,16,16,9,'#a4d6ff');box(39,36,4,29,'#c9eeff');box(43,48,14,14,'#edf5ff');box(47,51,6,8,blue);if(item==='shaker')box(52,19,10,5,'#b5a6f6');}ctx.restore();return;}
+ const p=pose(id,t),skin='#f1b78b',out='#1c2b49',top=id.includes('tina')||['yoga','tree','zumba','lunges','squats'].includes(id)?'#9c7ae8':'#338bfa';
+ // Equipment is drawn behind the athlete.
+ if(id==='pullups')box(13,7,70,4,out);if(id==='handstand')box(85,3,4,85,'#9ab4d9');if(['pushups','plank','yoga','meditation','downdog','bridges','crunches','situps'].includes(id))box(8,88,80,3,'#9380df');if(id==='bench'){box(13,65,53,6,out);box(18,71,4,16,out);box(60,71,4,16,out);}if(id==='cycling'){ctx.strokeStyle='#728fb9';ctx.lineWidth=3;for(const x of [24,74]){ctx.beginPath();ctx.arc(x,78,13,0,Math.PI*2);ctx.stroke();}line([24,78],[51,59],3,'#728fb9');line([51,59],[74,78],3,'#728fb9');}
+ const limb=(a,b,c,color)=>{line(a,b,8,out);line(b,c,8,out);line(a,b,5,color);line(b,c,5,color);};limb(p.hip,p.rk,p.rf,'#344d77');limb(p.hip,p.lk,p.lf,'#3a5785');line([p.lf[0]-2,p.lf[1]], [p.lf[0]+4,p.lf[1]],5,'#74c9ff');line([p.rf[0]-2,p.rf[1]], [p.rf[0]+4,p.rf[1]],5,'#74c9ff');line(p.neck,p.hip,18,out);line(p.neck,p.hip,13,top);limb([p.neck[0]-5,p.neck[1]+2],p.le,p.lh,skin);limb([p.neck[0]+5,p.neck[1]+2],p.re,p.rh,skin);box(p.h[0]-9,p.h[1]-11,18,20,out);box(p.h[0]-7,p.h[1]-8,14,15,skin);box(p.h[0]-8,p.h[1]-12,16,6,'#493345');box(p.h[0]-10,p.h[1]-8,4,7,'#493345');box(p.h[0]-4,p.h[1]-3,2,3,out);box(p.h[0]+3,p.h[1]-3,2,3,out);box(p.h[0]-2,p.h[1]+3,5,2,'#fff');if(id.includes('tina'))box(p.h[0]+9,p.h[1]-9,5,15,'#694253');if(['biceps','bench'].includes(id)){for(const hand of [p.lh,p.rh]){box(hand[0]-8,hand[1]-2,16,4,out);box(hand[0]-9,hand[1]-6,4,12,'#667ced');box(hand[0]+5,hand[1]-6,4,12,'#667ced');}}
+}
+window.FitBoxSpriteSource={FRAMES,SIZE,frame};
+})();

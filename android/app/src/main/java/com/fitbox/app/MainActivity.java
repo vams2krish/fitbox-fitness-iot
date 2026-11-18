@@ -170,7 +170,7 @@ public class MainActivity extends Activity {
     }
     @Override public void onBackPressed() { web.evaluateJavascript("window.fitboxBack && window.fitboxBack()", null); }
     @Override protected void onPause() { if(web!=null){web.evaluateJavascript("window.fitboxPause && window.fitboxPause()", null);web.onPause();}if(tts!=null)tts.stop();super.onPause(); }
-    @Override protected void onResume() { super.onResume();if(web!=null)web.onResume(); }
+    @Override protected void onResume() { super.onResume();if(web!=null)web.onResume();if(checkSelfPermission(Manifest.permission.READ_PHONE_STATE)==PackageManager.PERMISSION_GRANTED)registerCallProtection(); }
     @Override public void onWindowFocusChanged(boolean focus) { super.onWindowFocusChanged(focus);if(!focus&&web!=null){web.evaluateJavascript("window.fitboxPause && window.fitboxPause()",null);if(tts!=null)tts.stop();} }
     @Override protected void onDestroy() { if(cameraRequest != null) cameraRequest.deny(); if(callListener!=null){android.telephony.TelephonyManager manager=(android.telephony.TelephonyManager)getSystemService(TELEPHONY_SERVICE);if(manager!=null)manager.listen(callListener,android.telephony.PhoneStateListener.LISTEN_NONE);}if(tts!=null){tts.stop();tts.shutdown();}web.destroy(); super.onDestroy(); }
 }

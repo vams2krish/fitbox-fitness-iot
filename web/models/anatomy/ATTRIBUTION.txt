@@ -60,3 +60,5 @@ PUBLIC COPY (ShareAlike)
 FITBOX CHANGES (2026-11-17): Imported the mobile atlas into Blender 5.2.4, normalized the full-body scale, assigned satin muscle/connective materials, exported GLB with original muscle extras, and rendered transparent studio posters. FitBox GLBs/posters and these adaptations are CC BY-SA 4.0. No anatomical specialist review. Female mesh is an illustrative deformation of male geometry, not independently sourced female anatomy.
 
 FitBox fitness/AI presentation: midnight-blue material palette, neutral vision helmet and base training shorts; muscle region metadata retained. These adapted assets remain CC BY-SA 4.0.
+
+FitBox body preference thumbnails: twelve illustrative proportion variants rendered in Blender by tools/render-body-types.py. Adapted mesh silhouettes and renders remain CC BY-SA 4.0; not body measurements.

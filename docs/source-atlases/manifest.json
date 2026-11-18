@@ -1,0 +1,90 @@
+[
+  {
+    "index": 0,
+    "ids": [
+      "pushups",
+      "squats",
+      "plank",
+      "crunches"
+    ],
+    "prompt": "Create a production sprite animation atlas for FitBox. Landscape canvas, EXACTLY SIX equal columns and FOUR equal rows, 24 equal rectangular cells, transparent background, no text, grid lines or labels. Each row is ONE separate animated subject listed below; its six columns are six successive equally timed frames forming a seamless loop (start, transition, extreme, transition, return, near-start). Keep each subject centered at identical baseline and scale within its cell, generous empty padding so no pixels touch cell edges. Use the supplied portraits/exercise art as exact character and outfit style reference: charming detailed goofy 16-bit pixel art with expressive faces, cobalt blue/violet/white gear and navy outlines. Do not reduce to geometric stick figures. Each exercise must visibly articulate head, torso, arms and legs through the named action (holds use gentle breathing without changing stable pose). Store objects gently rotate/bob with glints, kits flutter; no lettering. Row order top to bottom: 1. pushups ; 2. squats ; 3. plank ; 4. crunches . No green or yellow backgrounds. A clean professional mobile-game sprite sheet.",
+    "source": "docs/source-atlases/atlas-0.png"
+  },
+  {
+    "index": 1,
+    "ids": [
+      "lunges",
+      "yoga",
+      "meditation",
+      "walking"
+    ],
+    "prompt": "Create a production sprite animation atlas for FitBox. Landscape canvas, EXACTLY SIX equal columns and FOUR equal rows, 24 equal rectangular cells, transparent background, no text, grid lines or labels. Each row is ONE separate animated subject listed below; its six columns are six successive equally timed frames forming a seamless loop (start, transition, extreme, transition, return, near-start). Keep each subject centered at identical baseline and scale within its cell, generous empty padding so no pixels touch cell edges. Use the supplied portraits/exercise art as exact character and outfit style reference: charming detailed goofy 16-bit pixel art with expressive faces, cobalt blue/violet/white gear and navy outlines. Do not reduce to geometric stick figures. Each exercise must visibly articulate head, torso, arms and legs through the named action (holds use gentle breathing without changing stable pose). Store objects gently rotate/bob with glints, kits flutter; no lettering. Row order top to bottom: 1. lunges ; 2. yoga ; 3. meditation ; 4. walking . No green or yellow backgrounds. A clean professional mobile-game sprite sheet.",
+    "source": "docs/source-atlases/atlas-1.png"
+  },
+  {
+    "index": 2,
+    "ids": [
+      "aerobics",
+      "zumba",
+      "situps",
+      "pullups"
+    ],
+    "prompt": "Create a production sprite animation atlas for FitBox. Landscape canvas, EXACTLY SIX equal columns and FOUR equal rows, 24 equal rectangular cells, transparent background, no text, grid lines or labels. Each row is ONE separate animated subject listed below; its six columns are six successive equally timed frames forming a seamless loop (start, transition, extreme, transition, return, near-start). Keep each subject centered at identical baseline and scale within its cell, generous empty padding so no pixels touch cell edges. Use the supplied portraits/exercise art as exact character and outfit style reference: charming detailed goofy 16-bit pixel art with expressive faces, cobalt blue/violet/white gear and navy outlines. Do not reduce to geometric stick figures. Each exercise must visibly articulate head, torso, arms and legs through the named action (holds use gentle breathing without changing stable pose). Store objects gently rotate/bob with glints, kits flutter; no lettering. Row order top to bottom: 1. aerobics ; 2. zumba ; 3. situps ; 4. pullups . No green or yellow backgrounds. A clean professional mobile-game sprite sheet.",
+    "source": "docs/source-atlases/atlas-2.png"
+  },
+  {
+    "index": 3,
+    "ids": [
+      "biceps",
+      "bridges",
+      "jacks",
+      "chair"
+    ],
+    "prompt": "Create a production sprite animation atlas for FitBox. Landscape canvas, EXACTLY SIX equal columns and FOUR equal rows, 24 equal rectangular cells, transparent background, no text, grid lines or labels. Each row is ONE separate animated subject listed below; its six columns are six successive equally timed frames forming a seamless loop (start, transition, extreme, transition, return, near-start). Keep each subject centered at identical baseline and scale within its cell, generous empty padding so no pixels touch cell edges. Use the supplied portraits/exercise art as exact character and outfit style reference: charming detailed goofy 16-bit pixel art with expressive faces, cobalt blue/violet/white gear and navy outlines. Do not reduce to geometric stick figures. Each exercise must visibly articulate head, torso, arms and legs through the named action (holds use gentle breathing without changing stable pose). Store objects gently rotate/bob with glints, kits flutter; no lettering. Row order top to bottom: 1. biceps ; 2. bridges ; 3. jacks ; 4. chair . No green or yellow backgrounds. A clean professional mobile-game sprite sheet.",
+    "source": "docs/source-atlases/atlas-3.png"
+  },
+  {
+    "index": 4,
+    "ids": [
+      "warrior",
+      "tree",
+      "downdog",
+      "burpees"
+    ],
+    "prompt": "Create a production sprite animation atlas for FitBox. Landscape canvas, EXACTLY SIX equal columns and FOUR equal rows, 24 equal rectangular cells, transparent background, no text, grid lines or labels. Each row is ONE separate animated subject listed below; its six columns are six successive equally timed frames forming a seamless loop (start, transition, extreme, transition, return, near-start). Keep each subject centered at identical baseline and scale within its cell, generous empty padding so no pixels touch cell edges. Use the supplied portraits/exercise art as exact character and outfit style reference: charming detailed goofy 16-bit pixel art with expressive faces, cobalt blue/violet/white gear and navy outlines. Do not reduce to geometric stick figures. Each exercise must visibly articulate head, torso, arms and legs through the named action (holds use gentle breathing without changing stable pose). Store objects gently rotate/bob with glints, kits flutter; no lettering. Row order top to bottom: 1. warrior ; 2. tree ; 3. downdog ; 4. burpees . No green or yellow backgrounds. A clean professional mobile-game sprite sheet.",
+    "source": "docs/source-atlases/atlas-4.png"
+  },
+  {
+    "index": 5,
+    "ids": [
+      "cycling",
+      "shadowboxing",
+      "handstand",
+      "bench"
+    ],
+    "prompt": "Create a production sprite animation atlas for FitBox. Landscape canvas, EXACTLY SIX equal columns and FOUR equal rows, 24 equal rectangular cells, transparent background, no text, grid lines or labels. Each row is ONE separate animated subject listed below; its six columns are six successive equally timed frames forming a seamless loop (start, transition, extreme, transition, return, near-start). Keep each subject centered at identical baseline and scale within its cell, generous empty padding so no pixels touch cell edges. Use the supplied portraits/exercise art as exact character and outfit style reference: charming detailed goofy 16-bit pixel art with expressive faces, cobalt blue/violet/white gear and navy outlines. Do not reduce to geometric stick figures. Each exercise must visibly articulate head, torso, arms and legs through the named action (holds use gentle breathing without changing stable pose). Store objects gently rotate/bob with glints, kits flutter; no lettering. Row order top to bottom: 1. cycling ; 2. shadowboxing ; 3. handstand ; 4. bench . No green or yellow backgrounds. A clean professional mobile-game sprite sheet.",
+    "source": "docs/source-atlases/atlas-5.png"
+  },
+  {
+    "index": 6,
+    "ids": [
+      "coach-john",
+      "coach-tina",
+      "store-midnight-kit",
+      "store-cobalt-kit"
+    ],
+    "prompt": "Create a production sprite animation atlas for FitBox. Landscape canvas, EXACTLY SIX equal columns and FOUR equal rows, 24 equal rectangular cells, transparent background, no text, grid lines or labels. Each row is ONE separate animated subject listed below; its six columns are six successive equally timed frames forming a seamless loop (start, transition, extreme, transition, return, near-start). Keep each subject centered at identical baseline and scale within its cell, generous empty padding so no pixels touch cell edges. Use the supplied portraits/exercise art as exact character and outfit style reference: charming detailed goofy 16-bit pixel art with expressive faces, cobalt blue/violet/white gear and navy outlines. Do not reduce to geometric stick figures. Each exercise must visibly articulate head, torso, arms and legs through the named action (holds use gentle breathing without changing stable pose). Store objects gently rotate/bob with glints, kits flutter; no lettering. Row order top to bottom: 1. coach john friendly coach wave and blink; 2. coach tina friendly coach wave and blink; 3. store midnight kit blue sports shirt and shorts set; 4. store cobalt kit blue sports shirt and shorts set. No green or yellow backgrounds. A clean professional mobile-game sprite sheet.",
+    "source": "docs/source-atlases/atlas-6.png"
+  },
+  {
+    "index": 7,
+    "ids": [
+      "store-studio-cap",
+      "store-hydration",
+      "store-shaker",
+      "store-lunar-pack"
+    ],
+    "prompt": "Create a production sprite animation atlas for FitBox. Landscape canvas, EXACTLY SIX equal columns and FOUR equal rows, 24 equal rectangular cells, transparent background, no text, grid lines or labels. Each row is ONE separate animated subject listed below; its six columns are six successive equally timed frames forming a seamless loop (start, transition, extreme, transition, return, near-start). Keep each subject centered at identical baseline and scale within its cell, generous empty padding so no pixels touch cell edges. Use the supplied portraits/exercise art as exact character and outfit style reference: charming detailed goofy 16-bit pixel art with expressive faces, cobalt blue/violet/white gear and navy outlines. Do not reduce to geometric stick figures. Each exercise must visibly articulate head, torso, arms and legs through the named action (holds use gentle breathing without changing stable pose). Store objects gently rotate/bob with glints, kits flutter; no lettering. Row order top to bottom: 1. store studio cap violet baseball cap; 2. store hydration blue water bottle; 3. store shaker violet protein shaker bottle; 4. store lunar pack violet cosmetic gift box. No green or yellow backgrounds. A clean professional mobile-game sprite sheet.",
+    "source": "docs/source-atlases/atlas-7.png"
+  }
+]
