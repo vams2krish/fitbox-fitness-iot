@@ -9,3 +9,5 @@
 Web notification UI previews schedules; remote Web Push/FCM is not configured. Android timing is subject to system battery restrictions. Email reports remain demo delivery. This is a debug test APK, not a Play Store production signing build.
 
 Validation: 51 pure logic/schema tests passed. Browser regression checked Day 1 completion, Day 2 recovery, Day 3 rollover, partial progress, fixed same-day targets, seven horizons, dock state and multiline messaging. See model card and notification documentation for implementation limits.
+
+Installed emulator verification passed: native notification permission, scheduled alarms, actual system notification with custom sound channel, deep-link routing and cancellation. Real Postgres signup/sync, isolation, idempotency, raw-landmark rejection and signout passed. Pose worker inference ran on both browser fixture and Android camera. Physical-device battery/audio behavior remains unverified.
