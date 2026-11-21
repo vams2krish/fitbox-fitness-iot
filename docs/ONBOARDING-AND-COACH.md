@@ -1,4 +1,4 @@
-# FitBox onboarding and Message Center — v0.7.0
+# FitBox onboarding and Message Center — v0.7.1
 
 The setup follows the existing Figma-inspired trainer/activity/chat workflow, with twelve stages: coach, activities, account details, goals chat, program schedule, equipment, movement comfort, coaching preferences, reminders, body preference, desired direction and final review.
 
@@ -8,7 +8,7 @@ Draft answers save locally as entered and resume after reload. The review includ
 
 ## Message Center NLP
 
-`web/coach-nlp.js` implements local example-based intent retrieval: normalized text, aliases, word/bigram TF-IDF vectors, cosine similarity, a confidence/margin fallback and explicit symptom/exclusion guards. It includes **30 intent topics and 164 example questions**, plus an urgent-symptom response and an unknown-question clarification. This is a small domain-specific NLP system, not a generative language model or a human trainer.
+`web/coach-nlp.js` implements local example-based intent retrieval: normalized text, aliases, word/bigram TF-IDF vectors, cosine similarity, a confidence/margin fallback and explicit symptom/exclusion guards. It includes **31 intent topics and 170 example questions**, plus an urgent-symptom response and an unknown-question clarification. This is a small domain-specific NLP system, not a generative language model or a human trainer.
 
 Prepared responses use live local plan ranges, logs, equipment and settings. Response variants rotate for repeat intents. Exercise context supports follow-ups such as “What muscles does it work?” and “How many sets?”; excluded exercises are respected. Unknown questions ask for clarification. Guidance does not invent a payment status, delivered email, diagnosis or physique measurement. Buttons open allowed app screens; text does not silently change a plan, grant rewards or initiate a payment.
 
@@ -22,4 +22,12 @@ The prescription decorator is idempotent across Home and nested Task Center rend
 
 ## Verification
 
-61 pure planner, onboarding, NLP, privacy/schema and product tests passed. Browser end-to-end checks covered all setup stages, draft reload, review edits, actual preference application, contextual conversation, app links, responsive layouts and single Task Center labels. Android installed-build and authenticated Postgres sync checks verify the same flows and bounded activity preference revisions. These checks do not establish clinical guidance accuracy or physical-device battery performance.
+63 pure planner, onboarding, NLP, privacy/schema and product tests passed. Browser end-to-end checks covered all setup stages, draft reload, review edits, actual preference application, contextual conversation, app links, responsive layouts and single Task Center labels. Android installed-build and authenticated Postgres sync checks verify the same flows and bounded activity preference revisions. These checks do not establish clinical guidance accuracy or physical-device battery performance.
+
+## Setup access and context in v0.7.1
+
+Settings includes Revisit personalized setup. Message Center recognizes setup requests with varied wording and offers an explicit action; the direct “start onboarding” command is case-insensitive. Reopening the questionnaire does not change saved workout history or earned points. Escape in an editing field blurs it and preserves the form/draft instead of navigating away. Notification settings now describe Android scheduled reminders accurately.
+
+Exercise follow-up context lasts at most 30 minutes and three subsequent conversational turns without a newly named movement. After expiry the coach asks which exercise the user means. This prevents an old exercise from being silently reused in a later conversation. New browser and pure intent tests cover these cases.
+
+[Settings setup entry screenshot](screenshots/99-settings-setup-entry.png).

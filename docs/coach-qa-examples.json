@@ -1,8 +1,37 @@
 {
   "note": "Fictional Alex profile; these are inspectable example outputs, not live account data. Runtime answers use current local context.",
-  "intents": 30,
-  "questions": 164,
+  "intents": 31,
+  "questions": 170,
   "topics": [
+    {
+      "intent": "setup",
+      "questions": [
+        {
+          "question": "restart onboarding",
+          "exampleAnswer": "You can revisit the full personalized setup to review your goals, experience, equipment, available time and coaching preferences. Your saved workouts and earned points stay intact. If you already trained today, plan changes start tomorrow."
+        },
+        {
+          "question": "revisit my setup",
+          "exampleAnswer": "You can revisit the full personalized setup to review your goals, experience, equipment, available time and coaching preferences. Your saved workouts and earned points stay intact. If you already trained today, plan changes start tomorrow."
+        },
+        {
+          "question": "change my onboarding answers",
+          "exampleAnswer": "You can revisit the full personalized setup to review your goals, experience, equipment, available time and coaching preferences. Your saved workouts and earned points stay intact. If you already trained today, plan changes start tomorrow."
+        },
+        {
+          "question": "redo the questionnaire",
+          "exampleAnswer": "You can revisit the full personalized setup to review your goals, experience, equipment, available time and coaching preferences. Your saved workouts and earned points stay intact. If you already trained today, plan changes start tomorrow."
+        },
+        {
+          "question": "personalize my profile again",
+          "exampleAnswer": "You can revisit the full personalized setup to review your goals, experience, equipment, available time and coaching preferences. Your saved workouts and earned points stay intact. If you already trained today, plan changes start tomorrow."
+        },
+        {
+          "question": "open personalized setup",
+          "exampleAnswer": "You can revisit the full personalized setup to review your goals, experience, equipment, available time and coaching preferences. Your saved workouts and earned points stay intact. If you already trained today, plan changes start tomorrow."
+        }
+      ]
+    },
     {
       "intent": "greeting",
       "questions": [
