@@ -1,0 +1,813 @@
+{
+  "note": "Fictional Alex profile; these are inspectable example outputs, not live account data. Runtime answers use current local context.",
+  "intents": 30,
+  "questions": 164,
+  "topics": [
+    {
+      "intent": "greeting",
+      "questions": [
+        {
+          "question": "hello",
+          "exampleAnswer": "Hi Alex! What would help today—your plan, a movement, or a quick progress check?"
+        },
+        {
+          "question": "hey coach",
+          "exampleAnswer": "Hi Alex! What would help today—your plan, a movement, or a quick progress check?"
+        },
+        {
+          "question": "good morning",
+          "exampleAnswer": "Hi Alex! What would help today—your plan, a movement, or a quick progress check?"
+        },
+        {
+          "question": "hi there",
+          "exampleAnswer": "Hi Alex! What would help today—your plan, a movement, or a quick progress check?"
+        },
+        {
+          "question": "good evening",
+          "exampleAnswer": "Hi Alex! What would help today—your plan, a movement, or a quick progress check?"
+        }
+      ]
+    },
+    {
+      "intent": "thanks",
+      "questions": [
+        {
+          "question": "thank you",
+          "exampleAnswer": "You’re welcome. Keep the session comfortable, and ask whenever you need a clearer explanation."
+        },
+        {
+          "question": "thanks coach",
+          "exampleAnswer": "You’re welcome. Keep the session comfortable, and ask whenever you need a clearer explanation."
+        },
+        {
+          "question": "that helped",
+          "exampleAnswer": "You’re welcome. Keep the session comfortable, and ask whenever you need a clearer explanation."
+        },
+        {
+          "question": "appreciate your help",
+          "exampleAnswer": "You’re welcome. Keep the session comfortable, and ask whenever you need a clearer explanation."
+        },
+        {
+          "question": "awesome thanks",
+          "exampleAnswer": "You’re welcome. Keep the session comfortable, and ask whenever you need a clearer explanation."
+        }
+      ]
+    },
+    {
+      "intent": "goodbye",
+      "questions": [
+        {
+          "question": "goodbye",
+          "exampleAnswer": "See you next time. Your saved progress will be here, and there’s no catching up to do."
+        },
+        {
+          "question": "bye for now",
+          "exampleAnswer": "See you next time. Your saved progress will be here, and there’s no catching up to do."
+        },
+        {
+          "question": "see you tomorrow",
+          "exampleAnswer": "See you next time. Your saved progress will be here, and there’s no catching up to do."
+        },
+        {
+          "question": "talk later",
+          "exampleAnswer": "See you next time. Your saved progress will be here, and there’s no catching up to do."
+        },
+        {
+          "question": "good night",
+          "exampleAnswer": "See you next time. Your saved progress will be here, and there’s no catching up to do."
+        }
+      ]
+    },
+    {
+      "intent": "capabilities",
+      "questions": [
+        {
+          "question": "what can you do",
+          "exampleAnswer": "I’m not sure which part you mean. Are you asking about your workout plan, an exercise, progress, or an app feature?"
+        },
+        {
+          "question": "help me",
+          "exampleAnswer": "I’m your virtual FitBox coach, using local intent matching and prepared guidance. I can explain your saved plan, sets and reps, exercise steps, progress, recovery, camera tracking, reminders and app features. I can’t diagnose health conditions or answer every open-ended question."
+        },
+        {
+          "question": "what can you help with",
+          "exampleAnswer": "I’m your virtual FitBox coach, using local intent matching and prepared guidance. I can explain your saved plan, sets and reps, exercise steps, progress, recovery, camera tracking, reminders and app features. I can’t diagnose health conditions or answer every open-ended question."
+        },
+        {
+          "question": "how does this coach work",
+          "exampleAnswer": "I’m your virtual FitBox coach, using local intent matching and prepared guidance. I can explain your saved plan, sets and reps, exercise steps, progress, recovery, camera tracking, reminders and app features. I can’t diagnose health conditions or answer every open-ended question."
+        },
+        {
+          "question": "are you a real person",
+          "exampleAnswer": "I’m your virtual FitBox coach, using local intent matching and prepared guidance. I can explain your saved plan, sets and reps, exercise steps, progress, recovery, camera tracking, reminders and app features. I can’t diagnose health conditions or answer every open-ended question."
+        }
+      ]
+    },
+    {
+      "intent": "plan",
+      "questions": [
+        {
+          "question": "what is my workout today",
+          "exampleAnswer": "Here’s your current plan, Alex:\nStationary lunges: 2 sets × 5–9 reps\nCrunches: 2 sets × 6–10 reps\nStart with a comfortable set and pause between sets."
+        },
+        {
+          "question": "show my plan",
+          "exampleAnswer": "Here’s your current plan, Alex:\nStationary lunges: 2 sets × 5–9 reps\nCrunches: 2 sets × 6–10 reps\nStart with a comfortable set and pause between sets."
+        },
+        {
+          "question": "my next workout",
+          "exampleAnswer": "Here’s your current plan, Alex:\nStationary lunges: 2 sets × 5–9 reps\nCrunches: 2 sets × 6–10 reps\nStart with a comfortable set and pause between sets."
+        },
+        {
+          "question": "what should i do today",
+          "exampleAnswer": "Here’s your current plan, Alex:\nStationary lunges: 2 sets × 5–9 reps\nCrunches: 2 sets × 6–10 reps\nStart with a comfortable set and pause between sets."
+        },
+        {
+          "question": "daily routine",
+          "exampleAnswer": "Here’s your current plan, Alex:\nStationary lunges: 2 sets × 5–9 reps\nCrunches: 2 sets × 6–10 reps\nStart with a comfortable set and pause between sets."
+        },
+        {
+          "question": "only ten minutes for training",
+          "exampleAnswer": "Here’s your current plan, Alex:\nStationary lunges: 2 sets × 5–9 reps\nCrunches: 2 sets × 6–10 reps\nStart with a comfortable set and pause between sets."
+        }
+      ]
+    },
+    {
+      "intent": "tomorrow",
+      "questions": [
+        {
+          "question": "what do i do tomorrow",
+          "exampleAnswer": "Your next forecast training day is 2026-11-23: Squats, Pushups—about 7 minutes. It can adapt to the work you save before then. Recovery days do not need catch-up sessions."
+        },
+        {
+          "question": "day two workout",
+          "exampleAnswer": "Your next forecast training day is 2026-11-23: Squats, Pushups—about 7 minutes. It can adapt to the work you save before then. Recovery days do not need catch-up sessions."
+        },
+        {
+          "question": "next day plan",
+          "exampleAnswer": "Your next forecast training day is 2026-11-23: Squats, Pushups—about 7 minutes. It can adapt to the work you save before then. Recovery days do not need catch-up sessions."
+        },
+        {
+          "question": "day three tasks",
+          "exampleAnswer": "Your next forecast training day is 2026-11-23: Squats, Pushups—about 7 minutes. It can adapt to the work you save before then. Recovery days do not need catch-up sessions."
+        },
+        {
+          "question": "when is my next training day",
+          "exampleAnswer": "Your next forecast training day is 2026-11-23: Squats, Pushups—about 7 minutes. It can adapt to the work you save before then. Recovery days do not need catch-up sessions."
+        }
+      ]
+    },
+    {
+      "intent": "progress",
+      "questions": [
+        {
+          "question": "show my progress",
+          "exampleAnswer": "You have saved 0 sessions, logged 0 reps and earned 0 Goal Points. Your current streak is 0 day(s). These are FitBox logs, not a measurement of changes in your body."
+        },
+        {
+          "question": "workout stats",
+          "exampleAnswer": "You have saved 0 sessions, logged 0 reps and earned 0 Goal Points. Your current streak is 0 day(s). These are FitBox logs, not a measurement of changes in your body."
+        },
+        {
+          "question": "how am i doing",
+          "exampleAnswer": "You have saved 0 sessions, logged 0 reps and earned 0 Goal Points. Your current streak is 0 day(s). These are FitBox logs, not a measurement of changes in your body."
+        },
+        {
+          "question": "how many sessions have i saved",
+          "exampleAnswer": "You have saved 0 sessions, logged 0 reps and earned 0 Goal Points. Your current streak is 0 day(s). These are FitBox logs, not a measurement of changes in your body."
+        },
+        {
+          "question": "my streak",
+          "exampleAnswer": "You have saved 0 sessions, logged 0 reps and earned 0 Goal Points. Your current streak is 0 day(s). These are FitBox logs, not a measurement of changes in your body."
+        },
+        {
+          "question": "my performance history",
+          "exampleAnswer": "You have saved 0 sessions, logged 0 reps and earned 0 Goal Points. Your current streak is 0 day(s). These are FitBox logs, not a measurement of changes in your body."
+        }
+      ]
+    },
+    {
+      "intent": "sets",
+      "questions": [
+        {
+          "question": "how many sets and repetitions",
+          "exampleAnswer": "Stationary lunges: 2 sets × 5–9 reps. A set is one group of repetitions or one timed hold. Rest about 30 seconds between sets. Today’s completion minimum is 10 reps total; it does not require the top of the range."
+        },
+        {
+          "question": "explain my sets and reps",
+          "exampleAnswer": "Stationary lunges: 2 sets × 5–9 reps. A set is one group of repetitions or one timed hold. Rest about 30 seconds between sets. Today’s completion minimum is 10 reps total; it does not require the top of the range."
+        },
+        {
+          "question": "what does two sets mean",
+          "exampleAnswer": "Stationary lunges: 2 sets × 5–9 reps. A set is one group of repetitions or one timed hold. Rest about 30 seconds between sets. Today’s completion minimum is 10 reps total; it does not require the top of the range."
+        },
+        {
+          "question": "how long should i hold",
+          "exampleAnswer": "Which timed movement do you mean? Your plank and yoga holds can have different set lengths."
+        },
+        {
+          "question": "rest between sets",
+          "exampleAnswer": "Stationary lunges: 2 sets × 5–9 reps. A set is one group of repetitions or one timed hold. Rest about 30 seconds between sets. Today’s completion minimum is 10 reps total; it does not require the top of the range."
+        }
+      ]
+    },
+    {
+      "intent": "muscles",
+      "questions": [
+        {
+          "question": "which muscles does it work",
+          "exampleAnswer": "Which exercise do you mean? Name the movement so I can show its muscle groups."
+        },
+        {
+          "question": "what muscle groups do squats use",
+          "exampleAnswer": "Squats involves Quads, Glutes, Hamstrings, Core. The digital athlete highlights logged training; it cannot measure muscle growth, toning or body fat."
+        },
+        {
+          "question": "muscles involved in pushups",
+          "exampleAnswer": "Pushups involves Chest, Triceps, Shoulders, Core. The digital athlete highlights logged training; it cannot measure muscle growth, toning or body fat."
+        },
+        {
+          "question": "what body parts does this train",
+          "exampleAnswer": "Which exercise do you mean? Name the movement so I can show its muscle groups."
+        },
+        {
+          "question": "does it work my core",
+          "exampleAnswer": "Which exercise do you mean? Name the movement so I can show its muscle groups."
+        }
+      ]
+    },
+    {
+      "intent": "form",
+      "questions": [
+        {
+          "question": "how do i do pushups",
+          "exampleAnswer": "Pushups\n1. Start in a high plank, with hands slightly wider than your shoulders.\n2. Lower your chest by bending your elbows, keeping your body in a straight line.\n3. Push back up. Use your knees for a gentler variation.\nStop if it feels painful or unsuitable."
+        },
+        {
+          "question": "teach me squats",
+          "exampleAnswer": "Squats\n1. Stand with feet about shoulder-width apart.\n2. Bend at your hips and knees, keeping your chest comfortably lifted.\n3. Press through your feet to return to standing.\nStop if it feels painful or unsuitable."
+        },
+        {
+          "question": "show proper exercise technique",
+          "exampleAnswer": "Which movement would you like to learn? Try “How do I do squats?” or “How do I hold a plank?”"
+        },
+        {
+          "question": "how to perform a plank",
+          "exampleAnswer": "Plank\n1. Place your forearms on the floor, with elbows under your shoulders.\n2. Extend your legs and keep your body in a straight line.\n3. Breathe steadily. Lower your knees whenever you need a break.\nStop if it feels painful or unsuitable."
+        },
+        {
+          "question": "instructions for a movement",
+          "exampleAnswer": "Which movement would you like to learn? Try “How do I do squats?” or “How do I hold a plank?”"
+        },
+        {
+          "question": "how about lunges",
+          "exampleAnswer": "Stationary lunges\n1. Stand tall and step one foot forward.\n2. Bend both knees within a comfortable range, keeping your torso upright.\n3. Return to standing, then alternate sides. Each side counts as one rep.\nStop if it feels painful or unsuitable."
+        }
+      ]
+    },
+    {
+      "intent": "rest",
+      "questions": [
+        {
+          "question": "i am tired",
+          "exampleAnswer": "Alex, rest is welcome. Use a recovery day or take a break when you need one. Saved work stays saved; missed tasks are not doubled tomorrow."
+        },
+        {
+          "question": "need a break",
+          "exampleAnswer": "Alex, rest is welcome. Use a recovery day or take a break when you need one. Saved work stays saved; missed tasks are not doubled tomorrow."
+        },
+        {
+          "question": "rest day",
+          "exampleAnswer": "Alex, rest is welcome. Use a recovery day or take a break when you need one. Saved work stays saved; missed tasks are not doubled tomorrow."
+        },
+        {
+          "question": "low energy today",
+          "exampleAnswer": "Alex, rest is welcome. Use a recovery day or take a break when you need one. Saved work stays saved; missed tasks are not doubled tomorrow."
+        },
+        {
+          "question": "should i recover",
+          "exampleAnswer": "Alex, rest is welcome. Use a recovery day or take a break when you need one. Saved work stays saved; missed tasks are not doubled tomorrow."
+        },
+        {
+          "question": "feeling exhausted",
+          "exampleAnswer": "Alex, rest is welcome. Use a recovery day or take a break when you need one. Saved work stays saved; missed tasks are not doubled tomorrow."
+        }
+      ]
+    },
+    {
+      "intent": "missed",
+      "questions": [
+        {
+          "question": "what if i miss a day",
+          "exampleAnswer": "A missed day stays in your history. The next training day gets its own plan; unfinished work is not piled on top. Your earned points stay yours."
+        },
+        {
+          "question": "missed my workout yesterday",
+          "exampleAnswer": "A missed day stays in your history. The next training day gets its own plan; unfinished work is not piled on top. Your earned points stay yours."
+        },
+        {
+          "question": "have not exercised all week",
+          "exampleAnswer": "A missed day stays in your history. The next training day gets its own plan; unfinished work is not piled on top. Your earned points stay yours."
+        },
+        {
+          "question": "skipped training",
+          "exampleAnswer": "A missed day stays in your history. The next training day gets its own plan; unfinished work is not piled on top. Your earned points stay yours."
+        },
+        {
+          "question": "catch up unfinished exercises tomorrow",
+          "exampleAnswer": "A missed day stays in your history. The next training day gets its own plan; unfinished work is not piled on top. Your earned points stay yours."
+        }
+      ]
+    },
+    {
+      "intent": "partial",
+      "questions": [
+        {
+          "question": "how do partial reps save",
+          "exampleAnswer": "Saved reps and tracked hold time add up for the same exercise on the same local day. Reopen it to continue from the saved count. Save before leaving; a paused draft resumes without counting your time away. On a new day, the task count starts fresh and yesterday’s work stays in Insights."
+        },
+        {
+          "question": "resume my previous count",
+          "exampleAnswer": "Saved reps and tracked hold time add up for the same exercise on the same local day. Reopen it to continue from the saved count. Save before leaving; a paused draft resumes without counting your time away. On a new day, the task count starts fresh and yesterday’s work stays in Insights."
+        },
+        {
+          "question": "only did a few repetitions",
+          "exampleAnswer": "Saved reps and tracked hold time add up for the same exercise on the same local day. Reopen it to continue from the saved count. Save before leaving; a paused draft resumes without counting your time away. On a new day, the task count starts fresh and yesterday’s work stays in Insights."
+        },
+        {
+          "question": "why count resets next day",
+          "exampleAnswer": "Saved reps and tracked hold time add up for the same exercise on the same local day. Reopen it to continue from the saved count. Save before leaving; a paused draft resumes without counting your time away. On a new day, the task count starts fresh and yesterday’s work stays in Insights."
+        },
+        {
+          "question": "continue unfinished exercise",
+          "exampleAnswer": "Saved reps and tracked hold time add up for the same exercise on the same local day. Reopen it to continue from the saved count. Save before leaving; a paused draft resumes without counting your time away. On a new day, the task count starts fresh and yesterday’s work stays in Insights."
+        },
+        {
+          "question": "saved my partial workout",
+          "exampleAnswer": "Saved reps and tracked hold time add up for the same exercise on the same local day. Reopen it to continue from the saved count. Save before leaving; a paused draft resumes without counting your time away. On a new day, the task count starts fresh and yesterday’s work stays in Insights."
+        }
+      ]
+    },
+    {
+      "intent": "equipment",
+      "questions": [
+        {
+          "question": "i have no equipment",
+          "exampleAnswer": "Your current plan is bodyweight-only. Change equipment in Program preferences. Exercise and template filters can narrow by goal, level and gear. A bench press needs both a bench and dumbbells."
+        },
+        {
+          "question": "workout with dumbbells",
+          "exampleAnswer": "Your current plan is bodyweight-only. Change equipment in Program preferences. Exercise and template filters can narrow by goal, level and gear. A bench press needs both a bench and dumbbells."
+        },
+        {
+          "question": "use a pull up bar",
+          "exampleAnswer": "Your current plan is bodyweight-only. Change equipment in Program preferences. Exercise and template filters can narrow by goal, level and gear. A bench press needs both a bench and dumbbells."
+        },
+        {
+          "question": "bodyweight only",
+          "exampleAnswer": "Your current plan is bodyweight-only. Change equipment in Program preferences. Exercise and template filters can narrow by goal, level and gear. A bench press needs both a bench and dumbbells."
+        },
+        {
+          "question": "change equipment filter",
+          "exampleAnswer": "Your current plan is bodyweight-only. Change equipment in Program preferences. Exercise and template filters can narrow by goal, level and gear. A bench press needs both a bench and dumbbells."
+        },
+        {
+          "question": "exercise at home without weights",
+          "exampleAnswer": "Your current plan is bodyweight-only. Change equipment in Program preferences. Exercise and template filters can narrow by goal, level and gear. A bench press needs both a bench and dumbbells."
+        }
+      ]
+    },
+    {
+      "intent": "goals",
+      "questions": [
+        {
+          "question": "change my fitness goal",
+          "exampleAnswer": "Your current goal is Stay fit, at Beginner level. Program preferences lets you change goals, experience and session time. If you have already started today, plan changes begin tomorrow so today’s target stays stable."
+        },
+        {
+          "question": "gain muscle",
+          "exampleAnswer": "Your current goal is Stay fit, at Beginner level. Program preferences lets you change goals, experience and session time. If you have already started today, plan changes begin tomorrow so today’s target stays stable."
+        },
+        {
+          "question": "build strength",
+          "exampleAnswer": "Your current goal is Stay fit, at Beginner level. Program preferences lets you change goals, experience and session time. If you have already started today, plan changes begin tomorrow so today’s target stays stable."
+        },
+        {
+          "question": "lose weight",
+          "exampleAnswer": "Your current goal is Stay fit, at Beginner level. Program preferences lets you change goals, experience and session time. If you have already started today, plan changes begin tomorrow so today’s target stays stable."
+        },
+        {
+          "question": "what is my experience level",
+          "exampleAnswer": "Your current goal is Stay fit, at Beginner level. Program preferences lets you change goals, experience and session time. If you have already started today, plan changes begin tomorrow so today’s target stays stable."
+        },
+        {
+          "question": "beginner intermediate advanced professional",
+          "exampleAnswer": "Your current goal is Stay fit, at Beginner level. Program preferences lets you change goals, experience and session time. If you have already started today, plan changes begin tomorrow so today’s target stays stable."
+        }
+      ]
+    },
+    {
+      "intent": "library",
+      "questions": [
+        {
+          "question": "browse programs",
+          "exampleAnswer": "Program Library offers editable templates filtered by goal, experience, time and equipment. Select movements, set rep or hold-time ranges, and import them into Task Center as your manual program. FitBox does not silently swap those selected activities."
+        },
+        {
+          "question": "choose a workout template",
+          "exampleAnswer": "Program Library offers editable templates filtered by goal, experience, time and equipment. Select movements, set rep or hold-time ranges, and import them into Task Center as your manual program. FitBox does not silently swap those selected activities."
+        },
+        {
+          "question": "make my own program",
+          "exampleAnswer": "Program Library offers editable templates filtered by goal, experience, time and equipment. Select movements, set rep or hold-time ranges, and import them into Task Center as your manual program. FitBox does not silently swap those selected activities."
+        },
+        {
+          "question": "import selected exercises",
+          "exampleAnswer": "Program Library offers editable templates filtered by goal, experience, time and equipment. Select movements, set rep or hold-time ranges, and import them into Task Center as your manual program. FitBox does not silently swap those selected activities."
+        },
+        {
+          "question": "manual workout plan",
+          "exampleAnswer": "Program Library offers editable templates filtered by goal, experience, time and equipment. Select movements, set rep or hold-time ranges, and import them into Task Center as your manual program. FitBox does not silently swap those selected activities."
+        }
+      ]
+    },
+    {
+      "intent": "camera",
+      "questions": [
+        {
+          "question": "camera setup",
+          "exampleAnswer": "Use the exercise’s front/side setup guide, one person in frame, and enough light. Keep the working joints visible. On-device MediaPipe pauses counting when visibility is low or more than one person appears. Reposition the phone before restarting; manual mode is available."
+        },
+        {
+          "question": "pose tracking not counting",
+          "exampleAnswer": "Use the exercise’s front/side setup guide, one person in frame, and enough light. Keep the working joints visible. On-device MediaPipe pauses counting when visibility is low or more than one person appears. Reposition the phone before restarting; manual mode is available."
+        },
+        {
+          "question": "where do i put the camera",
+          "exampleAnswer": "Use the exercise’s front/side setup guide, one person in frame, and enough light. Keep the working joints visible. On-device MediaPipe pauses counting when visibility is low or more than one person appears. Reposition the phone before restarting; manual mode is available."
+        },
+        {
+          "question": "it cannot see my legs",
+          "exampleAnswer": "Use the exercise’s front/side setup guide, one person in frame, and enough light. Keep the working joints visible. On-device MediaPipe pauses counting when visibility is low or more than one person appears. Reposition the phone before restarting; manual mode is available."
+        },
+        {
+          "question": "tracking confidence is low",
+          "exampleAnswer": "Use the exercise’s front/side setup guide, one person in frame, and enough light. Keep the working joints visible. On-device MediaPipe pauses counting when visibility is low or more than one person appears. Reposition the phone before restarting; manual mode is available."
+        },
+        {
+          "question": "camera not working",
+          "exampleAnswer": "Use the exercise’s front/side setup guide, one person in frame, and enough light. Keep the working joints visible. On-device MediaPipe pauses counting when visibility is low or more than one person appears. Reposition the phone before restarting; manual mode is available."
+        }
+      ]
+    },
+    {
+      "intent": "framing",
+      "questions": [
+        {
+          "question": "smart camera framing",
+          "exampleAnswer": "Smart framing gently changes the preview crop while the pose model keeps analyzing the full camera frame. It widens the view when body edges are missing. Digital zoom cannot recover joints outside the lens; move the phone back or step away if your body is cut off."
+        },
+        {
+          "question": "auto zoom in and out",
+          "exampleAnswer": "Smart framing gently changes the preview crop while the pose model keeps analyzing the full camera frame. It widens the view when body edges are missing. Digital zoom cannot recover joints outside the lens; move the phone back or step away if your body is cut off."
+        },
+        {
+          "question": "person is too small in camera",
+          "exampleAnswer": "Smart framing gently changes the preview crop while the pose model keeps analyzing the full camera frame. It widens the view when body edges are missing. Digital zoom cannot recover joints outside the lens; move the phone back or step away if your body is cut off."
+        },
+        {
+          "question": "adjust camera crop",
+          "exampleAnswer": "Smart framing gently changes the preview crop while the pose model keeps analyzing the full camera frame. It widens the view when body edges are missing. Digital zoom cannot recover joints outside the lens; move the phone back or step away if your body is cut off."
+        },
+        {
+          "question": "body is cut off on screen",
+          "exampleAnswer": "Smart framing gently changes the preview crop while the pose model keeps analyzing the full camera frame. It widens the view when body edges are missing. Digital zoom cannot recover joints outside the lens; move the phone back or step away if your body is cut off."
+        }
+      ]
+    },
+    {
+      "intent": "privacy",
+      "questions": [
+        {
+          "question": "my camera privacy",
+          "exampleAnswer": "Camera frames, recordings and body landmarks stay on this device. Optional authenticated sync sends bounded workout summaries, such as reps, time and tracking confidence, with your profile preferences. Practice clips are not uploaded. This chat is local too."
+        },
+        {
+          "question": "are videos uploaded",
+          "exampleAnswer": "Camera frames, recordings and body landmarks stay on this device. Optional authenticated sync sends bounded workout summaries, such as reps, time and tracking confidence, with your profile preferences. Practice clips are not uploaded. This chat is local too."
+        },
+        {
+          "question": "send photos to cloud",
+          "exampleAnswer": "Camera frames, recordings and body landmarks stay on this device. Optional authenticated sync sends bounded workout summaries, such as reps, time and tracking confidence, with your profile preferences. Practice clips are not uploaded. This chat is local too."
+        },
+        {
+          "question": "where do landmarks go",
+          "exampleAnswer": "Camera frames, recordings and body landmarks stay on this device. Optional authenticated sync sends bounded workout summaries, such as reps, time and tracking confidence, with your profile preferences. Practice clips are not uploaded. This chat is local too."
+        },
+        {
+          "question": "is body data on device",
+          "exampleAnswer": "Camera frames, recordings and body landmarks stay on this device. Optional authenticated sync sends bounded workout summaries, such as reps, time and tracking confidence, with your profile preferences. Practice clips are not uploaded. This chat is local too."
+        },
+        {
+          "question": "what gets synced",
+          "exampleAnswer": "Camera frames, recordings and body landmarks stay on this device. Optional authenticated sync sends bounded workout summaries, such as reps, time and tracking confidence, with your profile preferences. Practice clips are not uploaded. This chat is local too."
+        }
+      ]
+    },
+    {
+      "intent": "media",
+      "questions": [
+        {
+          "question": "find my practice videos",
+          "exampleAnswer": "Review holds your FitBox-only local practice library. Add a photo/video or opt in to recording a camera session. Clips are exercise-tagged and stay on this device; they are not a scan of your entire gallery and are never uploaded."
+        },
+        {
+          "question": "local gallery",
+          "exampleAnswer": "Review holds your FitBox-only local practice library. Add a photo/video or opt in to recording a camera session. Clips are exercise-tagged and stay on this device; they are not a scan of your entire gallery and are never uploaded."
+        },
+        {
+          "question": "import practice video",
+          "exampleAnswer": "Review holds your FitBox-only local practice library. Add a photo/video or opt in to recording a camera session. Clips are exercise-tagged and stay on this device; they are not a scan of your entire gallery and are never uploaded."
+        },
+        {
+          "question": "record my workout",
+          "exampleAnswer": "Review holds your FitBox-only local practice library. Add a photo/video or opt in to recording a camera session. Clips are exercise-tagged and stay on this device; they are not a scan of your entire gallery and are never uploaded."
+        },
+        {
+          "question": "where are clips saved",
+          "exampleAnswer": "Review holds your FitBox-only local practice library. Add a photo/video or opt in to recording a camera session. Clips are exercise-tagged and stay on this device; they are not a scan of your entire gallery and are never uploaded."
+        }
+      ]
+    },
+    {
+      "intent": "voice",
+      "questions": [
+        {
+          "question": "voice cues",
+          "exampleAnswer": "Voice cues are on in your preferences. Enable them in Settings; an installed local voice is needed. The coach can speak start, rep counts, placement/form cues, pauses and completion. Android sound and interruptions still take priority."
+        },
+        {
+          "question": "coach sound is off",
+          "exampleAnswer": "Voice cues are on in your preferences. Enable them in Settings; an installed local voice is needed. The coach can speak start, rep counts, placement/form cues, pauses and completion. Android sound and interruptions still take priority."
+        },
+        {
+          "question": "say my rep numbers aloud",
+          "exampleAnswer": "Voice cues are on in your preferences. Enable them in Settings; an installed local voice is needed. The coach can speak start, rep counts, placement/form cues, pauses and completion. Android sound and interruptions still take priority."
+        },
+        {
+          "question": "no spoken instructions",
+          "exampleAnswer": "Voice cues are on in your preferences. Enable them in Settings; an installed local voice is needed. The coach can speak start, rep counts, placement/form cues, pauses and completion. Android sound and interruptions still take priority."
+        },
+        {
+          "question": "mute the coach",
+          "exampleAnswer": "Voice cues are on in your preferences. Enable them in Settings; an installed local voice is needed. The coach can speak start, rep counts, placement/form cues, pauses and completion. Android sound and interruptions still take priority."
+        }
+      ]
+    },
+    {
+      "intent": "notifications",
+      "questions": [
+        {
+          "question": "reminder settings",
+          "exampleAnswer": "Coach reminders are opt-in: choose 30 or 60 minutes before workouts and one optional follow-up five minutes after the scheduled start. Opening FitBox or starting activity suppresses that follow-up. Sleep/work quiet hours, daily caps and system settings apply. Closed-app delivery uses Android; the website previews the schedule."
+        },
+        {
+          "question": "push notifications",
+          "exampleAnswer": "Coach reminders are opt-in: choose 30 or 60 minutes before workouts and one optional follow-up five minutes after the scheduled start. Opening FitBox or starting activity suppresses that follow-up. Sleep/work quiet hours, daily caps and system settings apply. Closed-app delivery uses Android; the website previews the schedule."
+        },
+        {
+          "question": "remind thirty minutes before",
+          "exampleAnswer": "Coach reminders are opt-in: choose 30 or 60 minutes before workouts and one optional follow-up five minutes after the scheduled start. Opening FitBox or starting activity suppresses that follow-up. Sleep/work quiet hours, daily caps and system settings apply. Closed-app delivery uses Android; the website previews the schedule."
+        },
+        {
+          "question": "five minute follow up",
+          "exampleAnswer": "Coach reminders are opt-in: choose 30 or 60 minutes before workouts and one optional follow-up five minutes after the scheduled start. Opening FitBox or starting activity suppresses that follow-up. Sleep/work quiet hours, daily caps and system settings apply. Closed-app delivery uses Android; the website previews the schedule."
+        },
+        {
+          "question": "do not notify while sleeping",
+          "exampleAnswer": "Coach reminders are opt-in: choose 30 or 60 minutes before workouts and one optional follow-up five minutes after the scheduled start. Opening FitBox or starting activity suppresses that follow-up. Sleep/work quiet hours, daily caps and system settings apply. Closed-app delivery uses Android; the website previews the schedule."
+        },
+        {
+          "question": "change sleep hours",
+          "exampleAnswer": "Coach reminders are opt-in: choose 30 or 60 minutes before workouts and one optional follow-up five minutes after the scheduled start. Opening FitBox or starting activity suppresses that follow-up. Sleep/work quiet hours, daily caps and system settings apply. Closed-app delivery uses Android; the website previews the schedule."
+        }
+      ]
+    },
+    {
+      "intent": "subscription",
+      "questions": [
+        {
+          "question": "subscription plans",
+          "exampleAnswer": "FitBox+ uses Stripe sandbox for the available plans. Open Membership for current pricing, renewal dates and cancellation controls. I won’t guess your account’s billing status from this conversation."
+        },
+        {
+          "question": "premium pricing",
+          "exampleAnswer": "FitBox+ uses Stripe sandbox for the available plans. Open Membership for current pricing, renewal dates and cancellation controls. I won’t guess your account’s billing status from this conversation."
+        },
+        {
+          "question": "cancel my membership",
+          "exampleAnswer": "FitBox+ uses Stripe sandbox for the available plans. Open Membership for current pricing, renewal dates and cancellation controls. I won’t guess your account’s billing status from this conversation."
+        },
+        {
+          "question": "renewal date",
+          "exampleAnswer": "FitBox+ uses Stripe sandbox for the available plans. Open Membership for current pricing, renewal dates and cancellation controls. I won’t guess your account’s billing status from this conversation."
+        },
+        {
+          "question": "fitbox plus benefits",
+          "exampleAnswer": "FitBox+ uses Stripe sandbox for the available plans. Open Membership for current pricing, renewal dates and cancellation controls. I won’t guess your account’s billing status from this conversation."
+        },
+        {
+          "question": "sandbox payment",
+          "exampleAnswer": "FitBox+ uses Stripe sandbox for the available plans. Open Membership for current pricing, renewal dates and cancellation controls. I won’t guess your account’s billing status from this conversation."
+        }
+      ]
+    },
+    {
+      "intent": "refund",
+      "questions": [
+        {
+          "question": "refund help",
+          "exampleAnswer": "Open Contact support in Settings to prepare an email to adam.vamshikrishna@gmail.com. You can attach screenshots and review it before sending. I can explain the route, but I can’t approve a refund or claim a payment was reversed."
+        },
+        {
+          "question": "contact developer",
+          "exampleAnswer": "Open Contact support in Settings to prepare an email to adam.vamshikrishna@gmail.com. You can attach screenshots and review it before sending. I can explain the route, but I can’t approve a refund or claim a payment was reversed."
+        },
+        {
+          "question": "billing support",
+          "exampleAnswer": "Open Contact support in Settings to prepare an email to adam.vamshikrishna@gmail.com. You can attach screenshots and review it before sending. I can explain the route, but I can’t approve a refund or claim a payment was reversed."
+        },
+        {
+          "question": "money back request",
+          "exampleAnswer": "Open Contact support in Settings to prepare an email to adam.vamshikrishna@gmail.com. You can attach screenshots and review it before sending. I can explain the route, but I can’t approve a refund or claim a payment was reversed."
+        },
+        {
+          "question": "email support with screenshot",
+          "exampleAnswer": "Open Contact support in Settings to prepare an email to adam.vamshikrishna@gmail.com. You can attach screenshots and review it before sending. I can explain the route, but I can’t approve a refund or claim a payment was reversed."
+        }
+      ]
+    },
+    {
+      "intent": "reports",
+      "questions": [
+        {
+          "question": "workout report",
+          "exampleAnswer": "Daily, weekly, monthly and yearly reports summarize your saved sessions, worklogs and progress. Email delivery remains a clearly labeled demo—no message is sent. Preview or export your report in the app, and update the report address in account details."
+        },
+        {
+          "question": "email my daily analysis",
+          "exampleAnswer": "Daily, weekly, monthly and yearly reports summarize your saved sessions, worklogs and progress. Email delivery remains a clearly labeled demo—no message is sent. Preview or export your report in the app, and update the report address in account details."
+        },
+        {
+          "question": "weekly monthly yearly report",
+          "exampleAnswer": "Daily, weekly, monthly and yearly reports summarize your saved sessions, worklogs and progress. Email delivery remains a clearly labeled demo—no message is sent. Preview or export your report in the app, and update the report address in account details."
+        },
+        {
+          "question": "report email address",
+          "exampleAnswer": "Daily, weekly, monthly and yearly reports summarize your saved sessions, worklogs and progress. Email delivery remains a clearly labeled demo—no message is sent. Preview or export your report in the app, and update the report address in account details."
+        },
+        {
+          "question": "why no email arrived",
+          "exampleAnswer": "Daily, weekly, monthly and yearly reports summarize your saved sessions, worklogs and progress. Email delivery remains a clearly labeled demo—no message is sent. Preview or export your report in the app, and update the report address in account details."
+        }
+      ]
+    },
+    {
+      "intent": "points",
+      "questions": [
+        {
+          "question": "explain sweat points",
+          "exampleAnswer": "Saved reps and tracked time earn Sweat Points. Claim a completed task once for 25 Goal Points; every 100 GP raises your level. Spending SP on virtual cosmetics does not reduce earned GP or your level. Tap the eye to show completed tasks."
+        },
+        {
+          "question": "goal points",
+          "exampleAnswer": "Saved reps and tracked time earn Sweat Points. Claim a completed task once for 25 Goal Points; every 100 GP raises your level. Spending SP on virtual cosmetics does not reduce earned GP or your level. Tap the eye to show completed tasks."
+        },
+        {
+          "question": "level up reward",
+          "exampleAnswer": "Saved reps and tracked time earn Sweat Points. Claim a completed task once for 25 Goal Points; every 100 GP raises your level. Spending SP on virtual cosmetics does not reduce earned GP or your level. Tap the eye to show completed tasks."
+        },
+        {
+          "question": "how do i earn gp",
+          "exampleAnswer": "Saved reps and tracked time earn Sweat Points. Claim a completed task once for 25 Goal Points; every 100 GP raises your level. Spending SP on virtual cosmetics does not reduce earned GP or your level. Tap the eye to show completed tasks."
+        },
+        {
+          "question": "why claim a task",
+          "exampleAnswer": "Saved reps and tracked time earn Sweat Points. Claim a completed task once for 25 Goal Points; every 100 GP raises your level. Spending SP on virtual cosmetics does not reduce earned GP or your level. Tap the eye to show completed tasks."
+        },
+        {
+          "question": "xp points",
+          "exampleAnswer": "Saved reps and tracked time earn Sweat Points. Claim a completed task once for 25 Goal Points; every 100 GP raises your level. Spending SP on virtual cosmetics does not reduce earned GP or your level. Tap the eye to show completed tasks."
+        }
+      ]
+    },
+    {
+      "intent": "store",
+      "questions": [
+        {
+          "question": "store rewards",
+          "exampleAnswer": "The Store is in the bottom dock beside Insights. Spend earned Sweat Points on virtual apparel and accessories, then equip them on your digital athlete. These are virtual cosmetics; no physical goods are shipped."
+        },
+        {
+          "question": "buy virtual clothes",
+          "exampleAnswer": "The Store is in the bottom dock beside Insights. Spend earned Sweat Points on virtual apparel and accessories, then equip them on your digital athlete. These are virtual cosmetics; no physical goods are shipped."
+        },
+        {
+          "question": "equip a cap",
+          "exampleAnswer": "The Store is in the bottom dock beside Insights. Spend earned Sweat Points on virtual apparel and accessories, then equip them on your digital athlete. These are virtual cosmetics; no physical goods are shipped."
+        },
+        {
+          "question": "cosmetic bottle",
+          "exampleAnswer": "The Store is in the bottom dock beside Insights. Spend earned Sweat Points on virtual apparel and accessories, then equip them on your digital athlete. These are virtual cosmetics; no physical goods are shipped."
+        },
+        {
+          "question": "spend sweat points",
+          "exampleAnswer": "The Store is in the bottom dock beside Insights. Spend earned Sweat Points on virtual apparel and accessories, then equip them on your digital athlete. These are virtual cosmetics; no physical goods are shipped."
+        }
+      ]
+    },
+    {
+      "intent": "exclusion",
+      "questions": [
+        {
+          "question": "avoid this movement",
+          "exampleAnswer": "Use Movement exclusions in Settings, or the comfort section during setup. Excluded activities are removed from your plan. Choose an allowed alternative that fits your equipment and experience; I won’t diagnose a restriction or change it without your choice."
+        },
+        {
+          "question": "exclude pushups",
+          "exampleAnswer": "Pushups can be excluded. Use Movement exclusions in Settings, or the comfort section during setup. Excluded activities are removed from your plan. Choose an allowed alternative that fits your equipment and experience; I won’t diagnose a restriction or change it without your choice."
+        },
+        {
+          "question": "exercise is unsuitable",
+          "exampleAnswer": "Use Movement exclusions in Settings, or the comfort section during setup. Excluded activities are removed from your plan. Choose an allowed alternative that fits your equipment and experience; I won’t diagnose a restriction or change it without your choice."
+        },
+        {
+          "question": "remove squats from my routine",
+          "exampleAnswer": "Squats can be excluded. Use Movement exclusions in Settings, or the comfort section during setup. Excluded activities are removed from your plan. Choose an allowed alternative that fits your equipment and experience; I won’t diagnose a restriction or change it without your choice."
+        },
+        {
+          "question": "alternative exercise",
+          "exampleAnswer": "Use Movement exclusions in Settings, or the comfort section during setup. Excluded activities are removed from your plan. Choose an allowed alternative that fits your equipment and experience; I won’t diagnose a restriction or change it without your choice."
+        },
+        {
+          "question": "cannot do lunges",
+          "exampleAnswer": "Stationary lunges can be excluded. Use Movement exclusions in Settings, or the comfort section during setup. Excluded activities are removed from your plan. Choose an allowed alternative that fits your equipment and experience; I won’t diagnose a restriction or change it without your choice."
+        }
+      ]
+    },
+    {
+      "intent": "motivation",
+      "questions": [
+        {
+          "question": "i feel unmotivated",
+          "exampleAnswer": "Alex, you don’t need a perfect session to return. One comfortable set, a shorter plan or a rest day are all valid choices. Your earned progress stays yours."
+        },
+        {
+          "question": "hard to get started",
+          "exampleAnswer": "Alex, you don’t need a perfect session to return. One comfortable set, a shorter plan or a rest day are all valid choices. Your earned progress stays yours."
+        },
+        {
+          "question": "encourage me",
+          "exampleAnswer": "Alex, you don’t need a perfect session to return. One comfortable set, a shorter plan or a rest day are all valid choices. Your earned progress stays yours."
+        },
+        {
+          "question": "i feel bad for missing workouts",
+          "exampleAnswer": "Alex, you don’t need a perfect session to return. One comfortable set, a shorter plan or a rest day are all valid choices. Your earned progress stays yours."
+        },
+        {
+          "question": "not making progress",
+          "exampleAnswer": "Alex, you don’t need a perfect session to return. One comfortable set, a shorter plan or a rest day are all valid choices. Your earned progress stays yours."
+        },
+        {
+          "question": "feeling discouraged",
+          "exampleAnswer": "Alex, you don’t need a perfect session to return. One comfortable set, a shorter plan or a rest day are all valid choices. Your earned progress stays yours."
+        }
+      ]
+    },
+    {
+      "intent": "medical",
+      "questions": [
+        {
+          "question": "exercise hurts",
+          "exampleAnswer": "Pause the exercise if it hurts, makes you dizzy or feels unsuitable. I can help you exclude the movement, but I cannot assess an injury or tell you it is safe to continue. Seek qualified medical advice for symptoms or concerns."
+        },
+        {
+          "question": "pain while exercising",
+          "exampleAnswer": "Pause the exercise if it hurts, makes you dizzy or feels unsuitable. I can help you exclude the movement, but I cannot assess an injury or tell you it is safe to continue. Seek qualified medical advice for symptoms or concerns."
+        },
+        {
+          "question": "i feel dizzy",
+          "exampleAnswer": "Pause the exercise if it hurts, makes you dizzy or feels unsuitable. I can help you exclude the movement, but I cannot assess an injury or tell you it is safe to continue. Seek qualified medical advice for symptoms or concerns."
+        },
+        {
+          "question": "injured my knee",
+          "exampleAnswer": "Pause the exercise if it hurts, makes you dizzy or feels unsuitable. I can help you exclude the movement, but I cannot assess an injury or tell you it is safe to continue. Seek qualified medical advice for symptoms or concerns."
+        },
+        {
+          "question": "i am feeling unwell",
+          "exampleAnswer": "Pause the exercise if it hurts, makes you dizzy or feels unsuitable. I can help you exclude the movement, but I cannot assess an injury or tell you it is safe to continue. Seek qualified medical advice for symptoms or concerns."
+        }
+      ]
+    }
+  ]
+}

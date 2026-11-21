@@ -1,6 +1,6 @@
 {
   "name": "fitbox",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "private": true,
   "description": "FitBox on-device MediaPipe pose tracking, local trainer, authenticated fitness summary sync",
   "scripts": {
