@@ -8,7 +8,7 @@ FitBox is an Android and web wellness app with on-device MediaPipe pose tracking
 
 | Try it | Link |
 | --- | --- |
-| Android test APK | [Download FitBox v0.6.0](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.6.0/FitBox-debug.apk) |
+| Android test APK | [Download FitBox v0.6.1](https://github.com/vams2krish/fitbox-fitness-iot/releases/download/v0.6.1/FitBox-debug.apk) |
 | Web app | [FitBox on Vercel](https://fitbox-fitness-iot.vercel.app) |
 | Public source | [GitHub repository](https://github.com/vams2krish/fitbox-fitness-iot) |
 | First design reference | [Original Figma, starting at 364:3661](https://www.figma.com/proto/7vS0ax0bayEIE4QrXlBjsQ/FitBox-App?node-id=364-3661&starting-point-node-id=364%3A3661) |
@@ -39,11 +39,11 @@ Exercise instruction dialogs show one centered looping character, with no coach 
 
 Source atlases and exact prompts are in [the art manifest](docs/source-atlases/manifest.json); `python tools/pack-sprite-atlases.py` recreates the runtime sheets. These illustrations demonstrate movement rather than assessing the camera user's form.
 
-## Programs and reminders in v0.6.0
+## Programs and reminders in v0.6.1
 
 Adaptive programs span 7, 15, 30, 90, 180, 270 and 365 days. Beginner through Professional plans use goals, equipment, available time and past performance. Every movement includes sets and rep/hold ranges. The separate Program Library offers 80 preset combinations to customize and import as manual plans. [Planner model card](docs/ADAPTIVE-PLANNER-MODEL-CARD.md).
 
-Android coach reminders are opt-in, aim for 30 or 60 minutes before workouts and protect sleep/work quiet hours. Recovery, comeback and verified membership messages use supportive copy, matching imagery and original CC0 sounds. The browser previews schedules; closed-app delivery requires Android, with no remote FCM/Web Push configured. [Notification behavior and limits](docs/NOTIFICATIONS.md).
+Android coach reminders stay quiet while FitBox is open and prevent duplicate restored deliveries. They are opt-in, aim for 30 or 60 minutes before workouts and protect sleep/work quiet hours. Recovery, comeback and verified membership messages use supportive copy, matching imagery and original CC0 sounds. The browser previews schedules; closed-app delivery requires Android, with no remote FCM/Web Push configured. [Notification behavior and limits](docs/NOTIFICATIONS.md).
 
 | Adaptive calendar | Program library | Coach reminders |
 | --- | --- | --- |
@@ -198,7 +198,7 @@ This release implements the listed functional flows; it does **not** certify eve
 
 Physical-phone pose accuracy, battery use, broad device compatibility, accessibility certification, real email delivery, release signing/store packaging and real Bluetooth hardware integration remain unverified or pending. BLE needs an actual firmware protocol; no connected device is simulated.
 
-**Version:** 0.6.0 · **App:** FitBox · **Type:** DL / computer vision fitness app with a local guided coach.
+**Version:** 0.6.1 · **App:** FitBox · **Type:** DL / computer vision fitness app with a local guided coach.
 
 
 
@@ -230,7 +230,7 @@ Legacy artwork remains on disk because automated approval review blocked its fil
 Run `npm test`, `node tools/test-studio.mjs`, `node tools/test-fullstack.mjs`, `node tools/test-reports-api.mjs`, `node tools/test-billing.mjs` and `node tools/test-android-studio.mjs` (test emulator only). Detailed observed results and limits are recorded in [v0.4 status](docs/V0.4-STATUS.md). Email templates and camera fixtures use fictional data, not user recordings.
 
 
-## v0.6.0 — original Figma screen direction
+## v0.6.1 — original Figma screen direction
 
 Restored the first design's welcome photograph, centered welcome title and bottom Get Started action. Home now follows the original header/progress/Bluetooth, Check-up panel and compact yellow mystery rows. Learning uses the original 3-column category grid; coach dialogs, onboarding cards, blue congratulations and yellow level screen follow the screenshot language. Kept the newer replacement coach/3D athlete artwork instead of restoring the rejected clipart. Real stats, hidden completed tasks, cumulative counts, settings, reports, voice, local media, wallet and call handling are unchanged.
 
