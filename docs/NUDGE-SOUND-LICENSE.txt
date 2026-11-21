@@ -1,0 +1,9 @@
+FitBox notification chimes: nudge_workout.wav, nudge_rest.wav, nudge_membership.wav
+
+Original synthesized tones created for this project by tools/generate-nudge-sounds.py.
+No external samples, songs or recordings are used.
+
+To the extent possible under law, the creator has waived all copyright and related
+or neighboring rights to these three audio files under CC0 1.0 Universal.
+Commercial use, adaptation and redistribution are permitted without attribution.
+https://creativecommons.org/publicdomain/zero/1.0/

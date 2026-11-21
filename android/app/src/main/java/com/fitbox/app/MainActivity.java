@@ -45,6 +45,12 @@ public class MainActivity extends Activity {
         web.getSettings().setMediaPlaybackRequiresUserGesture(true);
         web.addJavascriptInterface(new Object() {
             @JavascriptInterface public void enableCallProtection() { runOnUiThread(() -> { if(checkSelfPermission(Manifest.permission.READ_PHONE_STATE)==PackageManager.PERMISSION_GRANTED)registerCallProtection();else requestPermissions(new String[]{Manifest.permission.READ_PHONE_STATE},44); }); }
+            @JavascriptInterface public boolean notificationsAllowed() { return NudgeScheduler.allowed(MainActivity.this); }
+            @JavascriptInterface public void scheduleNudges(String json) { runOnUiThread(() -> NudgeScheduler.schedule(MainActivity.this,json)); }
+            @JavascriptInterface public void cancelNudges() { runOnUiThread(() -> NudgeScheduler.cancel(MainActivity.this)); }
+            @JavascriptInterface public void testNudge() { runOnUiThread(() -> NudgeScheduler.test(MainActivity.this)); }
+            @JavascriptInterface public void openNotificationSettings() { runOnUiThread(() -> { Intent intent=new Intent(android.provider.Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(android.provider.Settings.EXTRA_APP_PACKAGE,getPackageName());startActivity(intent); }); }
+            @JavascriptInterface public void requestNotificationPermission() { runOnUiThread(() -> { if(android.os.Build.VERSION.SDK_INT>=33&&checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS)!=PackageManager.PERMISSION_GRANTED)requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS},45);else web.evaluateJavascript("window.fitboxNotificationPermission && window.fitboxNotificationPermission()",null); }); }
             @JavascriptInterface public boolean callProtectionEnabled() { return checkSelfPermission(Manifest.permission.READ_PHONE_STATE)==PackageManager.PERMISSION_GRANTED; }
             @JavascriptInterface public void openBluetoothSettings() { runOnUiThread(() -> { try { startActivity(new Intent(android.provider.Settings.ACTION_BLUETOOTH_SETTINGS)); } catch (android.content.ActivityNotFoundException e) { startActivity(new Intent(android.provider.Settings.ACTION_SETTINGS)); } }); }
             @JavascriptInterface public void speak(String text) { if (text == null || text.length() > 1000) return; runOnUiThread(() -> { if (tts != null && hasWindowFocus() && tts.getVoice() != null && !tts.getVoice().isNetworkConnectionRequired()) tts.speak(text, android.speech.tts.TextToSpeech.QUEUE_FLUSH, null, "fitbox-cue"); }); }
@@ -101,6 +107,7 @@ public class MainActivity extends Activity {
                     if (legacyState != null) web.evaluateJavascript("if(!localStorage.getItem('fitbox.v1'))localStorage.setItem('fitbox.v1'," + JSONObject.quote(legacyState) + ");location.reload();", null);
                     legacyState = null;
                 }
+                if(url.equals(LOCAL_URL))openNotificationRoute();
             }
         });
         web.setWebChromeClient(new WebChromeClient() {
@@ -152,6 +159,7 @@ public class MainActivity extends Activity {
     private static WebResourceResponse missing() { return new WebResourceResponse("text/plain", "UTF-8", 404, "Not Found", java.util.Collections.emptyMap(), new ByteArrayInputStream(new byte[0])); }
     @Override public void onRequestPermissionsResult(int code, String[] permissions, int[] results) {
         super.onRequestPermissionsResult(code, permissions, results);
+        if(code==45&&web!=null)web.evaluateJavascript("window.fitboxNotificationPermission && window.fitboxNotificationPermission()",null);
         if(code==44&&results.length>0&&results[0]==PackageManager.PERMISSION_GRANTED)registerCallProtection();
         if (code == 41 && cameraRequest != null) {
             if (results.length > 0 && results[0] == PackageManager.PERMISSION_GRANTED) cameraRequest.grant(new String[]{PermissionRequest.RESOURCE_VIDEO_CAPTURE}); else cameraRequest.deny();
@@ -168,6 +176,8 @@ public class MainActivity extends Activity {
             fileChooser = null;
         }
     }
+    private void openNotificationRoute() { String route=getIntent().getStringExtra("fitbox-route");if(route!=null&&web!=null&&LOCAL_URL.equals(web.getUrl())&&java.util.Arrays.asList("home","program","coach","billing").contains(route)){getIntent().removeExtra("fitbox-route");web.evaluateJavascript("window.fitboxOpenNotification && window.fitboxOpenNotification("+JSONObject.quote(route)+")",null);} }
+    @Override protected void onNewIntent(Intent intent) { super.onNewIntent(intent);setIntent(intent);openNotificationRoute(); }
     @Override public void onBackPressed() { web.evaluateJavascript("window.fitboxBack && window.fitboxBack()", null); }
     @Override protected void onPause() { if(web!=null){web.evaluateJavascript("window.fitboxPause && window.fitboxPause()", null);web.onPause();}if(tts!=null)tts.stop();super.onPause(); }
     @Override protected void onResume() { super.onResume();if(web!=null)web.onResume();if(checkSelfPermission(Manifest.permission.READ_PHONE_STATE)==PackageManager.PERMISSION_GRANTED)registerCallProtection(); }

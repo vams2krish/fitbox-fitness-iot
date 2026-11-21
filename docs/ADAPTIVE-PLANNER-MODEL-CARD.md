@@ -1,0 +1,15 @@
+# FitBox personal planner model card
+
+Version 0.6.0 combines pretrained MediaPipe deep-learning pose inference with a small personal machine-learning planner trained on this device. No cloud LLM is used.
+
+The planner has two regularized linear regression heads: exercise capacity and repetition pace. It uses 31 features (intercept, experience, goal, adherence/readiness, movement category and exercise identity). Training uses up to 240 grouped prior-day exercise observations from the last 90 days, 24 SGD epochs, learning rate 0.025 and L2 0.08. Capacity predictions are bounded to 0.65–1.2 times conservative baseline prescriptions; pace is bounded to 2–8 seconds per rep. Implausibly fast tap logs are excluded from pace training. Cached coefficients avoid retraining on each render.
+
+Cold-start recommendations use conservative rules until personal logs are available. Training-day progression uses actual active days rather than elapsed calendar days. Available time, equipment, level, exclusions and recovery are hard constraints. This is an initial personal adaptation model, not a clinically validated trainer or an independently benchmarked exercise-prescription system.
+
+Programs support 7, 15, 30, 90, 180, 270 and 365 days; Beginner, Intermediate, Advanced and Professional; goals Stay fit, Gain muscle, Build strength and Lose weight. Sets and rep/hold ranges are explicit. Estimated time includes warm-up, cooldown and set rest. Daily completion uses the minimum range across all sets. Future sessions are forecasts and may adapt to new prior-day evidence. Today's target stays fixed against today's partial logs; preference edits after work begins apply tomorrow. Skipped days never accumulate punishment or double workload.
+
+Manual templates are a separate mode. Users edit the exercise list and sets/ranges and import a snapshot into Task Center. The adaptive model does not silently substitute that selection. Historical preference revisions preserve prior-day claim verification. Saved recipe copies remain on the device; the active bounded program revision may sync with the profile.
+
+Camera inference uses a CPU WASM worker, one in-flight frame, adaptive cadence and requestVideoFrameCallback where supported. Main-thread local inference is a compatibility fallback. Digital smart framing adjusts only the preview crop; inference retains the full original frame. Missing body edges widen the view and ask the user to step back. Digital zoom cannot recover joints outside the physical lens. No OpenCV runtime is added because it would duplicate the existing pose/geometry pipeline.
+
+Raw camera frames, recordings and pose landmarks stay on-device. Only bounded scalar workout summaries/profile configuration sync. Local media remains local. See [MediaPipe's web worker guidance](https://developers.google.com/edge/mediapipe/solutions/vision/pose_landmarker?tab=Web) and [video frame callbacks](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/requestVideoFrameCallback).

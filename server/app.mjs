@@ -3,10 +3,10 @@ const require=createRequire(import.meta.url),C=require('../web/core.js'),P=requi
 import {publicBilling,privateBilling} from './billing.mjs';
 import {billingReady,stripe} from './stripe.mjs';
 const Product=require('../web/product-core.js');
-for(const t of P.TASKS)if(!C.exercise(t.id))C.exercises.push({id:t.id,group:['chair','warrior','tree','downdog'].includes(t.id)?'Yoga Pose':'Body Exercise',unit:t.mode==='hold'?'sec':'reps',base:t.mode==='hold'?30:10});
+for(const t of P.TASKS)if(!C.exercise(t.id))C.exercises.push({id:t.id,group:['chair','warrior','tree','downdog'].includes(t.id)?'Yoga Pose':'Body Exercise',unit:(t.mode==='hold'||['cycling','shadowboxing','handstand'].includes(t.id))?'sec':'reps',base:(t.mode==='hold'||['cycling','shadowboxing','handstand'].includes(t.id))?30:10});
 export const app=new Hono();
 app.use('/api/*',async(c,next)=>{c.header('Cache-Control','no-store');c.header('X-Content-Type-Options','nosniff');if(!['GET','HEAD','OPTIONS'].includes(c.req.method)){const webhook=c.req.path==='/api/billing/webhook'&&c.req.method==='POST';const origin=c.req.header('origin');const allowed=[baseURL,'https://fitbox-fitness-iot.vercel.app',...(process.env.VERCEL?[]:['http://127.0.0.1:4173','http://localhost:4173'])];if(!webhook&&(!origin||!allowed.includes(origin)))return c.json({error:'Untrusted request origin'},403);const size=Number(c.req.header('content-length')||0);if(size>131072)return c.json({error:'Only small text summaries are accepted'},413);}await next();});
-app.get('/api/health',c=>c.json({status:'ok',version:'0.5.2',database:!!pool,auth:!!auth,pose:{inference:'on-device',model:'MediaPipe Pose Landmarker Lite',videoUpload:false},billing:{provider:'stripe',sandbox:true,configured:billingReady()},email:{provider:'resend',configured:false,mode:'demo-preview'}}));
+app.get('/api/health',c=>c.json({status:'ok',version:'0.6.0',database:!!pool,auth:!!auth,pose:{inference:'on-device',model:'MediaPipe Pose Landmarker Lite',videoUpload:false},billing:{provider:'stripe',sandbox:true,configured:billingReady()},email:{provider:'resend',configured:false,mode:'demo-preview'}}));
 publicBilling(app);
 app.all('/api/auth/*',c=>auth?auth.handler(c.req.raw):c.json({error:'Authentication is not configured'},503));
 app.use('/api/*',async(c,next)=>{if(!auth||!pool)return c.json({error:'Cloud sync is not configured'},503);const session=await auth.api.getSession({headers:c.req.raw.headers});if(!session)return c.json({error:'Sign in to continue'},401);c.set('user',session.user);await next();});
